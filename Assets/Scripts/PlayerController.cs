@@ -1,19 +1,10 @@
 using UnityEngine;
-using UnityEngine.Tilemaps;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour {
-
-    [SerializeField]
-    private Tilemap m_Tilemap;
+public class PlayerController : CharacterController {
 
     private InputAction m_MoveAction;
     private InputAction m_SprintAction;
-
-    private float m_MoveSpeed = 6.0f;
-    private float m_MoveSpeedSprintModifier = 2.0f;
-
-    private Vector3 m_PositionInternal;
 
     private const float REPEAT_COOLDOWN_S = 100.0f / 1000.0f;
     private float m_RepeatTimer = REPEAT_COOLDOWN_S;
@@ -46,13 +37,7 @@ public class PlayerController : MonoBehaviour {
             m_RepeatTimer = 0.0f;
         }
 
-        m_PositionInternal += new Vector3(delta.x, delta.y, 0);
-
-        // TODO Round to Tilemap grid size
-        transform.position = new Vector3(
-                Mathf.Round(m_PositionInternal.x),
-                Mathf.Round(m_PositionInternal.y),
-                0);
+        Move(delta);
     }
 
     void OnDrawGizmos() {

@@ -2,11 +2,6 @@ using UnityEngine;
 
 public class NPCController : CharacterController {
 
-    public enum State {
-        IDLE,
-        FOLLOWTARGET,
-    }
-
     private Vector3 m_MoveTarget;
 
     private PlayerController m_Player;

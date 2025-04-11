@@ -3,6 +3,12 @@ using UnityEngine.Tilemaps;
 
 public abstract class CharacterController : MonoBehaviour {
 
+    public enum Scaling {
+        NONE,
+        WITH_SPEED_AND_TIME,
+    }
+
+
     [SerializeField]
     protected Tilemap m_Tilemap;
 
@@ -15,7 +21,11 @@ public abstract class CharacterController : MonoBehaviour {
         m_PositionInternal = transform.position;
     }
 
-    protected void Move(Vector3 delta) {
+    protected void Move(Vector3 delta, Scaling scaling_mode) {
+        if (scaling_mode == Scaling.WITH_SPEED_AND_TIME) {
+            delta *= Time.deltaTime * m_MoveSpeed;
+        }
+
         m_PositionInternal += new Vector3(delta.x, delta.y, 0);
 
         // TODO Round to Tilemap grid size

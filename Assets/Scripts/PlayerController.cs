@@ -30,14 +30,15 @@ public class PlayerController : CharacterController {
         var move = m_MoveAction.ReadValue<Vector2>();
         var sprinting = m_SprintAction.IsPressed();
         var sprint_mod = sprinting ? m_MoveSpeedSprintModifier : 1.0f;
-        var delta = move * Time.deltaTime * m_MoveSpeed * sprint_mod;
+        var delta = move * sprint_mod;
 
         if (m_MoveAction.WasPressedThisFrame()) {
             delta.Normalize();
             m_RepeatTimer = 0.0f;
+            Move(delta, Scaling.NONE);
+        } else {
+            Move(delta, Scaling.WITH_SPEED_AND_TIME);
         }
-
-        Move(delta);
     }
 
     void OnDrawGizmos() {

@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour {
     private Tilemap m_Tilemap;
 
     private InputAction m_MoveAction;
+    private InputAction m_SprintAction;
+
     private float m_MoveSpeed = 6.0f;
     private float m_MoveSpeedSprintModifier = 2.0f;
 
@@ -18,6 +20,7 @@ public class PlayerController : MonoBehaviour {
 
     void Start() {
         m_MoveAction = InputSystem.actions.FindAction("Move");
+        m_SprintAction = InputSystem.actions.FindAction("Sprint");
         m_PositionInternal = transform.position;
     }
 
@@ -34,7 +37,9 @@ public class PlayerController : MonoBehaviour {
         }
 
         var move = m_MoveAction.ReadValue<Vector2>();
-        var delta = move * Time.deltaTime * m_MoveSpeed;
+        var sprinting = m_SprintAction.IsPressed();
+        var sprint_mod = sprinting ? m_MoveSpeedSprintModifier : 1.0f;
+        var delta = move * Time.deltaTime * m_MoveSpeed * sprint_mod;
 
         if (m_MoveAction.WasPressedThisFrame()) {
             delta.Normalize();

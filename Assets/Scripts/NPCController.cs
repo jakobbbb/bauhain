@@ -12,6 +12,10 @@ public class NPCController : CharacterController {
     }
 
     void Update() {
+        FollowTarget();
+    }
+
+    void FollowTarget() {
         m_MoveTarget = m_Player.transform.position;
 
         var direction = m_MoveTarget - m_PositionInternal;

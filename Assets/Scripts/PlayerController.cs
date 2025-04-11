@@ -23,7 +23,6 @@ public class PlayerController : CharacterController {
         m_RepeatTimer += Time.deltaTime;
 
         if (MovementBlocked()) {
-            Debug.Log("block");
             return;
         }
 

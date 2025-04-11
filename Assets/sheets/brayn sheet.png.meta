@@ -82,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,10 +93,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 42
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -148,10 +148,10 @@ TextureImporter:
       name: brayn sheet_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 125
-        width: 37
-        height: 40
+        x: 0
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: brayn sheet_1
       rect:
         serializedVersion: 2
-        x: 45
-        y: 125
-        width: 36
-        height: 40
+        x: 42
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: brayn sheet_2
       rect:
         serializedVersion: 2
-        x: 87
-        y: 125
-        width: 37
-        height: 40
+        x: 84
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +214,10 @@ TextureImporter:
       name: brayn sheet_3
       rect:
         serializedVersion: 2
-        x: 129
-        y: 125
-        width: 36
-        height: 39
+        x: 126
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: brayn sheet_4
       rect:
         serializedVersion: 2
-        x: 5
-        y: 83
-        width: 28
-        height: 38
+        x: 0
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: brayn sheet_5
       rect:
         serializedVersion: 2
-        x: 44
-        y: 83
-        width: 32
-        height: 39
+        x: 42
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: brayn sheet_6
       rect:
         serializedVersion: 2
-        x: 89
-        y: 83
-        width: 28
-        height: 38
+        x: 84
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: brayn sheet_7
       rect:
         serializedVersion: 2
-        x: 128
-        y: 83
-        width: 32
-        height: 39
+        x: 126
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,10 +324,10 @@ TextureImporter:
       name: brayn sheet_8
       rect:
         serializedVersion: 2
-        x: 9
-        y: 41
-        width: 28
-        height: 38
+        x: 0
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,10 +346,10 @@ TextureImporter:
       name: brayn sheet_9
       rect:
         serializedVersion: 2
-        x: 48
-        y: 41
-        width: 32
-        height: 39
+        x: 42
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,10 +368,10 @@ TextureImporter:
       name: brayn sheet_10
       rect:
         serializedVersion: 2
-        x: 89
-        y: 41
-        width: 28
-        height: 38
+        x: 84
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,10 +390,10 @@ TextureImporter:
       name: brayn sheet_11
       rect:
         serializedVersion: 2
-        x: 134
-        y: 41
-        width: 32
-        height: 39
+        x: 126
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +412,10 @@ TextureImporter:
       name: brayn sheet_12
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 0
-        width: 37
-        height: 39
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,10 +434,10 @@ TextureImporter:
       name: brayn sheet_13
       rect:
         serializedVersion: 2
-        x: 45
+        x: 42
         y: 0
-        width: 36
-        height: 39
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: brayn sheet_14
       rect:
         serializedVersion: 2
-        x: 87
+        x: 84
         y: 0
-        width: 37
-        height: 39
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +478,10 @@ TextureImporter:
       name: brayn sheet_15
       rect:
         serializedVersion: 2
-        x: 129
+        x: 126
         y: 0
-        width: 36
-        height: 39
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5f364884a3f2f4c38ad8f9d6aba3f37e
     internalID: 0
     vertices: []
     indices: 
@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      brayn sheet_0: 6831160351957851246
+      brayn sheet_1: -8240553614132555659
+      brayn sheet_10: -5942597282892970922
+      brayn sheet_11: 8090310199634406774
+      brayn sheet_12: -179265024739908406
+      brayn sheet_13: -7519892069156341574
+      brayn sheet_14: 8581534048194166062
+      brayn sheet_15: -4984188215363645557
+      brayn sheet_2: -8875286644984660178
+      brayn sheet_3: -9016389041600056798
+      brayn sheet_4: -4526204816795572312
+      brayn sheet_5: -3755256447653144620
+      brayn sheet_6: -6537214928879583469
+      brayn sheet_7: -1003833693607763175
+      brayn sheet_8: -428861206052965689
+      brayn sheet_9: 7930355659251002027
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -16,6 +16,65 @@ position: -3211,-2474
 -> Items? <<if visited("ItemsMattheo") == false>>
     <<jump ItemsMattheo>>
 -> Leave. <<if visited("SayMattheo") && visited("DoMattheo") && visited("ItemsMattheo") == true>>
+    <<set $Mattheo = 2>>
+    <<set $clock = $clock +1>>
+    <<if $Cops == 4 && $Mia == 2 && $Emma == 2 && $Noah == 2>>
+        <<jump MURDERCops>>
+    <<endif>>
+    <<if $Cops < 4 && $murder == "no">>
+        <<set $chanceMURDER = 0>>
+        <<if $clock == 1>>
+            <<set $chanceMURDER = random_range(1, 20)>> //5% 
+            <<if $chanceMURDER == 1>>
+                <<jump MURDERMattheo>>
+            <<endif>>
+        <<elseif $clock == 2>>
+            <<set $chanceMURDER = random_range(1, 10)>> //10%
+            <<if $chanceMURDER == 1>>
+                <<jump MURDERMattheo>>
+            <<endif>>
+        <<elseif $clock == 3>>
+            <<set $chanceMURDER = random_range(1, 100)>> //15%
+            <<if $chanceMURDER <= 15>>
+                <<jump MURDERMattheo>>
+            <<endif>>
+        <<elseif $clock == 4>>
+            <<set $chanceMURDER = random_range(1, 5)>> //20%
+            <<if $chanceMURDER == 1>>
+                <<jump MURDERMattheo>>
+            <<endif>>
+        <<elseif $clock == 5>>
+            <<set $chanceMURDER = random_range(1, 4)>> //25%
+            <<if $chanceMURDER == 1>>
+                <<jump MURDERMattheo>>
+            <<endif>>
+        <<elseif $clock == 6>>
+            <<set $chanceMURDER = random_range(1, 50)>> //30%
+            <<if $chanceMURDER <= 15>>
+                <<jump MURDERMattheo>>
+            <<endif>>
+        <<elseif $clock == 7>>
+            <<set $chanceMURDER = random_range(1, 100)>> //35%
+            <<if $chanceMURDER <= 35>>
+                <<jump MURDERMattheo>>
+            <<endif>>
+        <<elseif $clock == 8>>
+            <<set $chanceMURDER = random_range(1, 25)>> //40%
+            <<if $chanceMURDER <= 10>>
+                <<jump MURDERMattheo>>
+            <<endif>>
+        <<elseif $clock == 9>>
+            <<set $chanceMURDER = random_range(1, 100)>> //45%
+            <<if $chanceMURDER <= 45>>
+                <<jump MURDERMattheo>>
+            <<endif>>
+        <<elseif $clock == 10>>
+            <<set $chanceMURDER = random_range(1, 2)>>
+            <<if $chanceMURDER == 1>>
+                <<jump MURDERMattheo>>
+            <<endif>>
+        <<endif>>
+    <<endif>>
 ===
 
 title: SayMattheo
@@ -49,6 +108,18 @@ position: -2970,-2635
 -> blankly stare at them
     ...
 -> twerk furiously
+    <<if $Cops < 4 && $murder == "no">>
+        <<jump MURDERMattheo>>
+    <<else>>
+        Mattheo: Don't you like... work here?
+        You: You make it sound like it's a bad thing.
+        Mattheo squints, eyes following you bouncing behind.
+        Mattheo: Appalling workplace behaviour.
+        You: You are not the boss of me!
+        Mattheo: ...
+        Mattheo: Unfortunately.
+        You are not sure what that is supposed to mean.
+    <<endif>>
 <<jump BasicInteractionMattheo>>
 ===
 
@@ -66,9 +137,8 @@ position: -3006,-2211
 -> Schirmchen <<if $drink == 2>>
     <<set $drink = 3>>
 -> Snail <<if $snail == 1>>
-    <<set $snail = 2>>
+    <<set $snail = 0>>
 -> white powder <<if $koks == 1>>
     <<set $koks = 0>>
--> a gun?
 <<jump BasicInteractionMattheo>>
 ===

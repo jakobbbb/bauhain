@@ -16,6 +16,60 @@ position: -3211,-2474
 -> Items? <<if visited("ItemsMaggie") == false>>
     <<jump ItemsMaggie>>
 -> Leave. <<if visited("SayMaggie") && visited("DoMaggie") && visited("ItemsMaggie") == true>>
+    <<set $Maggie = 2>>
+    <<set $clock = $clock +1>>
+    <<set $chanceMURDER = 0>>
+    <<if $clock == 1>>
+        <<set $chanceMURDER = random_range(1, 20)>> //5% 
+        <<if $chanceMURDER == 1>>
+            <<jump MURDERMaggie>>
+        <<endif>>
+    <<elseif $clock == 2>>
+        <<set $chanceMURDER = random_range(1, 10)>> //10%
+        <<if $chanceMURDER == 1>>
+            <<jump MURDERMaggie>>
+        <<endif>>
+    <<elseif $clock == 3>>
+        <<set $chanceMURDER = random_range(1, 100)>> //15%
+        <<if $chanceMURDER <= 15>>
+            <<jump MURDERMaggie>>
+        <<endif>>
+    <<elseif $clock == 4>>
+        <<set $chanceMURDER = random_range(1, 5)>> //20%
+        <<if $chanceMURDER == 1>>
+            <<jump MURDERMaggie>>
+        <<endif>>
+    <<elseif $clock == 5>>
+        <<set $chanceMURDER = random_range(1, 4)>> //25%
+        <<if $chanceMURDER == 1>>
+            <<jump MURDERMaggie>>
+        <<endif>>
+    <<elseif $clock == 6>>
+        <<set $chanceMURDER = random_range(1, 50)>> //30%
+        <<if $chanceMURDER <= 15>>
+            <<jump MURDERMaggie>>
+        <<endif>>
+    <<elseif $clock == 7>>
+        <<set $chanceMURDER = random_range(1, 100)>> //35%
+        <<if $chanceMURDER <= 35>>
+            <<jump MURDERMaggie>>
+        <<endif>>
+    <<elseif $clock == 8>>
+        <<set $chanceMURDER = random_range(1, 25)>> //40%
+        <<if $chanceMURDER <= 10>>
+            <<jump MURDERMaggie>>
+        <<endif>>
+    <<elseif $clock == 9>>
+        <<set $chanceMURDER = random_range(1, 100)>> //45%
+        <<if $chanceMURDER <= 45>>
+            <<jump MURDERMaggie>>
+        <<endif>>
+    <<elseif $clock == 10>>
+        <<set $chanceMURDER = random_range(1, 2)>>
+        <<if $chanceMURDER == 1>>
+            <<jump MURDERMaggie>>
+        <<endif>>
+    <<endif>>
 ===
 
 title: SayMaggie
@@ -41,6 +95,7 @@ title: DoMaggie
 position: -2970,-2635
 ---
 -> start speaking backwards
+    <<jump MURDERMaggie>>
     <<set $backwards = 1>>
 -> scream
     You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
@@ -69,6 +124,5 @@ position: -3006,-2211
     <<set $snail = 2>>
 -> white powder <<if $koks == 1>>
     <<set $koks = 0>>
--> a gun?
-<<jump BasicInteraction>>
+<<jump BasicInteractionMaggie>>
 ===

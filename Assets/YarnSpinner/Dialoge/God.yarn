@@ -16,6 +16,8 @@ position: -3211,-2474
 -> Items? <<if visited("ItemsGod") == false>>
     <<jump ItemsGod>>
 -> Leave. <<if visited("SayGod") && visited("DoGod") && visited("ItemsGod") == true>>
+    <<set $God = 2>>
+    <<set $clock = $clock +1>>
 ===
 
 title: SayGod
@@ -70,8 +72,22 @@ position: -3006,-2211
 -> white powder <<if $koks == 1>>
     <<set $koks = 0>>
 -> a gun?
-    You:
-    God:
+    You pull out the gun and shoot person in front of you.
+    They fall to the floor.
+    You: GOD IS DEAD!
+    God: Nietzsche. How original.
+    God gets back up.
+    God: Ironically he is the dead one now.
+    God: I am still very much "alive".
+    God: Well, more like "in existence".
+    God: A subtle difference but an important one, really.
+    God: But I don't think profound theological questions are your strong suit.
+    You: Huh?
+    God: Case in point.
+    You: But I shot you!
+    God: Yeah...
+    God: You really shouldn't have done that.
+    God snaps their fingers.
     <<jump GodIsDead>>
 <<jump BasicInteractionGod>>
 ===
@@ -143,7 +159,10 @@ title: GodIsDead
     <<if $Yves >= 1>>
         <<jump MURDERLizzie>>
     <<endif>>
-<<else>>
-<<jump GodIsDead>>
 <<endif>>
+<<jump GodIsDead2>>
+===
+title: GodIsDead2
+---
+<<jump GodIsDead>>
 ===

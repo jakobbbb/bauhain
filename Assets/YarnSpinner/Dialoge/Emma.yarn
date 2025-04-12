@@ -10,12 +10,71 @@ position: -3211,-2474
 ---
 
 -> Say something! <<if visited("SayEmma") == false>>
-    <<jump Say>>
+    <<jump SayEmma>>
 -> Do something! <<if visited("DoEmma") == false>>
-    <<jump Do>>
+    <<jump DoEmma>>
 -> Items? <<if visited("ItemsEmma") == false>>
-    <<jump Items>>
+    <<jump ItemsEmma>>
 -> Leave. <<if visited("SayEmma") && visited("DoEmma") && visited("ItemsEmma") == true>>
+    <<set $Emma = 2>>
+    <<set $clock = $clock +1>>
+    <<if $Cops == 4 && $Mia == 2 && $Mattheo == 2 && $Noah == 2>>
+        <<jump MURDERCops>>
+    <<endif>>
+    <<if $Cops < 4 && $murder == "no">>
+        <<set $chanceMURDER = 0>>
+        <<if $clock == 1>>
+            <<set $chanceMURDER = random_range(1, 20)>> //5% 
+            <<if $chanceMURDER == 1>>
+                <<jump MURDEREmma>>
+            <<endif>>
+        <<elseif $clock == 2>>
+            <<set $chanceMURDER = random_range(1, 10)>> //10%
+            <<if $chanceMURDER == 1>>
+                <<jump MURDEREmma>>
+            <<endif>>
+        <<elseif $clock == 3>>
+            <<set $chanceMURDER = random_range(1, 100)>> //15%
+            <<if $chanceMURDER <= 15>>
+                <<jump MURDEREmma>>
+            <<endif>>
+        <<elseif $clock == 4>>
+            <<set $chanceMURDER = random_range(1, 5)>> //20%
+            <<if $chanceMURDER == 1>>
+                <<jump MURDEREmma>>
+            <<endif>>
+        <<elseif $clock == 5>>
+            <<set $chanceMURDER = random_range(1, 4)>> //25%
+            <<if $chanceMURDER == 1>>
+                <<jump MURDEREmma>>
+            <<endif>>
+        <<elseif $clock == 6>>
+            <<set $chanceMURDER = random_range(1, 50)>> //30%
+            <<if $chanceMURDER <= 15>>
+                <<jump MURDEREmma>>
+            <<endif>>
+        <<elseif $clock == 7>>
+            <<set $chanceMURDER = random_range(1, 100)>> //35%
+            <<if $chanceMURDER <= 35>>
+                <<jump MURDEREmma>>
+            <<endif>>
+        <<elseif $clock == 8>>
+            <<set $chanceMURDER = random_range(1, 25)>> //40%
+            <<if $chanceMURDER <= 10>>
+                <<jump MURDEREmma>>
+            <<endif>>
+        <<elseif $clock == 9>>
+            <<set $chanceMURDER = random_range(1, 100)>> //45%
+            <<if $chanceMURDER <= 45>>
+                <<jump MURDEREmma>>
+            <<endif>>
+        <<elseif $clock == 10>>
+            <<set $chanceMURDER = random_range(1, 2)>>
+            <<if $chanceMURDER == 1>>
+                <<jump MURDEREmma>>
+            <<endif>>
+        <<endif>>
+    <<endif>>
 ===
 
 title: SayEmma
@@ -60,15 +119,24 @@ position: -3006,-2211
 -> 2€ <<if $drink >1 && $note ==1>>
     <<set $note = 0>>
 -> Banana <<if $banana == 1>>
+    <<if $Cops < 4 && $murder == "no">>
+        <<jump MURDEREmma>>
+    <<else>>
+        You put your hand into your pocket and Emma flinches.
+        You pull out the banana.
+        Emma relaxes slighty
+        but the hostile energy in the room stays off the charts.
+        You decide to eat the banana yourself.
+        Some people just don't appreciate a good source of potassium.
+    <<endif>>
     <<set $banana = 0>>
 -> Drink <<if $drink == 1>>
     <<set $drink = 2>>
 -> Schirmchen <<if $drink == 2>>
     <<set $drink = 3>>
 -> Snail <<if $snail == 1>>
-    <<set $snail = 2>>
+    <<set $snail = 0>>
 -> white powder <<if $koks == 1>>
     <<set $koks = 0>>
--> a gun?
 <<jump BasicInteractionEmma>>
 ===

@@ -148,7 +148,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -373,7 +373,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -912,7 +912,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -953,10 +953,46 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 516767969729724755, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
+    - target: {fileID: 868170177117189558, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
     - target: {fileID: 896365676951496272, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
       propertyPath: m_Name
       value: TM_EntranceArea0
       objectReference: {fileID: 0}
+    - target: {fileID: 1368594969240825798, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
+    - target: {fileID: 1423307963124025973, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
+    - target: {fileID: 2877394275762209585, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
+    - target: {fileID: 3279280694388942339, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
+    - target: {fileID: 3581719201609912290, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
+    - target: {fileID: 4926099239441537296, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
+    - target: {fileID: 5314104363199544418, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
     - target: {fileID: 5457069889189179579, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
       propertyPath: m_Name
       value: Tilemaps Background
@@ -1001,6 +1037,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7504020163419981151, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
+    - target: {fileID: 9061567868787738272, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
+    - target: {fileID: 9214972211418483149, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -2,7 +2,12 @@ title: IntroKids
 position: -3653,-2709
 ---
 <<set $backwards = 0>>
-
+Ah, a... person?
+Yeah, that's obviously three kids in a trenchcoat.
+Why did you let them in?
+At least they seem well behaved.
+For now.
+Quick:
 <<jump BasicInteractionKids>>
 ===
 title: BasicInteractionKids
@@ -10,12 +15,14 @@ position: -3421,-2741
 ---
 
 -> Say something! <<if visited("SayKids") == false>>
-    <<jump Say>>
+    <<jump SayKids>>
 -> Do something! <<if visited("DoKids") == false>>
-    <<jump Do>>
+    <<jump DoKids>>
 -> Items? <<if visited("ItemsKids") == false>>
-    <<jump Items>>
+    <<jump ItemsKids>>
 -> Leave. <<if visited("SayKids") && visited("DoKids") && visited("ItemsKids") == true>>
+    <<set $kids = 2>>
+    <<set $clock = $clock +1>>
 ===
 
 title: SayKids
@@ -49,6 +56,13 @@ position: -2970,-2635
 -> blankly stare at them
     ...
 -> twerk furiously
+    No, that's ... how does the youth say... out?
+    What is in right now?
+    Flossing?
+    You try to floss.
+    You fail spectacularly.
+    Embarrassing.
+    The kids look at you with pity in their eyes.
 <<jump BasicInteractionKids>>
 ===
 
@@ -66,9 +80,9 @@ position: -3006,-2211
 -> Schirmchen <<if $drink == 2>>
     <<set $drink = 3>>
 -> Snail <<if $snail == 1>>
-    <<set $snail = 2>>
+    <<set $snail = 0>>
 -> white powder <<if $koks == 1>>
-    <<set $koks = 0>>
--> a gun?
+    No.
+    You're not going to do that.
 <<jump BasicInteractionKids>>
 ===

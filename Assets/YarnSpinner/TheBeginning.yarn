@@ -61,6 +61,7 @@ title: TheBeginning
 <<declare $murder = "no">>
 <<declare $murderCount = 0>>
 <<declare $clock = 1>>
+<<declare $chanceMURDER = 0>>
 You: Great, my shift is over.
 You: ...
 You: And the next bus leaves at 5:15 a.m.

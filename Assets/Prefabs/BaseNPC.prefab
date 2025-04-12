@@ -159,11 +159,14 @@ MonoBehaviour:
   m_Animator: {fileID: 7234137415862348550}
   m_StateMachine: {fileID: 1837630048318412195}
   m_RoomPreferences:
-    Entrance: 1
     Dancefloor: 1
-    Stairs: 1
+    DJStage: 1
     CokeRoom: 1
+    Backstage: 1
     Toilets: 1
+    Stairs: 1
+    Upstairs: 1
+    Bar: 1
 --- !u!95 &1837630048318412195
 Animator:
   serializedVersion: 7

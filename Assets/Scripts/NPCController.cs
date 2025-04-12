@@ -81,7 +81,6 @@ public class NPCController : CharacterController {
     void Start() {
         m_MoveSpeed *= 0.75f;
         m_Player = GameObject.FindFirstObjectByType<PlayerController>();
-        m_StateMachine.SetTrigger("MoveToTarget");
 
         StartCoroutine(RandomRoomCoroutine());
     }

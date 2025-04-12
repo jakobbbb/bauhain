@@ -1,160 +1,169 @@
 title: MURDERBarbara
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERBrayn
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERDiana
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERElfie
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERElim
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDEREmma
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDEREnoby
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERFürchti
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERGayle
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERLizzie
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERLux
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERMaggie
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERMattheo
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERMia
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERNoah
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERRenata
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERSamira
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERYves
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERVampires
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERPolikül
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERRentner
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERCops
 ---
-<<if $kids == 1>>
+<< if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERAlley
 ---
-<<if $kids == 1>>
+<<if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+===
+title: MURDERGod
+---
+Lightning strikes you right where you stand.
+...
+How original.
+    <<if $kids >= 1>>
+        <<jump KidsEnding>>
+    <<endif>>
 ===

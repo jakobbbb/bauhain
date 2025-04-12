@@ -95,7 +95,9 @@ title: GodIsDead
 ---
 <<declare $randomMURDER = 0>>
 <<set $randomMURDER = random_range(1, 16)>>
-<<if $randomMURDER == 1>>
+<<if $Barbara == 0 && $Brayn == 0 && $Elfie == 0 && $Emma == 0 && $Enoby == 0 && $Fürchti == 0 && $Gayle == 0 && $Lizzie == 0 && $Lux == 0 && $Maggie == 0 && $Mattheo == 0 && $Mia == 0 && $Noah == 0 && $Renata == 0 && $Samira == 0 && $Yves == 0>>
+    <<jump MURDERGod>>
+<<elseif $randomMURDER == 1>>
     <<if $Barbara >= 1>>
         <<jump MURDERBarbara>>
     <<endif>>
@@ -164,5 +166,5 @@ title: GodIsDead
 ===
 title: GodIsDead2
 ---
-<<jump GodIsDead>>
+    <<jump GodIsDead>>
 ===

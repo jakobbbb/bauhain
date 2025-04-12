@@ -3,13 +3,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : CharacterController {
 
-    private enum Direction {
-        UP = 0,
-        DOWN = 1,
-        LEFT = 2,
-        RIGHT = 3,
-    }
-
     private InputAction m_MoveAction;
     private InputAction m_SprintAction;
 
@@ -19,9 +12,6 @@ public class PlayerController : CharacterController {
     // Cooldown before going into idle anim
     private const float IDLE_COOLDOWN_S = 50.0f / 1000.0f;
     private float m_IdleTimer = IDLE_COOLDOWN_S;
-
-    [SerializeField]
-    private Animator m_Animator;
 
     void Start() {
         m_MoveAction = InputSystem.actions.FindAction("Move");
@@ -54,27 +44,8 @@ public class PlayerController : CharacterController {
             Move(delta, Scaling.WITH_SPEED_AND_TIME);
         }
 
-        bool stopped = delta.magnitude < 0.05f;
+        UpdateAnimator(delta);
 
-        if (!stopped) {
-            Direction dir = Direction.DOWN;
-            if (delta.x > 0.9f) {
-                dir = Direction.RIGHT;
-            } else if (delta.x < -0.9f) {
-                dir = Direction.LEFT;
-            } else if (delta.y > 0.9f) {
-                dir = Direction.UP;
-            }
-
-            m_Animator.SetInteger("DirUDLR", (int)dir);
-            m_Animator.SetFloat("Speed", 0.5f);
-
-            m_IdleTimer = 0.0f;
-        } else {
-            if (m_IdleTimer > IDLE_COOLDOWN_S) {
-                m_Animator.SetFloat("Speed", 0.0f);
-            }
-        }
     }
 
     void OnDrawGizmos() {

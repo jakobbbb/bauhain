@@ -3,9 +3,19 @@ using UnityEngine;
 
 public abstract class CharacterController : MonoBehaviour {
 
+    [SerializeField]
+    protected Animator m_Animator;
+
     public enum Scaling {
         NONE,
         WITH_SPEED_AND_TIME,
+    }
+
+    private enum Direction {
+        UP = 0,
+        DOWN = 1,
+        LEFT = 2,
+        RIGHT = 3,
     }
 
 
@@ -34,4 +44,25 @@ public abstract class CharacterController : MonoBehaviour {
                 Mathf.Round(m_PositionInternal.y),
                 0);
     }
+
+    protected void UpdateAnimator(Vector2 delta) {
+        bool stopped = delta.magnitude < 0.05f;
+
+        if (!stopped) {
+            Direction dir = Direction.DOWN;
+            if (delta.x > 0.9f) {
+                dir = Direction.RIGHT;
+            } else if (delta.x < -0.9f) {
+                dir = Direction.LEFT;
+            } else if (delta.y > 0.9f) {
+                dir = Direction.UP;
+            }
+
+            m_Animator.SetInteger("DirUDLR", (int)dir);
+            m_Animator.SetFloat("Speed", 0.5f);
+        } else {
+            m_Animator.SetFloat("Speed", 0.0f);
+        }
+    }
+
 }

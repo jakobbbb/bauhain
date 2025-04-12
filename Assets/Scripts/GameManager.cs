@@ -1,12 +1,11 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
 
     public static GameManager Instance;
 
-    public enum Rooms {
-        ENTRANCE,
-    }
+    public List<Room> Rooms = new List<Room>();
 
     private float m_GameTimeMinutes = 0;
 

@@ -6,6 +6,9 @@ public abstract class CharacterController : MonoBehaviour {
     [SerializeField]
     protected Animator m_Animator;
 
+    [SerializeField]
+    protected Rigidbody2D m_RigidBody;
+
     public enum Scaling {
         NONE,
         WITH_SPEED_AND_TIME,
@@ -48,7 +51,13 @@ public abstract class CharacterController : MonoBehaviour {
         if (delta_target.magnitude > 1.0f) {
             delta_target.Normalize();
         }
-        transform.position += delta_target * 15.0f * Time.deltaTime;
+
+        var move = delta_target * 15.0f * Time.deltaTime;
+        if (m_RigidBody) {
+            m_RigidBody.MovePosition(transform.position + move);
+        } else {
+            //transform.position += move;
+        }
 
         m_Target = target;
     }
@@ -78,5 +87,9 @@ public abstract class CharacterController : MonoBehaviour {
         Gizmos.DrawSphere(m_PositionInternal, 0.15f);
         Gizmos.color = Color.blue;
         Gizmos.DrawSphere(m_Target, 0.15f);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision) {
+        Debug.Log(collision);
     }
 }

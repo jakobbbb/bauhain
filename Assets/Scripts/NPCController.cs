@@ -108,6 +108,7 @@ public class NPCController : CharacterController {
     }
 
     void MoveToTarget() {
+        return;
         // m_MoveTarget = m_Player.transform.position;
 
         //var direction = m_MoveTarget - m_PositionInternal.position;

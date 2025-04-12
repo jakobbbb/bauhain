@@ -1,0 +1,50 @@
+﻿title: MURDER
+position: -125,-132
+---
+<<if $murder == "Barbara">>
+    <<jump MURDERBarbara>>
+<<elseif $murder == "Brayn">>
+    <<jump MURDERBrayn>>
+//<<elseif $murder == "Diana">>
+    //wird am Ende gecheckt
+<<elseif $murder == "Elfie">>
+    <<jump MURDERElfie>>
+<<elseif $murder == "Elim">>
+    <<jump MURDERElim>>
+<<elseif $murder == "Emma">>
+    <<jump MURDEREmma>>
+<<elseif $murder == "Enoby">>
+    <<jump MURDEREnoby>>
+<<elseif $murder == "Fürchti">>
+    <<jump MURDERFürchti>>
+<<elseif $murder == "Gayle">>
+    <<jump MURDERGayle>>
+<<elseif $murder == "Lizzie">>
+    <<jump MURDERLizzie>>
+<<elseif $murder == "Lux">>
+    <<jump MURDERLux>>
+<<elseif $murder == "Maggie">>
+    <<jump MURDERMaggie>>
+<<elseif $murder == "Mattheo">>
+    <<jump MURDERMattheo>>
+<<elseif $murder == "Mia">>
+    <<jump MURDERMia>>
+<<elseif $murder == "Noah">>
+    <<jump MURDERNoah>>
+<<elseif $murder == "Renata">>
+    <<jump MURDERRenata>>
+<<elseif $murder == "Samira">>
+    <<jump MURDERSamira>>
+<<elseif $murder == "Yves">>
+    <<jump MURDERYves>>
+<<elseif $murder == "Vampires">>
+    <<jump MURDERVampires>>
+<<elseif $murder == "Polikül">>
+    <<jump MURDERPolikül>>
+<<elseif $murder == "Rentner">>
+    <<jump MURDERRentner>>
+<<elseif $murder == "Cops">>
+    <<jump MURDERCops>>
+<<else>>
+<<endif>>
+===

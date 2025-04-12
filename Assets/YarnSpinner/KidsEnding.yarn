@@ -1,0 +1,6 @@
+title: KidsEnding
+---
+Inspector:
+Kids: Dürfen wir Ihnen unsere Karte geben?
+<<set $kids = 0>>
+===

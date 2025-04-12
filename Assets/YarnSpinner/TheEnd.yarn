@@ -1,0 +1,9 @@
+title: TheEnd
+---
+something something Bus
+<<if $murder == "Diana">>
+    <<jump MURDERDiana>>
+<<else>>
+    <<jump MURDERAlley>>
+<<endif>>
+===

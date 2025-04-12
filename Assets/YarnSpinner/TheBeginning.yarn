@@ -1,0 +1,70 @@
+title: TheBeginning
+---
+<<declare $vampires = 0>>
+    <<if $Enoby == 1>>
+        <<set $vampires = $vampires +1>>
+    <<endif>>
+     <<if $Gayle == 1>>
+        <<set $vampires = $vampires +1>>
+    <<endif>>
+    <<if $Brayn == 1>>
+        <<set $vampires = $vampires +1>>
+    <<endif>>
+     <<if $Yves == 1>>
+        <<set $vampires = $vampires +1>>
+    <<endif>>
+<<declare $Polikül = 0>>
+    <<if $Renata == 1>>
+        <<set $Polikül = $Polikül + 1>>
+    <<endif>>
+    <<if $Samira == 1>>
+        <<set $Polikül = $Polikül + 1>>
+    <<endif>>
+    <<if $Lux == 1>>
+        <<set $Polikül = $Polikül + 1>>
+    <<endif>>
+    <<if $Diana == 1>>
+        <<set $Polikül = $Polikül + 1>>
+    <<endif>>
+<<declare $Rentner = 0>>
+    <<if $Elfie == 1>>
+        <<set $Rentner = $Rentner +1>>
+    <<endif>>
+     <<if $Lizzie == 1>>
+        <<set $Rentner = $Rentner +1>>
+    <<endif>>
+     <<if $Fürchti == 1>>
+        <<set $Rentner = $Rentner +1>>
+    <<endif>>
+     <<if $Barbara == 1>>
+        <<set $Rentner = $Rentner +1>>
+    <<endif>>
+<<declare $Cops = 0>>
+    <<if $Mattheo == 1>>
+        <<set $Cops = $Cops +1>>
+    <<endif>>
+    <<if $Noah == 1>>
+        <<set $Cops = $Cops +1>>
+    <<endif>>
+    <<if $Mia == 1>>
+        <<set $Cops = $Cops +1>>
+    <<endif>>
+    <<if $Emma == 1>>
+        <<set $Cops = $Cops +1>>
+    <<endif>>
+<<declare $drink = 0>>
+<<declare $snail = 0>>
+<<declare $koks = 0>>
+<<declare $note = 2>>
+<<declare $banana = 1>>
+<<declare $backwards = 0>>
+<<declare $murder = "no">>
+<<declare $murderCount = 0>>
+<<declare $clock = 1>>
+You: Great, my shift is over.
+You: ...
+You: And the next bus leaves at 5:15 a.m.
+You: ...
+You: Might as well kill some time inside the 
+//title: BAUHAIN
+===

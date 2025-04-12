@@ -1,0 +1,86 @@
+title: IntroBrayn
+position: -3440,-2597
+---
+<<set $backwards = 0>>
+
+<<jump BasicInteractionBrayn>>
+===
+title: BasicInteractionBrayn
+position: -3211,-2474
+---
+
+-> Say something! <<if visited("SayBrayn") == false>>
+    <<jump SayBrayn>>
+-> Do something! <<if visited("DoBrayn") == false>>
+    <<jump DoBrayn>>
+-> Items? <<if visited("ItemsBrayn") == false>>
+    <<jump ItemsBrayn>>
+-> Leave. <<if visited("SayBrayn") && visited("DoBrayn") && visited("ItemsBrayn") == true>>
+    <<set $Brayn = 2>>
+    <<set $clock = $clock +1>>
+    <<if $vampires == 4 && $Enoby == 2 && $Gayle == 2 && $Yves == 2>>
+        <<jump MURDERVampires>>
+    <<endif>>
+===
+
+title: SayBrayn
+position: -3358,-2263
+---
+<<if $backwards == 0>>
+-> say something in Ye Old English
+-> tell them about your childhood
+-> ask their opinion on an obscure animated film
+-> explain one of your fan theories
+-> interrogate them about there whereabouts on April 16th 2023
+<<else>>
+-> hsilgnE dlO eY ni gnihtemos yas
+-> doohdlihc ruoy tuoba meht llet
+-> mlif detamina erucsbo na no noinipo rieht ksa
+-> seiroeht naf ruoy fo eno nialpxe
+-> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+<<endif>>
+<<jump BasicInteractionBrayn>>
+===
+
+title: DoBrayn
+position: -2970,-2635
+---
+-> start speaking backwards
+    <<set $backwards = 1>>
+-> scream
+    You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+-> imitate a seal
+    You take a deep breath and start belting.
+    <<if $vampires < 4 && $murder == "no">>
+        <<jump MURDERBrayn>>
+    <<else>>
+        Brayn also takes a deep breath
+        and sighs.
+        Brayn: *mutters* Why must I be punished over and over again?
+    <<endif>>
+-> blankly stare at them
+    ...
+-> twerk furiously
+<<jump BasicInteractionBrayn>>
+===
+
+title: ItemsBrayn
+position: -3006,-2211
+---
+-> 10€ note <<if $drink == 0 && $note == 2>>
+    <<set $note = 0>>
+-> 2€ <<if $drink >1 && $note ==1>>
+    <<set $note = 0>>
+-> Banana <<if $banana == 1>>
+    <<set $banana = 0>>
+-> Drink <<if $drink == 1>>
+    <<set $drink = 2>>
+-> Schirmchen <<if $drink == 2>>
+    <<set $drink = 3>>
+-> Snail <<if $snail == 1>>
+    <<set $snail = 0>>
+-> white powder <<if $koks == 1>>
+    <<set $koks = 0>>
+-> a gun?
+<<jump BasicInteractionBrayn>>
+===

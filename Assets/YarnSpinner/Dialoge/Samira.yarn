@@ -1,0 +1,74 @@
+title: IntroSamira
+position: -3440,-2597
+---
+<<set $backwards = 0>>
+
+<<jump BasicInteractionSamira>>
+===
+title: BasicInteractionSamira
+position: -3211,-2474
+---
+
+-> Say something! <<if visited("SaySamira") == false>>
+    <<jump SaySamira>>
+-> Do something! <<if visited("DoSamira") == false>>
+    <<jump DoSamira>>
+-> Items? <<if visited("ItemsSamira") == false>>
+    <<jump ItemsSamira>>
+-> Leave. <<if visited("SaySamira") && visited("DoSamira") && visited("ItemsSamira") == true>>
+===
+
+title: SaySamira
+position: -3358,-2263
+---
+<<if $backwards == 0>>
+-> say something in Ye Old English
+-> tell them about your childhood
+-> ask their opinion on an obscure animated film
+-> explain one of your fan theories
+-> interrogate them about there whereabouts on April 16th 2023
+<<else>>
+-> hsilgnE dlO eY ni gnihtemos yas
+-> doohdlihc ruoy tuoba meht llet
+-> mlif detamina erucsbo na no noinipo rieht ksa
+-> seiroeht naf ruoy fo eno nialpxe
+-> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+<<endif>>
+<<jump BasicInteractionSamira>>
+===
+
+title: DoSamira
+position: -2970,-2635
+---
+-> start speaking backwards
+    <<set $backwards = 1>>
+-> scream
+    You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+-> imitate a seal
+    You take a deep breath and start belting.
+-> blankly stare at them
+    ...
+-> twerk furiously
+<<jump BasicInteractionSamira>>
+===
+
+title: ItemsSamira
+position: -3006,-2211
+---
+-> 10€ note <<if $drink == 0 && $note == 2>>
+    <<set $note = 0>>
+-> 2€ <<if $drink >1 && $note ==1>>
+    <<set $note = 0>>
+-> Banana <<if $banana == 1>>
+    <<set $banana = 0>>
+-> Drink <<if $drink == 1>>
+    <<set $drink = 2>>
+-> Schirmchen <<if $drink == 2>>
+    <<set $drink = 3>>
+-> Snail <<if $snail == 1>>
+    <<set $snail = 2>>
+-> white powder <<if $koks == 1>>
+    <<set $koks = 0>>
+-> a gun?
+<<jump BasicInteractionSamira>>
+===

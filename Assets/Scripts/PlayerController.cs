@@ -54,5 +54,7 @@ public class PlayerController : CharacterController {
             Gizmos.color = Color.red;
         }
         Gizmos.DrawSphere(m_PositionInternal, 0.15f);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawSphere(m_Target, 0.15f);
     }
 }

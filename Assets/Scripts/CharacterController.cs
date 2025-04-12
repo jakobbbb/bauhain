@@ -18,6 +18,7 @@ public abstract class CharacterController : MonoBehaviour {
         RIGHT = 3,
     }
 
+    protected Vector2 m_Target;
 
     // [SerializeField]
     // protected Tilemap m_Tilemap;
@@ -38,14 +39,17 @@ public abstract class CharacterController : MonoBehaviour {
 
         m_PositionInternal += new Vector3(delta.x, delta.y, 0);
 
-        // TODO Round to Tilemap grid size
         var target = new Vector3(
                 Mathf.Round(m_PositionInternal.x + 0.5f) - 0.5f,
                 Mathf.Round(m_PositionInternal.y + 0.5f) - 0.5f,
                 0);
         var delta_target = target - transform.position;
-        //delta_target.Normalize();
+        if (delta_target.magnitude > 1.0f) {
+            delta_target.Normalize();
+        }
         transform.position += delta_target * 15.0f * Time.deltaTime;
+
+        m_Target = target;
     }
 
     protected void UpdateAnimator(Vector2 delta) {

@@ -4,6 +4,10 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager Instance;
 
+    public enum Rooms {
+        ENTRANCE,
+    }
+
     private float m_GameTimeMinutes = 0;
 
     void Start() {

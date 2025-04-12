@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class NPCController : CharacterController {
@@ -41,6 +42,7 @@ public class NPCController : CharacterController {
                     Bar,
             };
         }
+
         public List<float> Normalized() {
             var l = AsList();
             float sum = 0.0f;
@@ -81,7 +83,7 @@ public class NPCController : CharacterController {
         m_Player = GameObject.FindFirstObjectByType<PlayerController>();
         m_StateMachine.SetTrigger("MoveToTarget");
 
-        ChooseRandomRoom();
+        StartCoroutine(RandomRoomCoroutine());
     }
 
     void Update() {
@@ -98,7 +100,7 @@ public class NPCController : CharacterController {
     }
 
     void MoveToTarget() {
-        m_MoveTarget = m_Player.transform.position;
+        // m_MoveTarget = m_Player.transform.position;
 
         var direction = m_MoveTarget - m_PositionInternal;
 
@@ -108,5 +110,15 @@ public class NPCController : CharacterController {
         Move(direction, Scaling.WITH_SPEED_AND_TIME);
 
         UpdateAnimator(direction);
+    }
+
+    private IEnumerator RandomRoomCoroutine() {
+        while (true) {
+            // TODO enable once rooms are set up
+            // var room = GameManager.Instance.Rooms[ChooseRandomRoom()];
+            // m_MoveTarget = room.RandomPositionWithinRoom();
+            // m_StateMachine.SetTrigger("MoveToTarget");
+            yield return new WaitForSeconds(5.0f);
+        }
     }
 }

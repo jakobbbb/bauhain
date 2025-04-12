@@ -20,4 +20,5 @@ title: Start
 <<declare $Renata = 0>>
 <<declare $Samira = 0>>
 <<declare $Yves = 0>>
+<<declare $DJ = "no">>
 ===

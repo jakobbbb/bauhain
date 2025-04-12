@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gayle sheet_0: -8188019726856023027
+      gayle sheet_1: -3490056395950887402
+      gayle sheet_10: 7017894505374420976
+      gayle sheet_11: -169664270181204000
+      gayle sheet_12: -5207203512141848438
+      gayle sheet_13: -3322082587310185676
+      gayle sheet_14: 3641898920142101426
+      gayle sheet_15: 3549688190970478188
+      gayle sheet_2: 4237671599734008790
+      gayle sheet_3: -2863319314091474946
+      gayle sheet_4: 6142310049089365394
+      gayle sheet_5: -4101933444085754386
+      gayle sheet_6: -2862095995319075121
+      gayle sheet_7: -2505099407507523220
+      gayle sheet_8: -2513672338954968944
+      gayle sheet_9: 383138730480463844
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

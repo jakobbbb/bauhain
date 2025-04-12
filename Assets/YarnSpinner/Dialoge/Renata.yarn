@@ -16,6 +16,11 @@ position: -3257,-2571
 -> Items? <<if visited("ItemsRenata") == false>>
     <<jump ItemsRenata>>
 -> Leave. <<if visited("SayRenata") && visited("DoRenata") && visited("ItemsRenata") == true>>
+    <<set $Renata = 2>>
+    <<set $clock = $clock +1>>
+    <<if $Polikül == 4 && $Diana == 2 && $Lux == 2 && $Samira == 2>>
+        <<jump MURDERPolikül>>
+    <<endif>>
 ===
 
 title: SayRenata
@@ -26,12 +31,32 @@ position: -3688,-2390
 -> tell them about your childhood
 -> ask their opinion on an obscure animated film
 -> explain one of your fan theories
+    <<if $Polikül < 4 && $murder == "no">>
+        <<jump MURDERRenata>>
+    <<else>>
+        Renata nods along mentally obviously somewhere else
+        and occaisonally glancing at the disco ball above your heads.
+        The way it is fixed on the rafters does not look very secure.
+        You take a few steps to the side.
+        Renata looks slightly disappointed.
+        Nonetheless you finish explaining why JarJar Binks is most definitely a Sith Lord.
+    <<endif>>
 -> interrogate them about there whereabouts on April 16th 2023
 <<else>>
 -> hsilgnE dlO eY ni gnihtemos yas
 -> doohdlihc ruoy tuoba meht llet
 -> mlif detamina erucsbo na no noinipo rieht ksa
 -> seiroeht naf ruoy fo eno nialpxe
+    <<if $Polikül < 4 && $murder == "no">>
+        <<jump MURDERRenata>>
+    <<else>>
+        Renata nods along mentally obviously somewhere else
+        and occaisonally glancing at the disco ball above your heads.
+        The way it is fixed on the rafters does not look very secure.
+        You take a few steps to the side.
+        Renata looks slightly disappointed.
+        Nonetheless you finish explaining why JarJar Binks is most definitely a Sith Lord.
+    <<endif>>
 -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
 <<endif>>
 <<jump BasicInteractionRenata>>
@@ -66,9 +91,8 @@ position: -3230,-2201
 -> Schirmchen <<if $drink == 2>>
     <<set $drink = 3>>
 -> Snail <<if $snail == 1>>
-    <<set $snail = 2>>
+    <<set $snail = 0>>
 -> white powder <<if $koks == 1>>
     <<set $koks = 0>>
--> a gun?
 <<jump BasicInteractionRenata>>
 ===

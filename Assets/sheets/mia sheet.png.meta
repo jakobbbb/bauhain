@@ -1,55 +1,46 @@
 fileFormatVersion: 2
-guid: e90755dfde610e271ae8c37a02e81206
+guid: dd0b005583221ea48b14709ab2e598cb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2242610275863690
-    second: diana sheet_0
+      213: 7936276629876355294
+    second: mia sheet_0
   - first:
-      213: -7732710451103295845
-    second: diana sheet_1
+      213: 225911455959695919
+    second: mia sheet_1
   - first:
-      213: -4263968353779180221
-    second: diana sheet_2
+      213: 955857541009388448
+    second: mia sheet_2
   - first:
-      213: 1472171368759338444
-    second: diana sheet_3
+      213: 7176235102259119409
+    second: mia sheet_3
   - first:
-      213: -7025804617896120560
-    second: diana sheet_4
+      213: 2659360802028362285
+    second: mia sheet_4
   - first:
-      213: -2078060244711617904
-    second: diana sheet_5
+      213: -4265390886290961876
+    second: mia sheet_5
   - first:
-      213: -1809950193696536271
-    second: diana sheet_6
+      213: 3052523078010914764
+    second: mia sheet_6
   - first:
-      213: 7385233397754268733
-    second: diana sheet_7
+      213: 6105341610207471299
+    second: mia sheet_7
   - first:
-      213: 5245336841540021952
-    second: diana sheet_8
+      213: -3105748121836269030
+    second: mia sheet_8
   - first:
-      213: -884395232536195164
-    second: diana sheet_9
+      213: -8318893814445672159
+    second: mia sheet_9
   - first:
-      213: -3915490690745833531
-    second: diana sheet_10
+      213: 4101284857729414598
+    second: mia sheet_10
   - first:
-      213: 4479211475329972113
-    second: diana sheet_11
+      213: 7788261009036476662
+    second: mia sheet_11
   - first:
-      213: 4364437476676479514
-    second: diana sheet_12
-  - first:
-      213: -583862838629235605
-    second: diana sheet_13
-  - first:
-      213: 59917764982766569
-    second: diana sheet_14
-  - first:
-      213: -7664701614523636152
-    second: diana sheet_15
+      213: 6392711511108114248
+    second: mia sheet_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: diana sheet_0
+      name: mia sheet_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 4
         y: 125
-        width: 30
-        height: 38
+        width: 34
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +151,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8cccd464a7f70000800000000000000
-      internalID: 2242610275863690
+      spriteID: ed0b303fb81532e60800000000000000
+      internalID: 7936276629876355294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diana sheet_1
+      name: mia sheet_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 83
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f224b23b549922300800000000000000
+      internalID: 225911455959695919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mia sheet_2
       rect:
         serializedVersion: 2
         x: 46
-        y: 125
-        width: 32
-        height: 38
+        y: 41
+        width: 33
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b96990b70d4efa490800000000000000
-      internalID: -7732710451103295845
+      spriteID: 0a33eb38e53e34d00800000000000000
+      internalID: 955857541009388448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diana sheet_2
+      name: mia sheet_3
       rect:
         serializedVersion: 2
-        x: 90
+        x: 88
         y: 125
-        width: 30
-        height: 38
+        width: 34
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +217,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34d1c7baf5753d4c0800000000000000
-      internalID: -4263968353779180221
+      spriteID: 13508deddcb179360800000000000000
+      internalID: 7176235102259119409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diana sheet_3
+      name: mia sheet_4
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 83
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a9f7e3f82f7e420800000000000000
+      internalID: 2659360802028362285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mia sheet_5
       rect:
         serializedVersion: 2
         x: 132
         y: 125
-        width: 30
-        height: 38
+        width: 34
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,174 +261,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc5a66b5f043e6410800000000000000
-      internalID: 1472171368759338444
+      spriteID: c2a407286994ec4c0800000000000000
+      internalID: -4265390886290961876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diana sheet_4
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 83
-        width: 28
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 01fa001ace35f7e90800000000000000
-      internalID: -7025804617896120560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diana sheet_5
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 83
-        width: 28
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 09a4a1ca73f3923e0800000000000000
-      internalID: -2078060244711617904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diana sheet_6
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 83
-        width: 28
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 139819b63e3c1e6e0800000000000000
-      internalID: -1809950193696536271
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diana sheet_7
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 83
-        width: 28
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d3c8e7885ae9d7660800000000000000
-      internalID: 7385233397754268733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diana sheet_8
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 41
-        width: 28
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ce234ff01e2bc840800000000000000
-      internalID: 5245336841540021952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diana sheet_9
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 41
-        width: 28
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4af81a3c83ff9b3f0800000000000000
-      internalID: -884395232536195164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diana sheet_10
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 41
-        width: 28
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c7eeb046f169a9c0800000000000000
-      internalID: -3915490690745833531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diana sheet_11
+      name: mia sheet_6
       rect:
         serializedVersion: 2
         x: 134
         y: 41
-        width: 28
-        height: 39
+        width: 26
+        height: 86
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,20 +283,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19775ecda1b592e30800000000000000
-      internalID: 4479211475329972113
+      spriteID: cc7c585019dbc5a20800000000000000
+      internalID: 3052523078010914764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diana sheet_12
+      name: mia sheet_7
       rect:
         serializedVersion: 2
-        x: 6
+        x: 4
         y: 0
-        width: 30
-        height: 37
+        width: 34
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,20 +305,108 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1a24b1e2c8919c30800000000000000
-      internalID: 4364437476676479514
+      spriteID: 3c6e3d4d8d78ab450800000000000000
+      internalID: 6105341610207471299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diana sheet_13
+      name: mia sheet_8
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 41
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12dc14c98a26e4d0800000000000000
+      internalID: -3105748121836269030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mia sheet_9
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12975c1b62a5d8c80800000000000000
+      internalID: -8318893814445672159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mia sheet_10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 41
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c576ab39d0bae830800000000000000
+      internalID: 4101284857729414598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mia sheet_11
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f005adaf16751c60800000000000000
+      internalID: 7788261009036476662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mia sheet_12
       rect:
         serializedVersion: 2
         x: 46
         y: 0
-        width: 32
-        height: 37
+        width: 33
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,52 +415,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b6404f977d3b5e7f0800000000000000
-      internalID: -583862838629235605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diana sheet_14
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 0
-        width: 30
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9eb7889c3eed4d000800000000000000
-      internalID: 59917764982766569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diana sheet_15
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 0
-        width: 30
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 846a4fcad7281a590800000000000000
-      internalID: -7664701614523636152
+      spriteID: 8475623df3977b850800000000000000
+      internalID: 6392711511108114248
       vertices: []
       indices: 
       edges: []
@@ -509,23 +434,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      diana sheet_0: 2242610275863690
-      diana sheet_1: -7732710451103295845
-      diana sheet_10: -3915490690745833531
-      diana sheet_11: 4479211475329972113
-      diana sheet_12: 4364437476676479514
-      diana sheet_13: -583862838629235605
-      diana sheet_14: 59917764982766569
-      diana sheet_15: -7664701614523636152
-      diana sheet_2: -4263968353779180221
-      diana sheet_3: 1472171368759338444
-      diana sheet_4: -7025804617896120560
-      diana sheet_5: -2078060244711617904
-      diana sheet_6: -1809950193696536271
-      diana sheet_7: 7385233397754268733
-      diana sheet_8: 5245336841540021952
-      diana sheet_9: -884395232536195164
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

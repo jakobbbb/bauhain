@@ -10,12 +10,17 @@ position: -3211,-2474
 ---
 
 -> Say something! <<if visited("SayLux") == false>>
-    <<jump Say>>
+    <<jump SayLux>>
 -> Do something! <<if visited("DoLux") == false>>
-    <<jump Do>>
+    <<jump DoLux>>
 -> Items? <<if visited("ItemsLux") == false>>
-    <<jump Items>>
+    <<jump ItemsLux>>
 -> Leave. <<if visited("SayLux") && visited("DoLux") && visited("ItemsLux") == true>>
+    <<set $Lux = 2>>
+    <<set $clock = $clock +1>>
+    <<if $Polikül == 4 && $Diana == 2 && $Samira == 2 && $Renata == 2>>
+        <<jump MURDERPolikül>>
+    <<endif>>
 ===
 
 title: SayLux
@@ -25,12 +30,24 @@ position: -3358,-2263
 -> say something in Ye Old English
 -> tell them about your childhood
 -> ask their opinion on an obscure animated film
+    <<if $Polikül < 4 && $murder == "no">>
+        <<jump MURDERLux>>
+    <<else>>
+        Lux' whole body seems to vibrate with pent up energy.
+        You sure hope that energy stays where it is.
+    <<endif>>
 -> explain one of your fan theories
 -> interrogate them about there whereabouts on April 16th 2023
 <<else>>
 -> hsilgnE dlO eY ni gnihtemos yas
 -> doohdlihc ruoy tuoba meht llet
 -> mlif detamina erucsbo na no noinipo rieht ksa
+    <<if $Polikül < 4 && $murder == "no">>
+        <<jump MURDERLux>>
+    <<else>>
+        Lux' whole body seems to vibrate with pent up energy.
+        You sure hope that energy stays where it is.
+    <<endif>>
 -> seiroeht naf ruoy fo eno nialpxe
 -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
 <<endif>>
@@ -66,9 +83,8 @@ position: -3006,-2211
 -> Schirmchen <<if $drink == 2>>
     <<set $drink = 3>>
 -> Snail <<if $snail == 1>>
-    <<set $snail = 2>>
+    <<set $snail = 0>>
 -> white powder <<if $koks == 1>>
     <<set $koks = 0>>
--> a gun?
 <<jump BasicInteractionLux>>
 ===

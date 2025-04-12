@@ -81,6 +81,5 @@ position: -3006,-2211
     <<set $snail = 0>>
 -> white powder <<if $koks == 1>>
     <<set $koks = 0>>
--> a gun?
 <<jump BasicInteractionBrayn>>
 ===

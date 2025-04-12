@@ -108,7 +108,10 @@ public class NPCController : CharacterController {
     }
 
     void MoveToTarget() {
+        var desire = m_AiPath.desiredVelocity;
+        UpdateAnimator(desire);
         return;
+        /*
         // m_MoveTarget = m_Player.transform.position;
 
         //var direction = m_MoveTarget - m_PositionInternal.position;
@@ -123,6 +126,7 @@ public class NPCController : CharacterController {
         Move(direction, Scaling.WITH_SPEED_AND_TIME);
 
         UpdateAnimator(direction);
+        */
     }
 
     private IEnumerator RandomRoomCoroutine() {

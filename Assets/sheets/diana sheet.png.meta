@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      diana sheet_0: 2242610275863690
+      diana sheet_1: -7732710451103295845
+      diana sheet_10: -3915490690745833531
+      diana sheet_11: 4479211475329972113
+      diana sheet_12: 4364437476676479514
+      diana sheet_13: -583862838629235605
+      diana sheet_14: 59917764982766569
+      diana sheet_15: -7664701614523636152
+      diana sheet_2: -4263968353779180221
+      diana sheet_3: 1472171368759338444
+      diana sheet_4: -7025804617896120560
+      diana sheet_5: -2078060244711617904
+      diana sheet_6: -1809950193696536271
+      diana sheet_7: 7385233397754268733
+      diana sheet_8: 5245336841540021952
+      diana sheet_9: -884395232536195164
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

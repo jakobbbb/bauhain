@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      yves sheet_0: -345662641302044748
+      yves sheet_1: -183663912291470861
+      yves sheet_10: 8774790123546692458
+      yves sheet_11: -965536301510574816
+      yves sheet_12: 3416430287114493681
+      yves sheet_13: 7989296207374533109
+      yves sheet_14: 7126549209488214264
+      yves sheet_15: 6475856919305051355
+      yves sheet_2: -5428146396551596649
+      yves sheet_3: 2947164100359624708
+      yves sheet_4: 9156482460771530925
+      yves sheet_5: 7499419881035648659
+      yves sheet_6: 2301968543292545223
+      yves sheet_7: -8466895118023498132
+      yves sheet_8: 8486361584204912059
+      yves sheet_9: -611975692248702968
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

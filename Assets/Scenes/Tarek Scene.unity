@@ -4533,6 +4533,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2114767326}
     m_Modifications:
+    - target: {fileID: 1423307963124025973, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c3735f64e27927823bd5ad533a055a26, type: 2}
     - target: {fileID: 5457069889189179579, guid: 6d3139aaec251bc499663ee3388f0f89, type: 3}
       propertyPath: m_Name
       value: Tilemaps Background

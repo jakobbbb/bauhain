@@ -1,15 +1,19 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Pathfinding;
 
 public class NPCController : CharacterController {
-
-    private Vector3 m_MoveTarget;
 
     private PlayerController m_Player;
 
     [SerializeField]
     private Animator m_StateMachine;
+
+    private AIPath m_AiPath;
+    private AIDestinationSetter m_DestSetter;
+
+    private GameObject m_MoveTarget;
 
     [System.Serializable]
     public class RoomPreferences {
@@ -81,10 +85,13 @@ public class NPCController : CharacterController {
     }
 
     public void Start() {
-        m_MoveSpeed *= 0.75f;
-        m_Player = GameObject.FindFirstObjectByType<PlayerController>();
+        m_AiPath = GetComponent<AIPath>();
+        m_DestSetter = GetComponent<AIDestinationSetter>();
 
+        m_MoveSpeed *= 0.75f;
         StartCoroutine(RandomRoomCoroutine());
+        m_MoveTarget = new GameObject(name + "Target");
+        m_DestSetter.target = m_MoveTarget.transform;
     }
 
     void Update() {
@@ -104,7 +111,7 @@ public class NPCController : CharacterController {
         // m_MoveTarget = m_Player.transform.position;
 
         //var direction = m_MoveTarget - m_PositionInternal.position;
-        var direction = m_MoveTarget - transform.position;
+        var direction = m_MoveTarget.transform.position - transform.position;
 
         m_StateMachine.SetBool("TargetReached", direction.magnitude < 1.5f);;
 
@@ -120,7 +127,7 @@ public class NPCController : CharacterController {
             yield return new WaitForSeconds(1.0f);
             var room_idx = ChooseRandomRoom();
             var room = GameManager.Instance.Rooms[room_idx];
-            m_MoveTarget = room.RandomPositionWithinRoom();
+            m_MoveTarget.transform.position = room.RandomPositionWithinRoom();
             m_StateMachine.SetTrigger("MoveToTarget");
             Debug.Log(name + " moving to " + room.name);
             yield return new WaitForSeconds(14.0f);

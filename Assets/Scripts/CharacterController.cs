@@ -29,11 +29,15 @@ public abstract class CharacterController : MonoBehaviour {
     protected float m_MoveSpeed = 6.0f;
     protected float m_MoveSpeedSprintModifier = 2.0f;
 
-    protected Vector3 m_PositionInternal;
+    [SerializeField]
+    protected Transform m_PositionInternal;
+    [SerializeField]
+    protected Rigidbody2D m_PositionInternalRB;
 
-    void Start() {
-        m_PositionInternal = transform.position;
+    public void Awake() {
         m_Target = transform.position;
+        m_PositionInternal.transform.position = transform.position;
+        m_PositionInternal.transform.SetParent(null);
     }
 
     protected void Move(Vector3 delta, Scaling scaling_mode) {
@@ -41,11 +45,13 @@ public abstract class CharacterController : MonoBehaviour {
             delta *= Time.deltaTime * m_MoveSpeed;
         }
 
-        m_PositionInternal += new Vector3(delta.x, delta.y, 0);
+        m_RigidBody.MovePosition(delta);
+        /*
+        m_PositionInternalRB.MovePosition(m_PositionInternal.position + new Vector3(delta.x, delta.y, 0));
 
         var target = new Vector3(
-                Mathf.Round(m_PositionInternal.x + 0.5f) - 0.5f,
-                Mathf.Round(m_PositionInternal.y + 0.5f) - 0.5f,
+                Mathf.Round(m_PositionInternal.position.x),
+                Mathf.Round(m_PositionInternal.position.y),
                 0);
         var delta_target = target - transform.position;
         if (delta_target.magnitude > 1.0f) {
@@ -60,6 +66,7 @@ public abstract class CharacterController : MonoBehaviour {
         }
 
         m_Target = target;
+        */
     }
 
     protected void UpdateAnimator(Vector2 delta) {
@@ -84,7 +91,7 @@ public abstract class CharacterController : MonoBehaviour {
 
     void OnDrawGizmos() {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(m_PositionInternal, 0.15f);
+        Gizmos.DrawSphere(m_PositionInternal.position, 0.15f);
         Gizmos.color = Color.blue;
         Gizmos.DrawSphere(m_Target, 0.15f);
     }

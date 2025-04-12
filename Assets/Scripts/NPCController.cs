@@ -78,7 +78,7 @@ public class NPCController : CharacterController {
         return 0;
     }
 
-    void Start() {
+    public void Start() {
         m_MoveSpeed *= 0.75f;
         m_Player = GameObject.FindFirstObjectByType<PlayerController>();
 
@@ -101,7 +101,7 @@ public class NPCController : CharacterController {
     void MoveToTarget() {
         // m_MoveTarget = m_Player.transform.position;
 
-        var direction = m_MoveTarget - m_PositionInternal;
+        var direction = m_MoveTarget - m_PositionInternal.position;
 
         m_StateMachine.SetBool("TargetReached", direction.magnitude < 1.5f);;
 

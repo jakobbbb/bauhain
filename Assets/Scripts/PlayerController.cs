@@ -13,10 +13,10 @@ public class PlayerController : CharacterController {
     private const float IDLE_COOLDOWN_S = 50.0f / 1000.0f;
     private float m_IdleTimer = IDLE_COOLDOWN_S;
 
-    void Start() {
+    public void Start() {
         m_MoveAction = InputSystem.actions.FindAction("Move");
         m_SprintAction = InputSystem.actions.FindAction("Sprint");
-        m_PositionInternal = transform.position;
+        //m_PositionInternal = transform.position;
     }
 
     private bool MovementBlocked() {
@@ -36,13 +36,15 @@ public class PlayerController : CharacterController {
         var sprint_mod = sprinting ? m_MoveSpeedSprintModifier : 1.0f;
         var delta = move * sprint_mod;
 
+        /*
         if (m_MoveAction.WasPressedThisFrame()) {
             delta.Normalize();
             m_RepeatTimer = 0.0f;
             Move(delta, Scaling.NONE);
         } else {
             Move(delta, Scaling.WITH_SPEED_AND_TIME);
-        }
+        }*/
+            Move(delta, Scaling.WITH_SPEED_AND_TIME);
 
         UpdateAnimator(delta);
 

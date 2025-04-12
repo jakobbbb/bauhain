@@ -16,6 +16,10 @@ public class PlayerController : CharacterController {
     private const float REPEAT_COOLDOWN_S = 100.0f / 1000.0f;
     private float m_RepeatTimer = REPEAT_COOLDOWN_S;
 
+    // Cooldown before going into idle anim
+    private const float IDLE_COOLDOWN_S = 50.0f / 1000.0f;
+    private float m_IdleTimer = IDLE_COOLDOWN_S;
+
     [SerializeField]
     private Animator m_Animator;
 
@@ -31,6 +35,7 @@ public class PlayerController : CharacterController {
 
     void Update() {
         m_RepeatTimer += Time.deltaTime;
+        m_IdleTimer += Time.deltaTime;
 
         if (MovementBlocked()) {
             return;
@@ -51,8 +56,6 @@ public class PlayerController : CharacterController {
 
         bool stopped = delta.magnitude < 0.05f;
 
-        m_Animator.SetFloat("Speed", stopped ? 0.0f : 1.0f);
-
         if (!stopped) {
             Direction dir = Direction.DOWN;
             if (delta.x > 0.9f) {
@@ -64,6 +67,13 @@ public class PlayerController : CharacterController {
             }
 
             m_Animator.SetInteger("DirUDLR", (int)dir);
+            m_Animator.SetFloat("Speed", 0.5f);
+
+            m_IdleTimer = 0.0f;
+        } else {
+            if (m_IdleTimer > IDLE_COOLDOWN_S) {
+                m_Animator.SetFloat("Speed", 0.0f);
+            }
         }
     }
 

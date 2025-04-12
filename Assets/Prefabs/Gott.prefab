@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: -7782318383681643890, guid: a0024a38de271ee53ac66d8ab422e750, type: 3}
     - target: {fileID: 7130494179135545156, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_Name
-      value: Gott Variant
+      value: Gott
       objectReference: {fileID: 0}
     - target: {fileID: 7234137415862348550, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_Controller
@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 22100000, guid: 90f479899d0ed28a9b1527e1b7658482, type: 2}
     - target: {fileID: 7292793274678749296, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.102191
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7292793274678749296, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.38689515
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7292793274678749296, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.35110945
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7292793274678749296, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_LocalRotation.w

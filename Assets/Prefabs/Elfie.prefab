@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 7695977389115917350, guid: bf9ece6d91e5de31e998943eaf3bb0be, type: 3}
     - target: {fileID: 7130494179135545156, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_Name
-      value: Elfie Variant
+      value: Elfie
       objectReference: {fileID: 0}
     - target: {fileID: 7130494179135545156, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_IsActive
@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 22100000, guid: 776dd12474bba92e48dba6b25257e25c, type: 2}
     - target: {fileID: 7292793274678749296, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7292793274678749296, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.73
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7292793274678749296, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.35110945
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7292793274678749296, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_LocalRotation.w

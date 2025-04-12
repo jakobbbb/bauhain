@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 5853904585347215653, guid: 0a174deb47f3e7839ad8fc15ac1bd214, type: 3}
     - target: {fileID: 7130494179135545156, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_Name
-      value: Lux Variant
+      value: Lux
       objectReference: {fileID: 0}
     - target: {fileID: 7130494179135545156, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_IsActive
@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7292793274678749296, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7292793274678749296, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.73
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7292793274678749296, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.35110945
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7292793274678749296, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_LocalRotation.w

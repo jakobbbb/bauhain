@@ -686,6 +686,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8964923479913639315, guid: 3efc910c4e15ee020a4afdc5ba35ab84, type: 3}
+      propertyPath: m_Size.x
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8964923479913639315, guid: 3efc910c4e15ee020a4afdc5ba35ab84, type: 3}
+      propertyPath: m_Size.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8964923479913639315, guid: 3efc910c4e15ee020a4afdc5ba35ab84, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -720,7 +732,7 @@ MonoBehaviour:
   version: 5
   radius: 0.4
   height: 0.2
-  canMove: 1
+  canMove: 0
   maxSpeed: 1
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
@@ -735,7 +747,7 @@ MonoBehaviour:
     mode: 2
     interval: 0.5
     sensitivity: 10
-    maximumInterval: 2
+    maximumInterval: 0.5
     visualizeSensitivity: 0
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5

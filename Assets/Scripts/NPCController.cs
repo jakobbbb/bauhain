@@ -111,11 +111,14 @@ public class NPCController : CharacterController {
         // m_MoveTarget = m_Player.transform.position;
 
         //var direction = m_MoveTarget - m_PositionInternal.position;
-        var direction = m_MoveTarget.transform.position - transform.position;
+        var dist = (m_MoveTarget.transform.position - transform.position).magnitude;
+        var st = m_AiPath.steeringTarget;
 
-        m_StateMachine.SetBool("TargetReached", direction.magnitude < 1.5f);;
+        var direction = st - transform.position;
 
-        direction.Normalize();
+        m_StateMachine.SetBool("TargetReached", dist < 1.5f);;
+
+        //direction.Normalize();
         Move(direction, Scaling.WITH_SPEED_AND_TIME);
 
         UpdateAnimator(direction);

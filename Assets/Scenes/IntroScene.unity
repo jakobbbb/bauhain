@@ -1093,7 +1093,7 @@ GameObject:
   - component: {fileID: 1078430357}
   - component: {fileID: 1078430356}
   m_Layer: 5
-  m_Name: catgurl
+  m_Name: mia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1517,6 +1517,7 @@ MonoBehaviour:
   - {fileID: 1091643518}
   - {fileID: 1667224839}
   - {fileID: 431276269}
+  ObjectsToDeactivate: []
   animator: {fileID: 1676097419}
   activeCharacter: 0
 --- !u!1 &1334818010
@@ -2315,6 +2316,10 @@ MonoBehaviour:
   - {fileID: 1091643518}
   - {fileID: 1667224839}
   - {fileID: 431276269}
+  ObjectsToDeactivate:
+  - {fileID: 1533080096}
+  - {fileID: 269705377}
+  - {fileID: 353274333}
   animator: {fileID: 1676097419}
   activeCharacter: 0
 --- !u!1 &1697013311

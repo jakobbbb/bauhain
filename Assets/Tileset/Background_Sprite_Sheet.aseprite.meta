@@ -125,7 +125,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Background_Sprite_Sheet
     originalName: 
-    pivot: {x: 2.857143, y: -4}
+    pivot: {x: 1.2593703, y: -4}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,7 +133,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 294
+      width: 667
       height: 336
     spriteID: 23bcc804bb0d146419bb87dcd3a6a301
     spriteBone: []
@@ -1209,7 +1209,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 1344
-        width: 294
+        width: 667
         height: 336
       spriteId: 23bcc804bb0d146419bb87dcd3a6a301
     linkedCells: []
@@ -1255,4 +1255,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 1680, y: 1680}
-  previousTextureSize: {x: 512, y: 512}
+  previousTextureSize: {x: 1024, y: 512}

@@ -82,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 42
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -148,10 +148,10 @@ TextureImporter:
       name: mattheo sheet_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 125
-        width: 30
-        height: 38
+        x: 0
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: mattheo sheet_1
       rect:
         serializedVersion: 2
-        x: 45
-        y: 125
-        width: 33
-        height: 38
+        x: 42
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: mattheo sheet_2
       rect:
         serializedVersion: 2
-        x: 89
-        y: 125
-        width: 30
-        height: 38
+        x: 84
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +214,10 @@ TextureImporter:
       name: mattheo sheet_3
       rect:
         serializedVersion: 2
-        x: 132
-        y: 125
-        width: 31
-        height: 38
+        x: 126
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: mattheo sheet_4
       rect:
         serializedVersion: 2
-        x: 9
-        y: 83
-        width: 26
-        height: 38
+        x: 0
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: mattheo sheet_5
       rect:
         serializedVersion: 2
-        x: 50
-        y: 83
-        width: 27
-        height: 39
+        x: 42
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: mattheo sheet_6
       rect:
         serializedVersion: 2
-        x: 93
-        y: 83
-        width: 26
-        height: 38
+        x: 84
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: mattheo sheet_7
       rect:
         serializedVersion: 2
-        x: 134
-        y: 83
-        width: 26
-        height: 40
+        x: 126
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,10 +324,10 @@ TextureImporter:
       name: mattheo sheet_8
       rect:
         serializedVersion: 2
-        x: 7
-        y: 41
-        width: 26
-        height: 38
+        x: 0
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,10 +346,10 @@ TextureImporter:
       name: mattheo sheet_9
       rect:
         serializedVersion: 2
-        x: 49
-        y: 41
-        width: 27
-        height: 39
+        x: 42
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,10 +368,10 @@ TextureImporter:
       name: mattheo sheet_10
       rect:
         serializedVersion: 2
-        x: 91
-        y: 41
-        width: 26
-        height: 38
+        x: 84
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,10 +390,10 @@ TextureImporter:
       name: mattheo sheet_11
       rect:
         serializedVersion: 2
-        x: 134
-        y: 41
-        width: 26
-        height: 40
+        x: 126
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +412,10 @@ TextureImporter:
       name: mattheo sheet_12
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 30
-        height: 37
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,10 +434,10 @@ TextureImporter:
       name: mattheo sheet_13
       rect:
         serializedVersion: 2
-        x: 45
+        x: 42
         y: 0
-        width: 33
-        height: 37
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: mattheo sheet_14
       rect:
         serializedVersion: 2
-        x: 89
+        x: 84
         y: 0
-        width: 30
-        height: 37
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +478,10 @@ TextureImporter:
       name: mattheo sheet_15
       rect:
         serializedVersion: 2
-        x: 132
+        x: 126
         y: 0
-        width: 31
-        height: 37
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 81e93d96af13fef9a82d3cc7bcac9e94
     internalID: 0
     vertices: []
     indices: 

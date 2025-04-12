@@ -40,10 +40,11 @@ public abstract class CharacterController : MonoBehaviour {
 
         // TODO Round to Tilemap grid size
         var target = new Vector3(
-                Mathf.Round(m_PositionInternal.x),
-                Mathf.Round(m_PositionInternal.y),
+                Mathf.Round(m_PositionInternal.x + 0.5f) - 0.5f,
+                Mathf.Round(m_PositionInternal.y + 0.5f) - 0.5f,
                 0);
         var delta_target = target - transform.position;
+        //delta_target.Normalize();
         transform.position += delta_target * 15.0f * Time.deltaTime;
     }
 

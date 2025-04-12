@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8720142139796316672}
   - component: {fileID: 5627499385641983255}
+  - component: {fileID: 7234137415862348550}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: NPCSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,6 +88,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7234137415862348550
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120705806017112871}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 6ab3cd0759ee9c5d2ab4f5a2150d9c3e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7130494179135545156
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbdfbc81f8c2a7bb09a3106a00e47501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Tilemap: {fileID: 0}
+  m_Animator: {fileID: 7234137415862348550}
   m_StateMachine: {fileID: 1837630048318412195}
 --- !u!95 &1837630048318412195
 Animator:

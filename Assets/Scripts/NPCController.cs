@@ -25,7 +25,7 @@ public class NPCController : CharacterController {
     }
 
     void Idle() {
-
+        UpdateAnimator(Vector2.zero);
     }
 
     void MoveToTarget() {
@@ -37,5 +37,7 @@ public class NPCController : CharacterController {
 
         direction.Normalize();
         Move(direction, Scaling.WITH_SPEED_AND_TIME);
+
+        UpdateAnimator(direction);
     }
 }

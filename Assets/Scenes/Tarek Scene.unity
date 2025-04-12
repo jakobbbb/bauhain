@@ -1351,12 +1351,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579265719}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.128876, y: -2.3485155, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 888840642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &651739461
 GameObject:
@@ -2245,6 +2245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 888840642}
+  - component: {fileID: 888840643}
   m_Layer: 0
   m_Name: LightObjects
   m_TagString: Untagged
@@ -2284,8 +2285,54 @@ Transform:
   - {fileID: 1099133709}
   - {fileID: 1629118032}
   - {fileID: 1479959697}
+  - {fileID: 579265721}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &888840643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888840641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8961dc6e537ad14c9593cfa51ae1b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.013671875
+      value: 0.42819214
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.15022844
+      value: 1.2003831
+      inSlope: -0.9804638
+      outSlope: -0.9804638
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.5176585
+    - serializedVersion: 3
+      time: 1.0469793
+      value: 0.4334621
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &945631953
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,5 +4791,4 @@ SceneRoots:
   - {fileID: 861450488}
   - {fileID: 1636538514}
   - {fileID: 888840642}
-  - {fileID: 579265721}
   - {fileID: 10235512}

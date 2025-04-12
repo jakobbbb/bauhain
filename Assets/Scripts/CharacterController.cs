@@ -30,6 +30,7 @@ public abstract class CharacterController : MonoBehaviour {
 
     void Start() {
         m_PositionInternal = transform.position;
+        m_Target = transform.position;
     }
 
     protected void Move(Vector3 delta, Scaling scaling_mode) {
@@ -72,4 +73,10 @@ public abstract class CharacterController : MonoBehaviour {
         }
     }
 
+    void OnDrawGizmos() {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(m_PositionInternal, 0.15f);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawSphere(m_Target, 0.15f);
+    }
 }

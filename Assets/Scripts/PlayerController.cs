@@ -47,14 +47,4 @@ public class PlayerController : CharacterController {
         UpdateAnimator(delta);
 
     }
-
-    void OnDrawGizmos() {
-        Gizmos.color = Color.yellow;
-        if (MovementBlocked()) {
-            Gizmos.color = Color.red;
-        }
-        Gizmos.DrawSphere(m_PositionInternal, 0.15f);
-        Gizmos.color = Color.blue;
-        Gizmos.DrawSphere(m_Target, 0.15f);
-    }
 }

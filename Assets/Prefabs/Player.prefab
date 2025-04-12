@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1108629961423257885}
   - component: {fileID: 7457452602021178359}
   m_Layer: 0
-  m_Name: Triangle
+  m_Name: PlayerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,3 +155,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d73b3cfa68214bab08c6b9b768404281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Animator: {fileID: 7457452602021178359}

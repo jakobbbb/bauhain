@@ -3,11 +3,21 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : CharacterController {
 
+    private enum Direction {
+        UP = 0,
+        DOWN = 1,
+        LEFT = 2,
+        RIGHT = 3,
+    }
+
     private InputAction m_MoveAction;
     private InputAction m_SprintAction;
 
     private const float REPEAT_COOLDOWN_S = 100.0f / 1000.0f;
     private float m_RepeatTimer = REPEAT_COOLDOWN_S;
+
+    [SerializeField]
+    private Animator m_Animator;
 
     void Start() {
         m_MoveAction = InputSystem.actions.FindAction("Move");
@@ -37,6 +47,23 @@ public class PlayerController : CharacterController {
             Move(delta, Scaling.NONE);
         } else {
             Move(delta, Scaling.WITH_SPEED_AND_TIME);
+        }
+
+        bool stopped = delta.magnitude < 0.05f;
+
+        m_Animator.SetFloat("Speed", stopped ? 0.0f : 1.0f);
+
+        if (!stopped) {
+            Direction dir = Direction.DOWN;
+            if (delta.x > 0.9f) {
+                dir = Direction.RIGHT;
+            } else if (delta.x < -0.9f) {
+                dir = Direction.LEFT;
+            } else if (delta.y > 0.9f) {
+                dir = Direction.UP;
+            }
+
+            m_Animator.SetInteger("DirUDLR", (int)dir);
         }
     }
 

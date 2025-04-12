@@ -104,15 +104,19 @@ half4 CombinedShapeLightShared(in SurfaceData2D surfaceData, in InputData2D inpu
     half3 light = finalOutput / surfaceData.albedo;
 
     half3 l = light;
+    int ditherscale = 24;
     if (length(l) > 0.4) {
         if (length(l) > 0.75) {
             light = half3(.75, .75, .75);
         } else if (length(l) > 0.5) {
-            int ditherscale = 16;
-            if (
-                int(lightingUV.x * ditherscale * 16) % 2 == 0
-                ||
-                int(lightingUV.y * ditherscale * 9) % 2 == 0
+            if (int(lightingUV.x * ditherscale * 16) % 2 == 0 || int(lightingUV.y * ditherscale * 9) % 2 == 0
+            ) {
+                light = half3(0.5, 0.5, 0.5);
+            } else {
+                light = half3(0.2, 0.2, 0.2);
+            }
+        } else {
+            if (int(lightingUV.x * ditherscale * 16) % 2 == 0 && int(lightingUV.y * ditherscale * 9) % 2 == 0
             ) {
                 light = half3(0.5, 0.5, 0.5);
             } else {

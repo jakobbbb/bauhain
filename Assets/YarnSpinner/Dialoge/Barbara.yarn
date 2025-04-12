@@ -21,8 +21,61 @@ position: -3211,-2474
     <<if $Rentner == 4 && $Elfie == 2 && $Lizzie == 2 && $Fürchti == 2>>
         <<jump MURDERRentner>>
     <<endif>>
+    <<if $Rentner < 4 && $murder == "no">>
+        <<set $chanceMURDER = 0>>
+        <<if $clock == 1>>
+            <<set $chanceMURDER = random_range(1, 20)>> //5% 
+            <<if $chanceMURDER == 1>>
+                <<jump MURDERBarbara>>
+            <<endif>>
+        <<elseif $clock == 2>>
+            <<set $chanceMURDER = random_range(1, 10)>> //10%
+            <<if $chanceMURDER == 1>>
+                <<jump MURDERBarbara>>
+            <<endif>>
+        <<elseif $clock == 3>>
+            <<set $chanceMURDER = random_range(1, 100)>> //15%
+            <<if $chanceMURDER <= 15>>
+                <<jump MURDERBarbara>>
+            <<endif>>
+        <<elseif $clock == 4>>
+            <<set $chanceMURDER = random_range(1, 5)>> //20%
+            <<if $chanceMURDER == 1>>
+                <<jump MURDERBarbara>>
+            <<endif>>
+        <<elseif $clock == 5>>
+            <<set $chanceMURDER = random_range(1, 4)>> //25%
+            <<if $chanceMURDER == 1>>
+                <<jump MURDERBarbara>>
+            <<endif>>
+        <<elseif $clock == 6>>
+            <<set $chanceMURDER = random_range(1, 50)>> //30%
+            <<if $chanceMURDER <= 15>>
+                <<jump MURDERBarbara>>
+            <<endif>>
+        <<elseif $clock == 7>>
+            <<set $chanceMURDER = random_range(1, 100)>> //35%
+            <<if $chanceMURDER <= 35>>
+                <<jump MURDERBarbara>>
+            <<endif>>
+        <<elseif $clock == 8>>
+            <<set $chanceMURDER = random_range(1, 25)>> //40%
+            <<if $chanceMURDER <= 10>>
+                <<jump MURDERBarbara>>
+            <<endif>>
+        <<elseif $clock == 9>>
+            <<set $chanceMURDER = random_range(1, 100)>> //45%
+            <<if $chanceMURDER <= 45>>
+                <<jump MURDERBarbara>>
+            <<endif>>
+        <<elseif $clock == 10>>
+            <<set $chanceMURDER = random_range(1, 2)>>
+            <<if $chanceMURDER == 1>>
+                <<jump MURDERBarbara>>
+            <<endif>>
+        <<endif>>
+    <<endif>>
 ===
-
 title: SayBarbara
 position: -3358,-2263
 ---
@@ -52,7 +105,7 @@ position: -2970,-2635
     <<if $Rentner < 4 && $murder == "no">>
         <<jump MURDERBarbara>>
     <<else>>
-        Barbara smileys broadly at you.
+        Barbara smileys at you broadly.
         You don't like it.
     <<endif>>
 -> imitate a seal

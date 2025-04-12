@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6407163690444349609}
   - component: {fileID: 1108629961423257885}
   - component: {fileID: 7457452602021178359}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlayerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 6909416300887713377}
   - component: {fileID: 7124666491666014304}
   - component: {fileID: 3145551092777547682}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,8 +160,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Animator: {fileID: 7457452602021178359}
   m_RigidBody: {fileID: 3145551092777547682}
-  m_PositionInternal: {fileID: 3952075818964023454}
-  m_PositionInternalRB: {fileID: 2109668825167253457}
 --- !u!61 &7124666491666014304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -246,7 +244,7 @@ GameObject:
   - component: {fileID: 3952075818964023454}
   - component: {fileID: 8073170914417437266}
   - component: {fileID: 2109668825167253457}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InternalPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}

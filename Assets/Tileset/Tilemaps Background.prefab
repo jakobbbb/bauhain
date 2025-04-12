@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6585628791800802152}
   - component: {fileID: 5341670143905292936}
   - component: {fileID: 3999872143621525366}
+  - component: {fileID: 8798972153728643972}
   m_Layer: 0
   m_Name: TM_StairsArea6
   m_TagString: Room6
@@ -564,6 +565,19 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 263664097959556889}
+--- !u!114 &8798972153728643972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263664097959556889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680e4ac3c5934adee82d6b41d820e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomId: 6
 --- !u!1 &314474683498073685
 GameObject:
   m_ObjectHideFlags: 0
@@ -8234,6 +8248,7 @@ GameObject:
   - component: {fileID: 9037992698561929208}
   - component: {fileID: 8359707431546701463}
   - component: {fileID: 2143774108802928430}
+  - component: {fileID: 6218882654731031828}
   m_Layer: 0
   m_Name: TM_BackstageArea4
   m_TagString: Room4
@@ -9040,6 +9055,19 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 779539377952910178}
+--- !u!114 &6218882654731031828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779539377952910178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680e4ac3c5934adee82d6b41d820e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomId: 4
 --- !u!1 &896365676951496272
 GameObject:
   m_ObjectHideFlags: 0
@@ -9054,6 +9082,7 @@ GameObject:
   - component: {fileID: 6032106381254163113}
   - component: {fileID: 2542077478976868981}
   - component: {fileID: 4971611165774007303}
+  - component: {fileID: 7714398847859514775}
   m_Layer: 0
   m_Name: TM_EmporeArea0
   m_TagString: Room0
@@ -9608,6 +9637,19 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 896365676951496272}
+--- !u!114 &7714398847859514775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896365676951496272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680e4ac3c5934adee82d6b41d820e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomId: 0
 --- !u!1 &1274851075783046182
 GameObject:
   m_ObjectHideFlags: 0
@@ -9622,6 +9664,7 @@ GameObject:
   - component: {fileID: 4878893699540984793}
   - component: {fileID: 4221662954221179598}
   - component: {fileID: 208514413610743727}
+  - component: {fileID: 4827075060193262915}
   m_Layer: 0
   m_Name: TM_DJArea2
   m_TagString: Room2
@@ -10776,6 +10819,19 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 1274851075783046182}
+--- !u!114 &4827075060193262915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274851075783046182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680e4ac3c5934adee82d6b41d820e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomId: 2
 --- !u!1 &1706475495979132938
 GameObject:
   m_ObjectHideFlags: 0
@@ -12915,6 +12971,7 @@ GameObject:
   - component: {fileID: 786342287563894055}
   - component: {fileID: 7283121704394869743}
   - component: {fileID: 8753751387266149532}
+  - component: {fileID: 4881020484463750047}
   m_Layer: 0
   m_Name: TM_FloorArea1
   m_TagString: Room1
@@ -16285,6 +16342,19 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 2315569767886724196}
+--- !u!114 &4881020484463750047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315569767886724196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680e4ac3c5934adee82d6b41d820e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomId: 1
 --- !u!1 &3003805774949982070
 GameObject:
   m_ObjectHideFlags: 0
@@ -16299,6 +16369,7 @@ GameObject:
   - component: {fileID: 7209730786308543806}
   - component: {fileID: 1957007366353681356}
   - component: {fileID: 3067020026328988095}
+  - component: {fileID: 4054761476152079032}
   m_Layer: 0
   m_Name: TM_KoksArea3
   m_TagString: Room3
@@ -16905,6 +16976,19 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 3003805774949982070}
+--- !u!114 &4054761476152079032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3003805774949982070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680e4ac3c5934adee82d6b41d820e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomId: 3
 --- !u!1 &4587563370021097549
 GameObject:
   m_ObjectHideFlags: 0
@@ -16919,6 +17003,7 @@ GameObject:
   - component: {fileID: 694317027254826788}
   - component: {fileID: 3390398172350043307}
   - component: {fileID: 3070672331056862231}
+  - component: {fileID: 8480044377007516132}
   m_Layer: 0
   m_Name: TM_BarArea8
   m_TagString: Room8
@@ -17363,6 +17448,19 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 4587563370021097549}
+--- !u!114 &8480044377007516132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4587563370021097549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680e4ac3c5934adee82d6b41d820e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomId: 8
 --- !u!1 &5457069889189179579
 GameObject:
   m_ObjectHideFlags: 0
@@ -17419,6 +17517,7 @@ GameObject:
   - component: {fileID: 2543268867158075697}
   - component: {fileID: 7000660902117558293}
   - component: {fileID: 2888615603989087556}
+  - component: {fileID: 8924933315408422665}
   m_Layer: 0
   m_Name: TM_ToiletArea5
   m_TagString: Room5
@@ -18975,6 +19074,19 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 8117358832496638500}
+--- !u!114 &8924933315408422665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8117358832496638500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680e4ac3c5934adee82d6b41d820e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomId: 5
 --- !u!1 &8795310526266493241
 GameObject:
   m_ObjectHideFlags: 0
@@ -18989,6 +19101,7 @@ GameObject:
   - component: {fileID: 8980730555408695109}
   - component: {fileID: 6675020778398268399}
   - component: {fileID: 5702548348465533108}
+  - component: {fileID: 789296399742474804}
   m_Layer: 0
   m_Name: TM_EmporeArea7
   m_TagString: Room7
@@ -20203,3 +20316,16 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 8795310526266493241}
+--- !u!114 &789296399742474804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8795310526266493241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680e4ac3c5934adee82d6b41d820e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomId: 7

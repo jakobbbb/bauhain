@@ -446,6 +446,93 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6518748272335382071, guid: 0835949dc69d796b3b50204593da6578, type: 3}
   m_PrefabInstance: {fileID: 14631440739281455}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2048729767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2048729769}
+  - component: {fileID: 2048729768}
+  m_Layer: 0
+  m_Name: AStar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2048729768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048729767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAAAIIew8BIAjWgIAABUFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1v4jAQ/SvI522VEmiXve2mlO6BFpWuesnF2BNi4diRPwq04r/v2ElIitQTw5s3M28+nE8ilK2BOW0WRvCl5kB+jUiwyY9R73yEA91qtRYf0HHeBHdlINHIeaFOaMRvQpjVFTgj2G+1lYGcIOiVKLSp5nwLmbbOIlxQaQFdRrsQrRD6HJED/lzNQsgRrfFdsD7QmiWjE5oMlAPTUztiR2tYXjFJqxp4kNyTbzt2enc9jUSF7bSc5Hoa8msphW3VEHesY7cZra3HXpDABcXuooTQbAliW7qgdBj8XBQWXCvL0OO9MDikJiv5o5vJVdTuGm3vVPpQ5+omimpyLr9zF0ZXj13ZmySUcKVguxd6ZNS6wWSH8P1X3V7tqdzRjYS3EtSTXhjtFUenMz6Eegvj+/7vubOsBLbr8UbqBejr7/cTejjF5g+ZFNUmDn7SAGup47jj9sHgav6i4Hgbtk2BaFDxz8Ir3Q6PqHU8CGMdutouVZC30d4EKpnHmYVuvMu0URDhVnQNikp3XGEad7nBC9+g7IXngYbn0hZvfd0ruAiJcM9PkgvXSu/Py7Kl3i/Bls/eSaGgFx0cTzinTCvVHNhwJl3Y2puCskHY1gv+9bQIS6fpOE0202nKJ2nKrooJuy02MwYzWhTJT07i7QmFfVK5aoS248GtqT65wjvrviKjhaF1PHZu6H4hPio9GLlQhV4zA6Cemwxn4WCwCD5LPucCB7QG54SK+yafOZGa7YDn50R57HR+cIbmfZac1OJdu4DkJIufjZwE+HzLKwPvAvaheJfsRE7/AVBLAwQUAAAICAAACCHs2+IqsG0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0UrKxqbGRsUGSqalxiomxcbJumkmyWVqSZXKqZWJamoFFilIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAACCHsPASAI1oCAAAVBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAACCHs2+IqsG0AAAB4AAAACQAkAAAAAAAAAAAAAACnAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAF8DAAAAAA==
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames: []
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 1
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
+--- !u!4 &2048729769
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048729767}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.655803, y: -5.6484523, z: 1.7743448}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &14631440739281455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -706,3 +793,4 @@ SceneRoots:
   - {fileID: 4374125424395143020}
   - {fileID: 861450488}
   - {fileID: 1636538514}
+  - {fileID: 2048729769}

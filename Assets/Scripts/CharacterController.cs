@@ -29,10 +29,10 @@ public abstract class CharacterController : MonoBehaviour {
     protected float m_MoveSpeed = 6.0f;
     protected float m_MoveSpeedSprintModifier = 2.0f;
 
-    [SerializeField]
-    protected Transform m_PositionInternal;
-    [SerializeField]
-    protected Rigidbody2D m_PositionInternalRB;
+    // [SerializeField]
+    // protected Transform m_PositionInternal;
+    // [SerializeField]
+    // protected Rigidbody2D m_PositionInternalRB;
 
     public void Awake() {
         m_Target = transform.position;

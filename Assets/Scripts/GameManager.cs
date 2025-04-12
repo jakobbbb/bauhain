@@ -9,11 +9,23 @@ public class GameManager : MonoBehaviour {
 
     private float m_GameTimeMinutes = 0;
 
-    void Start() {
-        if (Instance) {
-            DestroyImmediate(Instance);
+    void Awake() {
+        if (Instance == null) {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        } else {
+            Destroy(this);
         }
-        Instance = this;
+    }
+
+    void Start() {
+        var rs = GameObject.FindObjectsByType(typeof(Room), FindObjectsSortMode.None);
+        foreach (var el in rs) {
+            Rooms.Add(null);
+        }
+        foreach (var el in rs) {
+            Rooms[((Room)el).RoomId] = (Room)el;
+        }
     }
 
     public void AdvanceTime(float minutes) {

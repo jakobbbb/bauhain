@@ -44,7 +44,8 @@ public class PlayerController : CharacterController {
         } else {
             Move(delta, Scaling.WITH_SPEED_AND_TIME);
         }*/
-            Move(delta, Scaling.WITH_SPEED_AND_TIME);
+
+        Move(delta, Scaling.WITH_SPEED_AND_TIME);
 
         UpdateAnimator(delta);
 

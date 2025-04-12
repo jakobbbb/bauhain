@@ -36,8 +36,8 @@ public abstract class CharacterController : MonoBehaviour {
 
     public void Awake() {
         m_Target = transform.position;
-        m_PositionInternal.transform.position = transform.position;
-        m_PositionInternal.transform.SetParent(null);
+        // m_PositionInternal.transform.position = transform.position;
+        // m_PositionInternal.transform.SetParent(null);
     }
 
     protected void Move(Vector3 delta, Scaling scaling_mode) {
@@ -45,7 +45,7 @@ public abstract class CharacterController : MonoBehaviour {
             delta *= Time.deltaTime * m_MoveSpeed;
         }
 
-        m_RigidBody.MovePosition(delta);
+        m_RigidBody.MovePosition(m_RigidBody.transform.position + delta);
         /*
         m_PositionInternalRB.MovePosition(m_PositionInternal.position + new Vector3(delta.x, delta.y, 0));
 
@@ -90,10 +90,10 @@ public abstract class CharacterController : MonoBehaviour {
     }
 
     void OnDrawGizmos() {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(m_PositionInternal.position, 0.15f);
-        Gizmos.color = Color.blue;
-        Gizmos.DrawSphere(m_Target, 0.15f);
+        // Gizmos.color = Color.yellow;
+        // Gizmos.DrawSphere(m_PositionInternal.position, 0.15f);
+        // Gizmos.color = Color.blue;
+        // Gizmos.DrawSphere(m_Target, 0.15f);
     }
 
     void OnCollisionEnter2D(Collision2D collision) {

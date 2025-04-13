@@ -60,7 +60,7 @@ title: TheBeginning
 <<declare $backwards = 0>>
 <<declare $murder = "no">>
 <<declare $murderCount = 0>>
-<<declare $clock = 1>>
+<<declare $clock = 0>>
 <<declare $chanceMURDER = 0>>
 You: Great, my shift is over.
 You: ...

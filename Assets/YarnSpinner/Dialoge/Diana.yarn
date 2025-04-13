@@ -30,16 +30,28 @@ position: -3358,-2263
 ---
     <<if $backwards == 0>>
     -> say something in Ye Old English
+        You: Whether 'tis nobler in the mind to suffer, The slings and arrows of outrageous fortune, Or to take arms against a sea of troubles, And by opposing end them.
+        Diana: Yeah, I guess.
     -> tell them about your childhood
+        Diana: You poor thing.
     -> ask their opinion on an obscure animated film
+        Diana: I have no idea what you are refering to.
     -> explain one of your fan theories
+        Diana seems intrigued by your 15 minute monologue about why Sokka is most definitely an earthbender.
     -> interrogate them about there whereabouts on April 16th 2023
+        Diana: ...
     <<else>>
     -> hsilgnE dlO eY ni gnihtemos yas
+        You: .meht dne gnisoppo yb dnA ,selbuort fo aes a tsniaga smra ekat ot rO ,enutrof suoegartuo fo sworra dna sgnils ehT ,reffus ot dnim eht ni relbon sit' rehtehW
+        Diana: Yeah, I guess.
     -> doohdlihc ruoy tuoba meht llet
+        Diana: You poor thing.
     -> mlif detamina erucsbo na no noinipo rieht ksa
+        Diana: I have no idea what you are refering to.
     -> seiroeht naf ruoy fo eno nialpxe
+        Diana seems intrigued by your 15 minute monologue about why Sokka is most definitely an earthbender.
     -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+        Diana: ...
     <<endif>>
 <<jump BasicInteractionDiana>>
 ===
@@ -51,11 +63,17 @@ position: -2970,-2635
         <<set $backwards = 1>>
     -> scream
         You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        Diana blinks slowly.
+        Diana: It is good that you let out your anger like this. 
+        Diana: Bottling it up is not healthy.
     -> imitate a seal
         You take a deep breath and start belting.
+        Diana: Beautiful.
     -> blankly stare at them
         ...
+        Diana smiles kindly at you.
     -> twerk furiously
+        Diana: Oh my. 
 <<jump BasicInteractionDiana>>
 ===
 
@@ -63,21 +81,27 @@ title: ItemsDiana
 position: -3006,-2211
 ---
     -> 10€ note <<if $drink == 0 && $note == 2>>
-        <<set $note = 0>>
+        Diana: Oh, how interesting.
+        Diana does not take the note.
     -> 2€ <<if $drink >1 && $note ==1>>
         <<set $murder = "Diana">>
         She takes the coin out of your hand, clearly dumbfounded.
         Diana: ... thank you?
         <<set $note = 0>>
     -> Banana <<if $banana == 1>>
+        Diana: Thank you, I am slightly hungry.
         <<set $banana = 0>>
     -> Drink <<if $drink == 1>>
+        Diana: Thank you, I am slightly thirsty.
         <<set $drink = 2>>
     -> Schirmchen <<if $drink == 2>>
+        Diana: Oh, how adorable.
         <<set $drink = 3>>
     -> Snail <<if $snail == 1>>
+        Diana: What a delightful little creature!
+        Diana: I shall take her home to my garden.
         <<set $snail = 0>>
     -> white powder <<if $koks == 1>>
-        <<set $koks = 0>>
+        Diana: No, thank you.
 <<jump BasicInteractionDiana>>
 ===

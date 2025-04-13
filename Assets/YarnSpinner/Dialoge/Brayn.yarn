@@ -3,7 +3,7 @@ position: -3440,-2597
 ---
 <<set $backwards = 0>>
 Ah, a person.
-Quick:
+Quick!
 <<jump BasicInteractionBrayn>>
 ===
 title: BasicInteractionBrayn
@@ -85,16 +85,36 @@ position: -3358,-2263
 ---
     <<if $backwards == 0>>
     -> say something in Ye Old English
+        You: Thou...
+        Brayn: Please don't.
     -> tell them about your childhood
+        Brayn: I can barely remember my childhood.
+        Brayn: It's been ages.
     -> ask their opinion on an obscure animated film
+        You: What is your opinion on Boo, Zino and the Snurks?
+        Brayn: The first animated feature film from Germany?
+        Brayn: It's alright.
     -> explain one of your fan theories
+        You launch into an indepth explanation of Larry Stylinson.
+        Brayn does not seem to understand the importance of the fake baby fotos.
     -> interrogate them about there whereabouts on April 16th 2023
+        Brayn: I guess I was at home?
     <<else>>
     -> hsilgnE dlO eY ni gnihtemos yas
+        You: ...uohT
+        Brayn: Please don't.
     -> doohdlihc ruoy tuoba meht llet
+        Brayn: I can barely remember my childhood.
+        Brayn: It's been ages.
     -> mlif detamina erucsbo na no noinipo rieht ksa
+        You: ?skrunS eht dna oniZ ,ooB no noinipo ruoy si tahW
+        Brayn: The first animated feature film from Germany?
+        Brayn: It's alright.
     -> seiroeht naf ruoy fo eno nialpxe
+        You launch into an indepth explanation of Larry Stylinson. Backwards.
+        Brayn does not seem to understand the importance of the fake baby fotos.
     -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+        Brayn: I guess I was at home?
     <<endif>>
 <<jump BasicInteractionBrayn>>
 ===
@@ -106,6 +126,7 @@ position: -2970,-2635
         <<set $backwards = 1>>
     -> scream
         You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        Brayn: Why must I be punished over and over again?
     -> imitate a seal
         You take a deep breath and start belting.
         <<if $vampires < 4 && $murder == "no">>
@@ -117,7 +138,10 @@ position: -2970,-2635
         <<endif>>
     -> blankly stare at them
         ...
+        Brayn stares back.
     -> twerk furiously
+        Brayn: Can you... oh to hell with it.
+        Brayn starts twerking with you.
 <<jump BasicInteractionBrayn>>
 ===
 
@@ -125,18 +149,31 @@ title: ItemsBrayn
 position: -3006,-2211
 ---
     -> 10€ note <<if $drink == 0 && $note == 2>>
+        Brayn: Ah thanks, that's enough for another drink.
+        Brayn: Here, take this as a thank you.
+        Brayn hands you a snail.
+        <<set $snail = 1>>
         <<set $note = 0>>
     -> 2€ <<if $drink >1 && $note ==1>>
-        <<set $note = 0>>
+        Brayn: Uh, you can keep that.
     -> Banana <<if $banana == 1>>
-        <<set $banana = 0>>
+        Brayn: Keep that thing to yourself.
     -> Drink <<if $drink == 1>>
+        Brayn: Thanks, I needed that.
+        Brayn: Here, take this as a thank you.
+        Brayn hands you a snail.
+        <<set $snail = 1>>
         <<set $drink = 2>>
     -> Schirmchen <<if $drink == 2>>
-        <<set $drink = 3>>
+        Brayn does not take it.
+        It seems like he is actively avoiding even looking at it.
     -> Snail <<if $snail == 1>>
-        <<set $snail = 0>>
+        Brayn: I have my own, but thank you.
     -> white powder <<if $koks == 1>>
+        Brayn: You know what... why not.
+        Brayn: Here, take this as a thank you.
+        Brayn hands you a snail.
+        <<set $snail = 1>>
         <<set $koks = 0>>
 <<jump BasicInteractionBrayn>>
 ===

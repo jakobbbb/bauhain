@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2a2f9f72b0aa3774fb78e335ca2e82fe
+guid: 5d4f2aa316f5533e7a7c06a132637086
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -82,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,10 +93,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 42
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -148,10 +148,10 @@ TextureImporter:
       name: elim sheet_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 125
-        width: 39
-        height: 40
+        x: 0
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: elim sheet_1
       rect:
         serializedVersion: 2
-        x: 43
-        y: 125
-        width: 39
-        height: 40
+        x: 42
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: elim sheet_2
       rect:
         serializedVersion: 2
-        x: 85
-        y: 125
-        width: 39
-        height: 40
+        x: 84
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +214,10 @@ TextureImporter:
       name: elim sheet_3
       rect:
         serializedVersion: 2
-        x: 128
-        y: 125
-        width: 39
-        height: 40
+        x: 126
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: elim sheet_4
       rect:
         serializedVersion: 2
-        x: 5
-        y: 83
-        width: 28
-        height: 38
+        x: 0
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: elim sheet_5
       rect:
         serializedVersion: 2
-        x: 48
-        y: 83
-        width: 28
-        height: 39
+        x: 42
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: elim sheet_6
       rect:
         serializedVersion: 2
-        x: 90
-        y: 83
-        width: 28
-        height: 38
+        x: 84
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: elim sheet_7
       rect:
         serializedVersion: 2
-        x: 133
-        y: 83
-        width: 28
-        height: 38
+        x: 126
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,10 +324,10 @@ TextureImporter:
       name: elim sheet_8
       rect:
         serializedVersion: 2
-        x: 9
-        y: 41
-        width: 28
-        height: 38
+        x: 0
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,10 +346,10 @@ TextureImporter:
       name: elim sheet_9
       rect:
         serializedVersion: 2
-        x: 50
-        y: 41
-        width: 28
-        height: 39
+        x: 42
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,10 +368,10 @@ TextureImporter:
       name: elim sheet_10
       rect:
         serializedVersion: 2
-        x: 92
-        y: 41
-        width: 28
-        height: 38
+        x: 84
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,10 +390,10 @@ TextureImporter:
       name: elim sheet_11
       rect:
         serializedVersion: 2
-        x: 133
-        y: 41
-        width: 28
-        height: 38
+        x: 126
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +412,10 @@ TextureImporter:
       name: elim sheet_12
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 39
-        height: 39
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,10 +434,10 @@ TextureImporter:
       name: elim sheet_13
       rect:
         serializedVersion: 2
-        x: 44
+        x: 42
         y: 0
-        width: 39
-        height: 39
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: elim sheet_14
       rect:
         serializedVersion: 2
-        x: 85
+        x: 84
         y: 0
-        width: 39
-        height: 39
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +478,10 @@ TextureImporter:
       name: elim sheet_15
       rect:
         serializedVersion: 2
-        x: 128
+        x: 126
         y: 0
-        width: 39
-        height: 39
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1fa03bc043e577987bcf1cf1cc7ebfff
     internalID: 0
     vertices: []
     indices: 
@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      elim sheet_0: -1845464496831680336
+      elim sheet_1: 826745061352894315
+      elim sheet_10: 4319553146496573186
+      elim sheet_11: 6757083194706357267
+      elim sheet_12: 1532995722020843852
+      elim sheet_13: 8592894801853568584
+      elim sheet_14: 8656836722355361048
+      elim sheet_15: 9034072238127666255
+      elim sheet_2: -8309272735505206733
+      elim sheet_3: -4356335704676219240
+      elim sheet_4: 5699225007360515979
+      elim sheet_5: -5084981003617421555
+      elim sheet_6: -9030931415476983129
+      elim sheet_7: 812661108902513896
+      elim sheet_8: -4441809691740639713
+      elim sheet_9: 3285752178763747008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

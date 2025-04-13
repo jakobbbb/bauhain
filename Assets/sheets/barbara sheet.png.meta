@@ -1,59 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: c347c66ab7489574e8b131885ba6e0db
-=======
-guid: cc328289e44be0407b81b03b651a1397
->>>>>>> 16f4dfb (Event loop, perchance)
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 2731960588331809501
-    second: barbara sheet_0
-  - first:
-      213: -8089082720329551505
-    second: barbara sheet_1
-  - first:
-      213: 2494986259926467605
-    second: barbara sheet_2
-  - first:
-      213: -1658754053918630240
-    second: barbara sheet_3
-  - first:
-      213: 2937027195961593633
-    second: barbara sheet_4
-  - first:
-      213: 2287946556608596770
-    second: barbara sheet_5
-  - first:
-      213: 1986549969377684544
-    second: barbara sheet_6
-  - first:
-      213: -8543052227154148000
-    second: barbara sheet_7
-  - first:
-      213: -8901489507300167302
-    second: barbara sheet_8
-  - first:
-      213: 5420362725119483997
-    second: barbara sheet_9
-  - first:
-      213: 3883487435643277809
-    second: barbara sheet_10
-  - first:
-      213: 5006384657840183601
-    second: barbara sheet_11
-  - first:
-      213: -1600259351724607284
-    second: barbara sheet_12
-  - first:
-      213: 1473132310529322410
-    second: barbara sheet_13
-  - first:
-      213: 7354918187597077863
-    second: barbara sheet_14
-  - first:
-      213: -2751330661071207143
-    second: barbara sheet_15
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -86,21 +34,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 42
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -152,20 +100,20 @@ TextureImporter:
       name: barbara sheet_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 125
-        width: 31
-        height: 40
+        x: 0
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dda72e73eafd9e520800000000000000
-      internalID: 2731960588331809501
+      spriteID: 71bb87420a3f9b5d8b42069a7dfc8a13
+      internalID: 766988828
       vertices: []
       indices: 
       edges: []
@@ -174,20 +122,20 @@ TextureImporter:
       name: barbara sheet_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 125
-        width: 32
-        height: 40
+        x: 42
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f61b108af1ecdbf80800000000000000
-      internalID: -8089082720329551505
+      spriteID: 6fa69e0d8b7a7dacebf1a326952bb951
+      internalID: -810359127
       vertices: []
       indices: 
       edges: []
@@ -196,20 +144,20 @@ TextureImporter:
       name: barbara sheet_2
       rect:
         serializedVersion: 2
-        x: 89
-        y: 125
-        width: 31
-        height: 40
+        x: 84
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 514c56ec8c8ff9220800000000000000
-      internalID: 2494986259926467605
+      spriteID: 6c4debe8ec84329fbbf765b42f507938
+      internalID: -621215667
       vertices: []
       indices: 
       edges: []
@@ -218,20 +166,20 @@ TextureImporter:
       name: barbara sheet_3
       rect:
         serializedVersion: 2
-        x: 132
-        y: 125
-        width: 31
-        height: 40
+        x: 126
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0aed076f9fbeaf8e0800000000000000
-      internalID: -1658754053918630240
+      spriteID: 2a9e7fbfa2ba17818b4a220eb5591abd
+      internalID: -1334186733
       vertices: []
       indices: 
       edges: []
@@ -240,9 +188,9 @@ TextureImporter:
       name: barbara sheet_4
       rect:
         serializedVersion: 2
-        x: 135
-        y: 83
-        width: 24
+        x: 0
+        y: 84
+        width: 42
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -250,10 +198,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 12fc3f67caa62c820800000000000000
-      internalID: 2937027195961593633
+      spriteID: 47dcf5f9e4d02ea0e8b641ffab238c82
+      internalID: 1154626950
       vertices: []
       indices: 
       edges: []
@@ -262,20 +210,20 @@ TextureImporter:
       name: barbara sheet_5
       rect:
         serializedVersion: 2
-        x: 9
-        y: 83
-        width: 24
-        height: 39
+        x: 42
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 22bcbbb654b60cf10800000000000000
-      internalID: 2287946556608596770
+      spriteID: abe6d994ab29f035e8dcd1f053379266
+      internalID: 1510993755
       vertices: []
       indices: 
       edges: []
@@ -284,20 +232,20 @@ TextureImporter:
       name: barbara sheet_6
       rect:
         serializedVersion: 2
-        x: 50
-        y: 83
-        width: 24
-        height: 41
+        x: 84
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04ce1550ca4a19b10800000000000000
-      internalID: 1986549969377684544
+      spriteID: 4f92364c089e6dbe988364a0f625bd72
+      internalID: -718527082
       vertices: []
       indices: 
       edges: []
@@ -306,20 +254,20 @@ TextureImporter:
       name: barbara sheet_7
       rect:
         serializedVersion: 2
-        x: 93
-        y: 83
-        width: 24
-        height: 39
+        x: 126
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0650ede234bf07980800000000000000
-      internalID: -8543052227154148000
+      spriteID: 9e3fa2af5cf9ce6a1ab775d9e4a02e06
+      internalID: 1703944435
       vertices: []
       indices: 
       edges: []
@@ -328,9 +276,9 @@ TextureImporter:
       name: barbara sheet_8
       rect:
         serializedVersion: 2
-        x: 135
-        y: 41
-        width: 24
+        x: 0
+        y: 42
+        width: 42
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -338,10 +286,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a71b189847e877480800000000000000
-      internalID: -8901489507300167302
+      spriteID: 0080afdcdc4ba2f0abc46892ef386495
+      internalID: 1537434185
       vertices: []
       indices: 
       edges: []
@@ -350,20 +298,20 @@ TextureImporter:
       name: barbara sheet_9
       rect:
         serializedVersion: 2
-        x: 9
-        y: 41
-        width: 24
-        height: 39
+        x: 42
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d50e3802e2ff83b40800000000000000
-      internalID: 5420362725119483997
+      spriteID: eda31e44352673e13bc1dc507c639f86
+      internalID: 417721981
       vertices: []
       indices: 
       edges: []
@@ -372,20 +320,20 @@ TextureImporter:
       name: barbara sheet_10
       rect:
         serializedVersion: 2
-        x: 52
-        y: 41
-        width: 24
-        height: 41
+        x: 84
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1f1d5334f3be4e530800000000000000
-      internalID: 3883487435643277809
+      spriteID: cc6c38525dd130082a3a44de3cffaac4
+      internalID: 1652639400
       vertices: []
       indices: 
       edges: []
@@ -394,20 +342,20 @@ TextureImporter:
       name: barbara sheet_11
       rect:
         serializedVersion: 2
-        x: 93
-        y: 41
-        width: 24
-        height: 39
+        x: 126
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 139978342504a7540800000000000000
-      internalID: 5006384657840183601
+      spriteID: c35e42778b3b15fe38440c72f93ff8c3
+      internalID: -583236252
       vertices: []
       indices: 
       edges: []
@@ -416,20 +364,20 @@ TextureImporter:
       name: barbara sheet_12
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 31
-        height: 38
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cc835ff199cbac9e0800000000000000
-      internalID: -1600259351724607284
+      spriteID: 73cf2dc666e4c7e06b1fbbb255cebe86
+      internalID: -1204820570
       vertices: []
       indices: 
       edges: []
@@ -438,20 +386,20 @@ TextureImporter:
       name: barbara sheet_13
       rect:
         serializedVersion: 2
-        x: 46
+        x: 42
         y: 0
-        width: 32
-        height: 39
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: aad204c080e917410800000000000000
-      internalID: 1473132310529322410
+      spriteID: b3693239745f0cf788d820b89315cbcb
+      internalID: 1814838825
       vertices: []
       indices: 
       edges: []
@@ -460,20 +408,20 @@ TextureImporter:
       name: barbara sheet_14
       rect:
         serializedVersion: 2
-        x: 89
+        x: 84
         y: 0
-        width: 31
-        height: 38
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 76d98c3af1be11660800000000000000
-      internalID: 7354918187597077863
+      spriteID: bda91a3352b33bb46979444def12f2a8
+      internalID: -558530710
       vertices: []
       indices: 
       edges: []
@@ -482,20 +430,20 @@ TextureImporter:
       name: barbara sheet_15
       rect:
         serializedVersion: 2
-        x: 132
+        x: 126
         y: 0
-        width: 31
-        height: 38
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 915c537475f41d9d0800000000000000
-      internalID: -2751330661071207143
+      spriteID: 2250765b8ba6fd762bbb5d7976856046
+      internalID: -1723951633
       vertices: []
       indices: 
       edges: []
@@ -504,7 +452,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 408990d45dc4134bd8c9411a0fe937c5
     internalID: 0
     vertices: []
     indices: 
@@ -514,22 +462,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      barbara sheet_0: 2731960588331809501
-      barbara sheet_1: -8089082720329551505
-      barbara sheet_10: 3883487435643277809
-      barbara sheet_11: 5006384657840183601
-      barbara sheet_12: -1600259351724607284
-      barbara sheet_13: 1473132310529322410
-      barbara sheet_14: 7354918187597077863
-      barbara sheet_15: -2751330661071207143
-      barbara sheet_2: 2494986259926467605
-      barbara sheet_3: -1658754053918630240
-      barbara sheet_4: 2937027195961593633
-      barbara sheet_5: 2287946556608596770
-      barbara sheet_6: 1986549969377684544
-      barbara sheet_7: -8543052227154148000
-      barbara sheet_8: -8901489507300167302
-      barbara sheet_9: 5420362725119483997
+      barbara sheet_0: 766988828
+      barbara sheet_1: -810359127
+      barbara sheet_10: 1652639400
+      barbara sheet_11: -583236252
+      barbara sheet_12: -1204820570
+      barbara sheet_13: 1814838825
+      barbara sheet_14: -558530710
+      barbara sheet_15: -1723951633
+      barbara sheet_2: -621215667
+      barbara sheet_3: -1334186733
+      barbara sheet_4: 1154626950
+      barbara sheet_5: 1510993755
+      barbara sheet_6: -718527082
+      barbara sheet_7: 1703944435
+      barbara sheet_8: 1537434185
+      barbara sheet_9: 417721981
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

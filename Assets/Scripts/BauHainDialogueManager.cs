@@ -11,6 +11,8 @@ public class BauHainDialogueManager : MonoBehaviour {
     public Canvas DialogueCanvas;
     public Image CharacterSplash;
 
+    private bool m_TheEnd = false;
+
     public InMemoryVariableStorage Storage() {
         if (m_Vars == null) {
             m_Vars = GetComponent<InMemoryVariableStorage>();
@@ -26,10 +28,11 @@ public class BauHainDialogueManager : MonoBehaviour {
     void Update() {
         float clock = -1;
         Storage().TryGetValue<float>("$clock", out clock);
-        if (clock >= 10) {
+        if (!m_TheEnd && clock >= 10) {
             DialogueCanvas.enabled = true;
             m_Runner.StopDialogue();
             m_Runner.StartDialogue("TheEnd");
+            m_TheEnd = true;
         }
     }
 
@@ -45,8 +48,10 @@ public class BauHainDialogueManager : MonoBehaviour {
         if (cmd[0] == "dialogue_is_over") {
             BauHainDialogueManager b = GameManager.Instance.DiaManager;
             b.DialogueCanvas.enabled = false;
-            b.m_Runner.StopDialogue();
-            b.m_Runner.StartDialogue("EventLoop");
+            //b.m_Runner.StopDialogue();
+            //b.m_Runner.StartDialogue("EventLoop");
+        } else {
+            Debug.Log("Got command " + cmd[0]);
         }
     }
 }

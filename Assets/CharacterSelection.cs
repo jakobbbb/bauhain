@@ -197,6 +197,14 @@ public class CharacterSelection : MonoBehaviour
                     //Set Yarn Spinner DJ Variable to Name of current Character
                 }
             }
+            if (activeCharacter == 19)
+            {
+                //Set Maggie Value to 1
+                if (acceptedCounter == 1)
+                {
+                    //Set Yarn Spinner DJ Variable to Name of current Character
+                }
+            }
         }
         }
 

@@ -3,6 +3,8 @@ position: -3589,-2730
 ---
 <<set $backwards = 0>>
 <<declare $ball = 0>>
+Ah, a person.
+Quick!
 <<jump BasicInteractionRenata>>
 ===
 title: BasicInteractionRenata
@@ -84,8 +86,12 @@ position: -3688,-2390
 ---
     <<if $backwards == 0>>
     -> say something in Ye Old English
+        You: Thou...
+        Renata: Do you really have to?
     -> tell them about your childhood
+        Renata: Oof.
     -> ask their opinion on an obscure animated film
+        Renata: Maybe I'll watch it some day.
     -> explain one of your fan theories
         <<if $Polikül < 4 && $murder == "no">>
             Renata nods along enthusiastically as you explain why JarJar Binks is most definitely a Sith Lord.
@@ -102,10 +108,15 @@ position: -3688,-2390
             Nonetheless you finish explaining why JarJar Binks is most definitely a Sith Lord.
         <<endif>>
     -> interrogate them about there whereabouts on April 16th 2023
+        Renata: Do you not have anything better to do?
     <<else>>
     -> hsilgnE dlO eY ni gnihtemos yas
+        You: ...uohT
+        Renata: Do you really have to?
     -> doohdlihc ruoy tuoba meht llet
+        Renata: Oof.
     -> mlif detamina erucsbo na no noinipo rieht ksa
+        Renata: Maybe I'll watch it some day.
     -> seiroeht naf ruoy fo eno nialpxe
         <<if $Polikül < 4 && $murder == "no">>
             Renata nods along enthusiastically as you explain why JarJar Binks is most definitely a Sith Lord.
@@ -122,6 +133,7 @@ position: -3688,-2390
             Nonetheless you finish explaining why JarJar Binks is most definitely a Sith Lord.
         <<endif>>
     -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+        Renata: Do you not have anything better to do?
     <<endif>>
 <<jump BasicInteractionRenata>>
 ===
@@ -133,11 +145,16 @@ position: -3163,-2965
         <<set $backwards = 1>>
     -> scream
         You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        Renata: ah.
     -> imitate a seal
         You take a deep breath and start belting.
+        Renata also starts belting.
+        Renata sounds way better than you.
     -> blankly stare at them
         ...
+        Renata: Okay.
     -> twerk furiously
+        Renata: And I love that for you.
 <<jump BasicInteractionRenata>>
 ===
 
@@ -145,18 +162,18 @@ title: ItemsRenata
 position: -3230,-2201
 ---
     -> 10€ note <<if $drink == 0 && $note == 2>>
-        <<set $note = 0>>
+        Renata: You can keep that.
     -> 2€ <<if $drink >1 && $note ==1>>
-        <<set $note = 0>>
+        Renata: You can keep that.
     -> Banana <<if $banana == 1>>
-        <<set $banana = 0>>
+        Renata: You can keep that.
     -> Drink <<if $drink == 1>>
-        <<set $drink = 2>>
+        Renata: You can keep that.
     -> Schirmchen <<if $drink == 2>>
-        <<set $drink = 3>>
+        Renata: You can keep that.
     -> Snail <<if $snail == 1>>
-        <<set $snail = 0>>
+        Renata: You can keep that.
     -> white powder <<if $koks == 1>>
-        <<set $koks = 0>>
+        Renata: You can keep that.
 <<jump BasicInteractionRenata>>
 ===

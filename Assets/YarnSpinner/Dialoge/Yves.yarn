@@ -2,7 +2,8 @@ title: IntroYves
 position: -3440,-2597
 ---
 <<set $backwards = 0>>
-
+Ah, a person.
+Quick!
 <<jump BasicInteractionYves>>
 ===
 title: BasicInteractionYves
@@ -18,7 +19,7 @@ position: -3211,-2474
 -> Leave. <<if visited("SayYves") && visited("DoYves") && visited("ItemsYves") == true>>
     <<set $Yves = 2>>
     <<set $clock = $clock +1>>
-    <<if $vampires == 4 && $Brayn == 2 && $Gayle == 2 && $Enoby == 2>>
+    <<if $vampires == 4 && $Yves == 2 && $Gayle == 2 && $Enoby == 2>>
         <<jump MURDERVampires>>
     <<endif>>
     <<if $vampires < 4 && $murder == "no">>
@@ -84,16 +85,28 @@ position: -3358,-2263
 ---
     <<if $backwards == 0>>
     -> say something in Ye Old English
+        Yves: Your grammar sucks.
     -> tell them about your childhood
+        Yves: I can barely remember my childhood.
+        Yves: It's been ages.
     -> ask their opinion on an obscure animated film
+        Yves is not interested.
     -> explain one of your fan theories
+        Yves is not interested.
     -> interrogate them about there whereabouts on April 16th 2023
+        Yves: Why should I tell you?
     <<else>>
     -> hsilgnE dlO eY ni gnihtemos yas
+        Yves: Your grammar sucks.
     -> doohdlihc ruoy tuoba meht llet
+        Yves: I can barely remember my childhood.
+        Yves: It's been ages.
     -> mlif detamina erucsbo na no noinipo rieht ksa
+        Yves is not interested.
     -> seiroeht naf ruoy fo eno nialpxe
+        Yves is not interested.
     -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+        Yves: Why should I tell you?
     <<endif>>
 <<jump BasicInteractionYves>>
 ===
@@ -105,11 +118,15 @@ position: -2970,-2635
         <<set $backwards = 1>>
     -> scream
         You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        Yves: ...
     -> imitate a seal
         You take a deep breath and start belting.
+        Yves: ...
     -> blankly stare at them
         ...
+        Yves: ...
     -> twerk furiously
+        Yves: ...
 <<jump BasicInteractionYves>>
 ===
 
@@ -117,13 +134,13 @@ title: ItemsYves
 position: -3006,-2211
 ---
     -> 10€ note <<if $drink == 0 && $note == 2>>
-        <<set $note = 0>>
+        Yves: Keep that.
     -> 2€ <<if $drink >1 && $note ==1>>
-        <<set $note = 0>>
+        Yves: Keep that.
     -> Banana <<if $banana == 1>>
-        <<set $banana = 0>>
+        Yves: Keep that.
     -> Drink <<if $drink == 1>>
-        <<set $drink = 2>>
+        Yves: Keep that.
     -> Schirmchen <<if $drink == 2>>
         <<if $vampires < 4 && $murder == "no">>
             Yves screams as you pull out the Schirmchen.
@@ -135,8 +152,8 @@ position: -3006,-2211
         <<endif>>
         <<set $drink = 3>>
     -> Snail <<if $snail == 1>>
-        <<set $snail = 2>>
+        Yves: Keep that.
     -> white powder <<if $koks == 1>>
-        <<set $koks = 0>>
+        Yves: Keep that.
 <<jump BasicInteractionYves>>
 ===

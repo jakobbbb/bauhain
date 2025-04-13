@@ -2,7 +2,8 @@ title: IntroNoah
 position: -3440,-2597
 ---
 <<set $backwards = 0>>
-
+Ah, a person.
+Quick!
 <<jump BasicInteractionNoah>>
 ===
 title: BasicInteractionNoah
@@ -84,16 +85,30 @@ position: -3358,-2263
 ---
     <<if $backwards == 0>>
     -> say something in Ye Old English
+        You: I do wish thou wert a dog, that I might love thee something ...
+        Noah: I love dogs.
     -> tell them about your childhood
+        Noah: Poor you.
     -> ask their opinion on an obscure animated film
+        Noah's eyeroll seem well practiced.
     -> explain one of your fan theories
+        You explain why it is obvious that Frodo does not know Legolas' name.
+        Noah: Is that really important?
     -> interrogate them about there whereabouts on April 16th 2023
+        Noah seems to avoid eye contact with you.
     <<else>>
     -> hsilgnE dlO eY ni gnihtemos yas
+        You: ... gnihtemos eeht evol thgim I taht ,god a trew uoht hsiw od I
+        Noah: I love dogs.
     -> doohdlihc ruoy tuoba meht llet
+        Noah: Poor you.
     -> mlif detamina erucsbo na no noinipo rieht ksa
+        Noah's eyeroll seem well practiced.
     -> seiroeht naf ruoy fo eno nialpxe
+        You explain why it is obvious that Frodo does not know Legolas' name.
+        Noah: Is that really important?
     -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+        Noah seems to avoid eye contact with you.
     <<endif>>
 <<jump BasicInteractionNoah>>
 ===
@@ -105,11 +120,17 @@ position: -2970,-2635
         <<set $backwards = 1>>
     -> scream
         You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        Noah: Argh.
     -> imitate a seal
         You take a deep breath and start belting.
+        Noah: Not bad.
     -> blankly stare at them
         ...
+        Noah tries to poke your eyes.
+        Rude.
     -> twerk furiously
+        Noah: Wow.
+        Noah: I'm impressed.
 <<jump BasicInteractionNoah>>
 ===
 
@@ -117,16 +138,22 @@ title: ItemsNoah
 position: -3006,-2211
 ---
     -> 10€ note <<if $drink == 0 && $note == 2>>
+        Noah: Yeah, I needed that.
         <<set $note = 0>>
     -> 2€ <<if $drink >1 && $note ==1>>
+        Noah: Yeah, I needed that.
         <<set $note = 0>>
     -> Banana <<if $banana == 1>>
+        Noah: Yeah, I needed that.
         <<set $banana = 0>>
     -> Drink <<if $drink == 1>>
+        Noah: Yeah, I needed that.
         <<set $drink = 2>>
     -> Schirmchen <<if $drink == 2>>
+        Noah: Sweet.
         <<set $drink = 3>>
     -> Snail <<if $snail == 1>>
+        Noah: Sweet.
         <<set $snail = 0>>
     -> white powder <<if $koks == 1>>
         <<if $Cops < 4 && $murder == "no">>

@@ -10,11 +10,11 @@ position: -3211,-2474
 ---
 
 -> Say something! <<if visited("SayElim") == false>>
-    <<jump Say>>
+    <<jump SayElim>>
 -> Do something! <<if visited("DoElim") == false>>
-    <<jump Do>>
+    <<jump DoElim>>
 -> Items? <<if visited("ItemsElim") == false>>
-    <<jump Items>>
+    <<jump ItemsElim>>
 -> Leave. <<if visited("SayElim") && visited("DoElim") && visited("ItemsElim") == true>>
     <<set $Elim = 2>>
     <<set $clock = $clock +1>>

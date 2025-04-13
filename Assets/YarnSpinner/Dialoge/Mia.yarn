@@ -2,7 +2,8 @@ title: IntroMia
 position: -3440,-2597
 ---
 <<set $backwards = 0>>
-
+Ah, a person.
+Quick!
 <<jump BasicInteractionMia>>
 ===
 title: BasicInteractionMia
@@ -84,16 +85,26 @@ position: -3358,-2263
 ---
     <<if $backwards == 0>>
     -> say something in Ye Old English
+        Mia: :3 meow :3
     -> tell them about your childhood
+        Mia: :3 meow :3
     -> ask their opinion on an obscure animated film
+        Mia: :3 meow :3
     -> explain one of your fan theories
+        Mia: :3 meow :3
     -> interrogate them about there whereabouts on April 16th 2023
+        Mia: :3 meow :3
     <<else>>
     -> hsilgnE dlO eY ni gnihtemos yas
+        Mia: :3 meow :3
     -> doohdlihc ruoy tuoba meht llet
+        Mia: :3 meow :3
     -> mlif detamina erucsbo na no noinipo rieht ksa
+        Mia: :3 meow :3
     -> seiroeht naf ruoy fo eno nialpxe
+        Mia: :3 meow :3
     -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+        Mia: :3 meow :3
     <<endif>>
 <<jump BasicInteractionMia>>
 ===
@@ -105,11 +116,15 @@ position: -2970,-2635
         <<set $backwards = 1>>
     -> scream
         You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        Mia: rawr xD
     -> imitate a seal
         You take a deep breath and start belting.
+        Mia: rawr xD
     -> blankly stare at them
         ...
+        Mia: rawr xD
     -> twerk furiously
+        Mia: rawr: xD
 <<jump BasicInteractionMia>>
 ===
 
@@ -131,18 +146,24 @@ position: -3006,-2211
             You: You should try again in a few months.
             Mia puts the handcuffs away but you cannot shake the feeling that she would really like to use them.
         <<endif>>
-        <<set $note = 0>>
     -> 2€ <<if $drink >1 && $note ==1>>
-        <<set $note = 0>>
+        Mia: Uh, no thanks?
     -> Banana <<if $banana == 1>>
+        Mia: Oh, tasty! <3
         <<set $banana = 0>>
     -> Drink <<if $drink == 1>>
-        <<set $drink = 2>>
+        Mia knocks the drink out of your hand.
+        Mia: whoops, teeheehee.
+        Mia: :3 meow :3
+        <<set $drink = 3>>
     -> Schirmchen <<if $drink == 2>>
+        Mia: Uh, no thanks?
         <<set $drink = 3>>
     -> Snail <<if $snail == 1>>
+        Mia: Uh, no thanks?
         <<set $snail = 0>>
     -> white powder <<if $koks == 1>>
+        Mia: Awwww, thanks but no <3
         <<set $koks = 0>>
 <<jump BasicInteractionMia>>
 ===

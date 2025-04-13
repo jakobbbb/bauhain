@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 432508722919246474, guid: a840a10ed13eb47738034edcc8b2cfca, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -6902622451341508375, guid: 65a94a21719fac14ea5322a81a98de23, type: 2}
     - target: {fileID: 2047672728861489954, guid: a840a10ed13eb47738034edcc8b2cfca, type: 3}
       propertyPath: DiaManager
       value: 
@@ -1006,7 +1010,7 @@ AudioSource:
   m_GameObject: {fileID: 525390009}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7247019153073670462, guid: 65a94a21719fac14ea5322a81a98de23, type: 2}
   m_audioClip: {fileID: 8300000, guid: 5d741c1512a0c16d19597dbc64524ca5, type: 3}
   m_Resource: {fileID: 8300000, guid: 5d741c1512a0c16d19597dbc64524ca5, type: 3}
   m_PlayOnAwake: 1
@@ -2399,7 +2403,7 @@ AudioSource:
   m_GameObject: {fileID: 1585182744}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 1551212486068034481, guid: 65a94a21719fac14ea5322a81a98de23, type: 2}
   m_audioClip: {fileID: 8300000, guid: 50a0d909857c9ae4a922715b45b6068a, type: 3}
   m_Resource: {fileID: 8300000, guid: 50a0d909857c9ae4a922715b45b6068a, type: 3}
   m_PlayOnAwake: 1
@@ -3263,7 +3267,7 @@ AudioSource:
   m_GameObject: {fileID: 1750022628}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 1551212486068034481, guid: 65a94a21719fac14ea5322a81a98de23, type: 2}
   m_audioClip: {fileID: 8300000, guid: 8318a3fb0dcbd404791ac88261193b47, type: 3}
   m_Resource: {fileID: 8300000, guid: 8318a3fb0dcbd404791ac88261193b47, type: 3}
   m_PlayOnAwake: 1
@@ -3546,7 +3550,7 @@ AudioSource:
   m_GameObject: {fileID: 2103431776}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 1551212486068034481, guid: 65a94a21719fac14ea5322a81a98de23, type: 2}
   m_audioClip: {fileID: 8300000, guid: 881e945758b64ad438cde0321246cd88, type: 3}
   m_Resource: {fileID: 8300000, guid: 881e945758b64ad438cde0321246cd88, type: 3}
   m_PlayOnAwake: 1

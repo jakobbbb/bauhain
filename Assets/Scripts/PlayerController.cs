@@ -68,7 +68,6 @@ public class PlayerController : CharacterController {
             // TODO!!! fix?
             var storage = GameManager.Instance.DiaManager.Storage();
             storage.SetValue("$playerroom", r.RoomId);
-            Debug.Log("Room updated to " + r.RoomId + " (" + r + ")");
         }
     }
 

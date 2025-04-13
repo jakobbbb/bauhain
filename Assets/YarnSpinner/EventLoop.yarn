@@ -31,10 +31,10 @@ position: -90,-128
         <<set $Renata = 0>>
         <<set $Elfie = 0>>
         <<set $murderCount = $murderCount +1>>
-    <<endif>>
+
 
     //Snails
-    <<if $Brayn == 2 && $Fürchti == 2 && $Emma == 2>>
+    <<elseif $Brayn == 2 && $Fürchti == 2 && $Emma == 2>>
         <<wait  45>>
         //SnailKill
         <<trigger_as "Snail 1">>
@@ -59,222 +59,222 @@ position: -90,-128
         <<trigger_as "Snail 3">>
         <<set $Brayn = 0>>
         <<set $Emma = 0>>
-    <<endif>>
+
 
     //Goff
-    <<if $Enoby == 2 && $Mattheo == 2>>
+    <<elseif $Enoby == 2 && $Mattheo == 2>>
         <<wait  5>>
         //GoffKill
         <<trigger_as "Goff">>
         <<set $Enoby = 0>>
         <<set $Mattheo = 0>>
-    <<endif>>
+
 
     //LeftBang
-    <<if $Yves == 2 && $Noah == 2>>
+    <<elseif $Yves == 2 && $Noah == 2>>
         <<wait  10>>
         //LeftBangKill
         <<trigger_as "Left Bang">>
         <<set $Yves = 0>>
         <<set $Noah = 0>>
-    <<endif>>
+
 
     //Left
-    <<if $Samira == 2 && $Barbara == 2>>
+    <<elseif $Samira == 2 && $Barbara == 2>>
         <<wait  10>>
         //LeftKill
         <<trigger_as "Left">>
         <<set $Samira = 0>>
         <<set $murderCount = $murderCount +1>>
-    <<endif>>
+
 
     //Women
-    <<if $Renata == 2 && $Barbara == 2>>
+    <<elseif $Renata == 2 && $Barbara == 2>>
         <<wait  60>>
         //WomenKill
         <<trigger_as "Women">>
         <<set $Renata = 0>>
         <<set $Barbara = 0>>
-    <<endif>>
+
 
     //Cats
-    <<if $Mia == 2 && $Lux == 2>>
+    <<elseif $Mia == 2 && $Lux == 2>>
         <<wait  5>>
         //CatKill
         <<trigger_as "Cats">>
         <<set $Mia = 0>>
         <<set $Lux = 0>>
-    <<endif>>
+
 
     //Royal
-    <<if $Diana == 2 && $Lizzie == 2>>
+    <<elseif $Diana == 2 && $Lizzie == 2>>
         <<wait  60>>
         //RoyalKill
         <<trigger_as "Royal">>
         <<set $Diana = 0>>
-        <<if $murder == "Diana">>
+        <<elseif $murder == "Diana">>
             <<set $murder = "no">>
-        <<endif>>
+    
         <<set $murderCount = $murderCount +1>>
-    <<endif>>
+
 
     //British
-    <<if $Maggie == 2 && $Lizzie == 2>>
+    <<elseif $Maggie == 2 && $Lizzie == 2>>
         <<wait  15>>
         //BritishKill
         <<trigger_as "British">>
         <<set $Maggie = 0>>
         <<set $murderCount = $murderCount +1>>
-    <<endif>>
+
 
     //God
-    <<if $Fürchti == 2 && $God == 2>>
+    <<elseif $Fürchti == 2 && $God == 2>>
         <<wait  40>>
         //GodKill
         <<trigger_as "God">>
         <<set $Fürchti = 0>>
-    <<endif>>
+
 
     //DJ
-    <<if $DJ == "Barbara" && $Barbara == 2 && $Elim >= 1>>
+    <<elseif $DJ == "Barbara" && $Barbara == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Barbara = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Brayn" && $Brayn == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Brayn" && $Brayn == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Brayn = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Diana" && $Diana == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Diana" && $Diana == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Diana = 0>>
-        <<if $murder == "Diana">>
+        <<elseif $murder == "Diana">>
             <<set $murder = "no">>
-        <<endif>>
+    
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Elfie" && $Elfie == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Elfie" && $Elfie == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Elfie = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Emma" && $Emma == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Emma" && $Emma == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Emma = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Enoby" && $Enoby == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Enoby" && $Enoby == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Enoby = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Fürchti" && $Fürchti == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Fürchti" && $Fürchti == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Fürchti = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Gayle" && $Gayle == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Gayle" && $Gayle == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Gayle = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Lizzie" && $Lizzie == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Lizzie" && $Lizzie == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Lizzie = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Lux" && $Lux == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Lux" && $Lux == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Lux = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Maggie" && $Maggie == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Maggie" && $Maggie == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Maggie = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Mattheo" && $Mattheo == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Mattheo" && $Mattheo == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Mattheo = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Mia" && $Mia == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Mia" && $Mia == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Mia = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Noah" && $Noah == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Noah" && $Noah == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Noah = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Renata" && $Renata == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Renata" && $Renata == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Renata = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Samira" && $Samira == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Samira" && $Samira == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Samira = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
-    <<if $DJ == "Yves" && $Yves == 2 && $Elim >= 1>>
+
+    <<elseif $DJ == "Yves" && $Yves == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
         <<trigger_as "DJ">>
         <<set $Yves = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-    <<endif>>
+<<endif>>
 <<if $murderCount == 1 && $kids == 2>>
     <<jump KidsEnding>>
 <<endif>>

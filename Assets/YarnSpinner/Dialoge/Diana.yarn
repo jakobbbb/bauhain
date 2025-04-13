@@ -16,7 +16,7 @@ position: -3211,-2474
     <<jump DoDiana>>
 -> Items? <<if visited("ItemsDiana") == false>>
     <<jump ItemsDiana>>
--> Leave. <<if visited("SayDiana") && visited("Do") && visited("ItemsDiana") == true>>
+-> Leave. <<if visited("SayDiana") && visited("DoDiana") && visited("ItemsDiana") == true>>
     <<set $Diana = 2>>
     <<set $clock = $clock +1>>
     <<if $Polikül == 4 && $Samira == 2 && $Lux == 2 && $Renata == 2>>

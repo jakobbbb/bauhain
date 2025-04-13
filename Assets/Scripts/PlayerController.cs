@@ -68,7 +68,11 @@ public class PlayerController : CharacterController {
         if (d == null) {
             Room r = null;
             other.TryGetComponent<Room>(out r);
-            GameManager.Instance.DiaManager.Storage.SetValue("$playerroom", r.RoomId);
+            if (r) {
+                var storage = GameManager.Instance.DiaManager.Storage();
+                storage.SetValue("$playerroom", r.RoomId);
+                Debug.Log("Room updated to " + r.RoomId);
+            }
         } else {
             m_NearNPC = d;
         }

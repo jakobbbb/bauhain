@@ -7,6 +7,10 @@ public class BauHainDialogueManager : MonoBehaviour {
 
     private InMemoryVariableStorage m_Vars = null;
 
+    public InMemoryVariableStorage Storage {
+        get => m_Vars;
+    }
+
     void Start() {
     }
 

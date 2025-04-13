@@ -46,6 +46,9 @@ public class BauHainDialogueManager : MonoBehaviour {
     }
 
     public void TalkTo(string character_name, Sprite sprite, string prefix = "Intro") {
+        if (character_name == "kids") {
+            character_name = "Kids";  // aAAAAAAAAAAAAaaaaaaaaaaaAAAaaAAAAAAAaAAAAa
+        }
         DialogueCanvas.enabled = true;
         CharacterSplash.sprite = sprite;
         var im = CharacterSplash.GetComponent<Image>();

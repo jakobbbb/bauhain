@@ -12,9 +12,10 @@ How did you get into the Koksraum?
 Barbara: Looks like you need some... vitamins.
 Barbara grabs your head and shoves your face into a mountain of white powder.
 //BarbaraMurder
-<<if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+<<set $killscreen = "Barbara_KS">>
+//<<if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Barbara_KS>>
 ===
 
@@ -39,9 +40,9 @@ You try to spit out the drink but it's already to late.
 Your throat is closing up and you forgot your EpiPen at home.
 A really stupid mistake on your part.
 //BraynMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Brayn_KS>>
 ===
 
@@ -53,9 +54,9 @@ Diana: Fuck YOU and your FUCKING club!!!
 Diana: You can shove your FUCKING 2€ coin right UP YOUR ARSE!!!
 Diana: DIE BITCH!!! DIIIIEEEE!!!
 //DianaMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Diana_KS>>
 ===
 
@@ -73,9 +74,9 @@ Elfie grabs your throat with surprising strength.
 Elfie: Hasta la vista baby.
 Elfie throws you down the stairs.
 //ElfieMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Elfie_KS>>
 ===
 
@@ -87,9 +88,9 @@ Elim: To.
 Elim: The. 
 Elim: DJ.
 //ElimMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Elim_KS>>
 ===
 
@@ -106,9 +107,9 @@ You: That's a bana...
 But Emma has already doused you in enough pepperspray to kill an adult elephant.
 Which is more than enough to finish you off.
 //EmmaMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Emma_KS>>
 ===
 
@@ -123,9 +124,9 @@ Enoby pulls out a gun.
 Enoby: YOU MUTHRFUKR!!!
 Enoby shots you a gazillion times.
 //EnobyMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Enoby_KS>>
 ===
 
@@ -142,9 +143,9 @@ Fürchtegott Wilhelm pulls a knife out of his pocket.
 Guess who's getting stabbed today?
 It's you!
 //FürchtiMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Fuerchti_KS>>
 ===
 
@@ -163,9 +164,9 @@ How did you get to the bathroom?
 Gayle snatches you and drowns you in the toilet.
 What a dignified way to go.
 //GayleMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+////<< if $kids >= 1>>
+////    <<jump KidsEnding>>
+////<<endif>>
 <<trigger_ks Gayle_KS>>
 ===
 
@@ -183,9 +184,9 @@ Are those guns?
 You hear one last thing before the firing squad executes you:
 LONG LIVE THE QUEEN!
 //LizzieMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+////<< if $kids >= 1>>
+////    <<jump KidsEnding>>
+////<<endif>>
 <<trigger_ks Lizzie_KS>>
 ===
 
@@ -208,9 +209,9 @@ Is that someone purring behind you?
 You feel hands on your back.
 Lux shoves you out of the window.
 //LuxMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Lux_KS>>
 ===
 
@@ -224,9 +225,9 @@ Big mistake.
 Definitely not Margaret Thatcher stabs you in the back.
 Never turn your back on a Torie.
 //MaggieMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Maggie_KS>>
 ===
 
@@ -275,9 +276,9 @@ That. makes. no. sense.
 You can feel your brain melting.
 Noah is still talking as you sink to the floor.
 //NoahMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Noah_KS>>
 ===
 
@@ -296,9 +297,9 @@ Renata: Don't move, sweetie.
 Renata takes on step to the side.
 The disco ball come crashing down.
 //RenataMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Renata_KS>>
 ===
 
@@ -312,9 +313,9 @@ You: Oh no.
 <<endif>>
 Samira: За Сталина!
 //SamiraMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Samira_KS>>
 ===
 
@@ -325,9 +326,9 @@ A person appears in front of you.
 <<endif>>
 Yves sucker punches you square in the face.
 //YvesMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Yves_KS>>
 ===
 
@@ -335,9 +336,9 @@ title: MURDERVampires
 ---
 What's that?
 //VampireMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Vampires_KS>>
 ===
 
@@ -345,9 +346,9 @@ title: MURDERPolikül
 ---
 What's that?
 //PolikülMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Polikuel_KS>>
 ===
 
@@ -355,9 +356,9 @@ title: MURDERRentner
 ---
 What's that?
 //RentnerMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Rentner_KS>>
 ===
 
@@ -365,9 +366,9 @@ title: MURDERCops
 ---
 What's that?
 //CopMurder
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<< if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Cops_KS>>
 ===
 
@@ -378,9 +379,9 @@ What's that?
 ???: Look who finally got out of the club they wouldn't let us in...
 Ten people emerge from the shadows.
 They pull out their weapons.
-<<if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<<if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks Alley_KS>>
 ===
 title: MURDERGod
@@ -388,8 +389,8 @@ title: MURDERGod
 Lightning strikes you right where you stand.
 ...
 How original.
-<<if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+//<<if $kids >= 1>>
+//    <<jump KidsEnding>>
+//<<endif>>
 <<trigger_ks God_KS>>
 ===

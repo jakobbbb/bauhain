@@ -30,16 +30,36 @@ position: -3358,-2263
     <<else>>
         <<if $backwards == 0>>
         -> say something in Ye Old English
+            You: Shall I compare thee to a summer's day? Thou art more lovely and more temperate.
+            Elim: Sure.
         -> tell them about your childhood
+            Elim: That's rough, buddy.
         -> ask their opinion on an obscure animated film
+            You: What is your opinion on Boo, Zino and the Snurks?
+            Elim: The first animated feature film from Germany?
+            Elim: An absolute masterpiece.
         -> explain one of your fan theories
+            You: ... and that is why Elvis is definitely alive!
+            Elim: Sure.
         -> interrogate them about there whereabouts on April 16th 2023
+            Elim: If I told you that, I'd have to kill you.
+            You refrain from pressing the matter further.
         <<else>>
         -> hsilgnE dlO eY ni gnihtemos yas
+            You: .etarepmet erom dna ylevol erom tra uohT ?yad s'remmus a ot eeht erapmoc I llahS
+            Elim: Sure.
         -> doohdlihc ruoy tuoba meht llet
+            Elim: That's rough, buddy.
         -> mlif detamina erucsbo na no noinipo rieht ksa
+            You: ?skrunS eht dna oniZ ,ooB no noinipo ruoy si tahW
+            Elim: The first animated feature film from Germany?
+            Elim: An absolute masterpiece.
         -> seiroeht naf ruoy fo eno nialpxe
+            You: !evila yletinifed si sivlE yhw si taht dna ...
+            Elim: Sure.
         -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+            Elim: If I told you that, I'd have to kill you.
+            You refrain from pressing the matter further.
         <<endif>>
     <<endif>>
 <<jump BasicInteractionElim>>
@@ -48,6 +68,10 @@ position: -3358,-2263
 title: DoElim
 position: -2970,-2635
 ---
+<<if $DJ == "Elim">>
+    Elim does not react. 
+    <<jump BasicInteractionElim>>
+<<else>>
     -> start speaking backwards
         <<if $DJ == "Elim">>
             <<jump MURDERElim>>
@@ -55,32 +79,41 @@ position: -2970,-2635
         <<set $backwards = 1>>
     -> scream
         You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        Elim: Let it all out buddy.
     -> imitate a seal
         You take a deep breath and start belting.
+        Elim: Let it all out buddy.
     -> blankly stare at them
         ...
+        Elim: Hm.
     -> twerk furiously
-    Elim does not react. <<if $DJ == "Elim">>
+        Elim: Nice.
+        Elim: Would be even better if the music didn't suck.
 <<jump BasicInteractionElim>>
+<<endif>>
 ===
 
 title: ItemsElim
 position: -3006,-2211
 ---
+<<if $DJ == "Elim">>
+    Elim will not take anything.
+    <<jump BasicInteractionElim>>
+<<else>>
     -> 10€ note <<if $drink == 0 && $note == 2>>
-        <<set $note = 0>>
+        Elim: Keep your stuff. I don't need it.
     -> 2€ <<if $drink >1 && $note ==1>>
-        <<set $note = 0>>
+        Elim: Keep your stuff. I don't need it.
     -> Banana <<if $banana == 1>>
-        <<set $banana = 0>>
+        Elim: Keep your stuff. I don't need it.
     -> Drink <<if $drink == 1>>
-        <<set $drink = 2>>
+        Elim: Keep your stuff. I don't need it.
     -> Schirmchen <<if $drink == 2>>
-        <<set $drink = 3>>
+        Elim: Keep your stuff. I don't need it.
     -> Snail <<if $snail == 1>>
-        <<set $snail = 0>>
+        Elim: Keep your stuff. I don't need it.
     -> white powder <<if $koks == 1>>
-        <<set $koks = 0>>
-    Elim will not take anything. <<if $DJ == "Elim">>
+        Elim: Keep your stuff. I don't need it.
 <<jump BasicInteractionElim>>
+<<endif>>
 ===

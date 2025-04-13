@@ -15,6 +15,7 @@ Barbara grabs your head and shoves your face into a mountain of white powder.
 <<if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Barbara_KS>>
 ===
 
 title: MURDERBrayn
@@ -41,6 +42,7 @@ A really stupid mistake on your part.
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Brayn_KS>>
 ===
 
 title: MURDERDiana
@@ -54,6 +56,7 @@ Diana: DIE BITCH!!! DIIIIEEEE!!!
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Diana_KS>>
 ===
 
 title: MURDERElfie
@@ -73,6 +76,7 @@ Elfie throws you down the stairs.
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Elfie_KS>>
 ===
 
 title: MURDERElim
@@ -86,6 +90,7 @@ Elim: DJ.
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Elim_KS>>
 ===
 
 title: MURDEREmma
@@ -104,6 +109,7 @@ Which is more than enough to finish you off.
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Emma_KS>>
 ===
 
 title: MURDEREnoby
@@ -120,6 +126,7 @@ Enoby shots you a gazillion times.
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Enoby_KS>>
 ===
 
 title: MURDERFürchti
@@ -138,6 +145,7 @@ It's you!
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Fuerchti_KS>>
 ===
 
 title: MURDERGayle
@@ -158,6 +166,7 @@ What a dignified way to go.
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Gayle_KS>>
 ===
 
 title: MURDERLizzie
@@ -177,6 +186,7 @@ LONG LIVE THE QUEEN!
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Lizzie_KS>>
 ===
 
 title: MURDERLux
@@ -201,6 +211,7 @@ Lux shoves you out of the window.
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Lux_KS>>
 ===
 
 title: MURDERMaggie
@@ -216,6 +227,7 @@ Never turn your back on a Torie.
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Maggie_KS>>
 ===
 
 title: MURDERMattheo
@@ -226,9 +238,7 @@ Mattheo pulls out a piece of paper that informs you, that your contract has been
 You: Damn. 
 You: Guess, I'll just continue to chill here until I can catch my bus.
 <<jump TheEnd>>
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+<<trigger_ks Mattheo_KS>>
 ===
 
 title: MURDERMia
@@ -245,12 +255,10 @@ You: Look over there!
 You point behind Mia.
 Mia turns around.
 You run.
-//MurderMia
+<<trigger_ks Mia_KS>>
 That was close.
 <<jump TheEnd>>
-<< if $kids >= 1>>
-    <<jump KidsEnding>>
-<<endif>>
+<<trigger_ks Mia_KS>>
 ===
 
 title: MURDERNoah
@@ -270,6 +278,7 @@ Noah is still talking as you sink to the floor.
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Noah_KS>>
 ===
 
 title: MURDERRenata
@@ -290,6 +299,7 @@ The disco ball come crashing down.
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Renata_KS>>
 ===
 
 title: MURDERSamira
@@ -305,6 +315,7 @@ Samira: За Сталина!
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Samira_KS>>
 ===
 
 title: MURDERYves
@@ -317,6 +328,7 @@ Yves sucker punches you square in the face.
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Yves_KS>>
 ===
 
 title: MURDERVampires
@@ -326,6 +338,7 @@ What's that?
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Vampires_KS>>
 ===
 
 title: MURDERPolikül
@@ -335,6 +348,7 @@ What's that?
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Polikuel_KS>>
 ===
 
 title: MURDERRentner
@@ -344,6 +358,7 @@ What's that?
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Rentner_KS>>
 ===
 
 title: MURDERCops
@@ -353,6 +368,7 @@ What's that?
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Cops_KS>>
 ===
 
 title: MURDERAlley
@@ -365,6 +381,7 @@ They pull out their weapons.
 <<if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks Alley_KS>>
 ===
 title: MURDERGod
 ---
@@ -374,4 +391,5 @@ How original.
 <<if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
+<<trigger_ks God_KS>>
 ===

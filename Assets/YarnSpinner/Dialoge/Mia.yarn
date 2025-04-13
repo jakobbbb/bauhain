@@ -10,7 +10,6 @@ position: -3211,-2474
 ---
 
 -> Say something! <<if visited("SayMia") == false>>
-    <<trigger_ks Mia_KS>>
     <<jump SayMia>>
 -> Do something! <<if visited("DoMia") == false>>
     <<jump DoMia>>

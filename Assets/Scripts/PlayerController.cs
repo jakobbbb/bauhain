@@ -56,7 +56,7 @@ public class PlayerController : CharacterController {
         if (Input.GetKeyDown(KeyCode.E)) {
             var near = GetNearNPC();
             if (near) {
-                GameManager.Instance.DiaManager.TalkTo(near.NPCName());
+                GameManager.Instance.DiaManager.TalkTo(near.NPCName(), near.Splash);
             }
         }
     }

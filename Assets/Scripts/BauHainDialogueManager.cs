@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using Yarn.Unity;
 
 public class BauHainDialogueManager : MonoBehaviour {
@@ -8,6 +9,7 @@ public class BauHainDialogueManager : MonoBehaviour {
     private InMemoryVariableStorage m_Vars = null;
 
     public Canvas DialogueCanvas;
+    public Image CharacterSplash;
 
     public InMemoryVariableStorage Storage() {
         if (m_Vars == null) {
@@ -18,6 +20,7 @@ public class BauHainDialogueManager : MonoBehaviour {
 
     void Start() {
         DialogueCanvas.enabled = false;
+        m_Runner.CommandNeedsHandling.AddListener(DialogueIsOver);
     }
 
     void Update() {
@@ -30,10 +33,20 @@ public class BauHainDialogueManager : MonoBehaviour {
         }
     }
 
-    public void TalkTo(string character_name) {
+    public void TalkTo(string character_name, Sprite sprite) {
         DialogueCanvas.enabled = true;
+        CharacterSplash.sprite = sprite;
         Debug.Log("enabled? " + DialogueCanvas.enabled);
         m_Runner.StopDialogue();
         m_Runner.StartDialogue("Intro" + character_name);
+    }
+
+    public static void DialogueIsOver(string[] cmd) {
+        if (cmd[0] == "dialogue_is_over") {
+            BauHainDialogueManager b = GameManager.Instance.DiaManager;
+            b.DialogueCanvas.enabled = false;
+            //b.m_Runner.StopDialogue();
+            //b.m_Runner.StartDialogue("EventLoop");
+        }
     }
 }

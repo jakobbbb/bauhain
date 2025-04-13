@@ -2,6 +2,7 @@ title: EventLoop
 position: -90,-128
 ---
 //Profs
+<<event_loop_is_looping>>
 <<if $Renata == 2 && $Gayle == 2 && $Elfie == 2>>
     <<wait  20>>
     //ProfKill

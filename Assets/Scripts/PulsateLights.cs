@@ -20,7 +20,6 @@ public class PulsateLights : MonoBehaviour {
         Debug.Log("Got " + m_Lights.Count + " lights.");
     }
 
-    // Update is called once per frame
     void Update() {
         float speed = BPM / 60.0f;
         float t = (Time.time * speed) - Mathf.Floor(Time.time * speed);

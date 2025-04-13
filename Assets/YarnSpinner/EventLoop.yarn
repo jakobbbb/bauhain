@@ -28,85 +28,6 @@ position: -90,-128
     <<set $Elfie = 0>>
     <<set $murderCount = $murderCount +1>>
 <<endif>>
-<<if $Renata == 2 && $Gayle == 2 && $Elfie == 2>>
-    <<wait  20>>
-    //ProfKill
-    <<set $Renata = 0>>
-    <<set $Gayle = 0>>
-    <<set $Elfie = 0>>
-    <<set $murderCount = $murderCount +1>>
-<<elseif $Renata == 2 && $Gayle == 2 && $Elfie == 0>>
-    <<wait  20>>
-    //ProfKill
-    <<set $Renata = 0>>
-    <<set $Gayle = 0>>
-    <<set $murderCount = $murderCount +1>>
-<<elseif $Renata == 0 && $Gayle == 2 && $Elfie == 2>>
-    <<wait  20>>
-    //ProfKill
-    <<set $Gayle = 0>>
-    <<set $Elfie = 0>>
-    <<set $murderCount = $murderCount +1>>
-<<elseif $Renata == 2 && $Gayle == 0 && $Elfie == 2>>
-    <<wait  20>>
-    //ProfKill
-    <<set $Renata = 0>>
-    <<set $Elfie = 0>>
-    <<set $murderCount = $murderCount +1>>
-<<endif>>
-//Snails
-<<if $Renata == 2 && $Gayle == 2 && $Elfie == 2>>
-    <<wait  20>>
-    //ProfKill
-    <<set $Renata = 0>>
-    <<set $Gayle = 0>>
-    <<set $Elfie = 0>>
-    <<set $murderCount = $murderCount +1>>
-<<elseif $Renata == 2 && $Gayle == 2 && $Elfie == 0>>
-    <<wait  20>>
-    //ProfKill
-    <<set $Renata = 0>>
-    <<set $Gayle = 0>>
-    <<set $murderCount = $murderCount +1>>
-<<elseif $Renata == 0 && $Gayle == 2 && $Elfie == 2>>
-    <<wait  20>>
-    //ProfKill
-    <<set $Gayle = 0>>
-    <<set $Elfie = 0>>
-    <<set $murderCount = $murderCount +1>>
-<<elseif $Renata == 2 && $Gayle == 0 && $Elfie == 2>>
-    <<wait  20>>
-    //ProfKill
-    <<set $Renata = 0>>
-    <<set $Elfie = 0>>
-    <<set $murderCount = $murderCount +1>>
-<<endif>>
-<<if $Renata == 2 && $Gayle == 2 && $Elfie == 2>>
-    <<wait  20>>
-    //ProfKill
-    <<set $Renata = 0>>
-    <<set $Gayle = 0>>
-    <<set $Elfie = 0>>
-    <<set $murderCount = $murderCount +1>>
-<<elseif $Renata == 2 && $Gayle == 2 && $Elfie == 0>>
-    <<wait  20>>
-    //ProfKill
-    <<set $Renata = 0>>
-    <<set $Gayle = 0>>
-    <<set $murderCount = $murderCount +1>>
-<<elseif $Renata == 0 && $Gayle == 2 && $Elfie == 2>>
-    <<wait  20>>
-    //ProfKill
-    <<set $Gayle = 0>>
-    <<set $Elfie = 0>>
-    <<set $murderCount = $murderCount +1>>
-<<elseif $Renata == 2 && $Gayle == 0 && $Elfie == 2>>
-    <<wait  20>>
-    //ProfKill
-    <<set $Renata = 0>>
-    <<set $Elfie = 0>>
-    <<set $murderCount = $murderCount +1>>
-<<endif>>
 
 //Snails
 <<if $Brayn == 2 && $Fürchti == 2 && $Emma == 2>>
@@ -148,21 +69,20 @@ position: -90,-128
     <<set $Noah = 0>>
 <<endif>>
 
+//Left
+<<if $Samira == 2 && $Barbara == 2>>
+    <<wait  10>>
+    //LeftKill
+    <<set $Samira = 0>>
+    <<set $murderCount = $murderCount +1>>
+<<endif>>
+
 //Women
 <<if $Renata == 2 && $Barbara == 2>>
     <<wait  60>>
     //WomenKill
     <<set $Renata = 0>>
     <<set $Barbara = 0>>
-<<endif>>
-
-//Left
-<<if $Samira == 2 && $Barbara == 2>>
-    <<wait  10>>
-    //LeftKill
-    <<set $Samira = 0>>
-    <<set $Barbara = 0>>
-    <<set $murderCount = $murderCount +1>>
 <<endif>>
 
 //Cats

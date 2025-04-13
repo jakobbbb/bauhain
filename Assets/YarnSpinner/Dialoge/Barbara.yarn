@@ -101,21 +101,21 @@ position: -3358,-2263
 title: DoBarbara
 position: -2970,-2635
 ---
--> start speaking backwards
-    <<set $backwards = 1>>
--> scream
-    You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
-    <<if $Rentner < 4 && $murder == "no">>
-        <<jump MURDERBarbara>>
-    <<else>>
-        Barbara smileys at you broadly.
-        You don't like it.
-    <<endif>>
--> imitate a seal
-    You take a deep breath and start belting.
--> blankly stare at them
-    ...
--> twerk furiously
+    -> start speaking backwards
+        <<set $backwards = 1>>
+    -> scream
+        You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        <<if $Rentner < 4 && $murder == "no">>
+            <<jump MURDERBarbara>>
+        <<else>>
+            Barbara smileys at you broadly.
+            You don't like it.
+        <<endif>>
+    -> imitate a seal
+        You take a deep breath and start belting.
+    -> blankly stare at them
+        ...
+    -> twerk furiously
 <<jump BasicInteractionBarbara>>
 ===
 

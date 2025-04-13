@@ -79,16 +79,30 @@ position: -3358,-2263
 ---
     <<if $backwards == 0>>
     -> say something in Ye Old English
+        You: Shall I compare thee to a summer's day? Thou art more lovely and more temperate.
+        Defintely not Maragaret Thatcher: Delightful.
     -> tell them about your childhood
+        Defintely not Maragaret Thatcher: A pity, really.
     -> ask their opinion on an obscure animated film
+        Defintely not Maragaret Thatcher snorts more white powder.
     -> explain one of your fan theories
+        You launch into an indepth explanation of Larry Stylinson.
+        Defintely not Maragaret Thatcher: That wouldn't have happened under my watch!
     -> interrogate them about there whereabouts on April 16th 2023
+        Defintely not Maragaret Thatcher does not answer you.
     <<else>>
     -> hsilgnE dlO eY ni gnihtemos yas
+        You: You: .etarepmet erom dna ylevol erom tra uohT ?yad s'remmus a ot eeht erapmoc I llahS
+        Defintely not Maragaret Thatcher: Delightful.
     -> doohdlihc ruoy tuoba meht llet
+        Defintely not Maragaret Thatcher: A pity, really.
     -> mlif detamina erucsbo na no noinipo rieht ksa
+        efintely not Maragaret Thatcher snorts more white powder.
     -> seiroeht naf ruoy fo eno nialpxe
+        You launch into an indepth explanation of Larry Stylinson.
+        Defintely not Maragaret Thatcher: That wouldn't have happened under my watch!
     -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+        Defintely not Maragaret Thatcher does not answer you.
     <<endif>>
 <<jump BasicInteractionMaggie>>
 ===
@@ -101,11 +115,15 @@ position: -2970,-2635
         <<set $backwards = 1>>
     -> scream
         You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        Defintely not Maragaret Thatcher: Understandable.
     -> imitate a seal
         You take a deep breath and start belting.
+        Defintely not Maragaret Thatcher: Understandable.
     -> blankly stare at them
         ...
+        Defintely not Maragaret Thatcher: Understandable.
     -> twerk furiously
+        Defintely not Maragaret Thatcher: Impressive.
 <<jump BasicInteractionMaggie>>
 ===
 
@@ -113,18 +131,20 @@ title: ItemsMaggie
 position: -3006,-2211
 ---
     -> 10€ note <<if $drink == 0 && $note == 2>>
+        Defintely not Maragaret Thatcher rolls up the note and... uses it.
         <<set $note = 0>>
     -> 2€ <<if $drink >1 && $note ==1>>
-        <<set $note = 0>>
+        Defintely not Maragaret Thatcher: I have no use for this.
     -> Banana <<if $banana == 1>>
+        Defintely not Maragaret Thatcher: I have no use for this.
         <<set $banana = 0>>
-    -> Drink <<if $drink == 1>>
-        <<set $drink = 2>>
+        Defintely not Maragaret Thatcher: I have no use for this.
     -> Schirmchen <<if $drink == 2>>
-        <<set $drink = 3>>
+        Defintely not Maragaret Thatcher: I have no use for this.
     -> Snail <<if $snail == 1>>
-        <<set $snail = 2>>
+        Defintely not Maragaret Thatcher: I have no use for this.
     -> white powder <<if $koks == 1>>
+        Defintely not Maragaret Thatcher: Ah, thank you, how thoughtful.
         <<set $koks = 0>>
 <<jump BasicInteractionMaggie>>
 ===

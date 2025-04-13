@@ -84,16 +84,39 @@ position: -3358,-2263
 ---
     <<if $backwards == 0>>
     -> say something in Ye Old English
+        You: Shall I compare thee to a summer's day? Thou art more lovely and more temperate.
+        Barbara: Okay.
     -> tell them about your childhood
+        You: My mother left when I was 3.
+        Barbara: Here, take this.
+        You receive a small plastic bag with white powder.
+        <<set $koks = 1>>
     -> ask their opinion on an obscure animated film
+        Barbara: I do not watch movies.
     -> explain one of your fan theories
+        You: ... and that is why Elvis is definitely alive!
+        Barbara: Here, take this.
+        You receive a small plastic bag with white powder.
+        <<set $koks = 1>>
     -> interrogate them about there whereabouts on April 16th 2023
+        Barbara: What are you? A cop?
     <<else>>
     -> hsilgnE dlO eY ni gnihtemos yas
+        You: .etarepmet erom dna ylevol erom tra uohT ?yad s'remmus a ot eeht erapmoc I llahS
+        Barbara: Okay.
     -> doohdlihc ruoy tuoba meht llet
+        You: .3 saw I nehw tfel rehtom yM
+        Barbara: Here, take this.
+        You receive a small plastic bag with white powder.
+        <<set $koks = 1>>
     -> mlif detamina erucsbo na no noinipo rieht ksa
     -> seiroeht naf ruoy fo eno nialpxe
+        You: !evila yletinifed si sivlE yhw si taht dna ...
+        Barbara: Here, take this.
+        You receive a small plastic bag with white powder.
+        <<set $koks = 1>>
     -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+        Barbara: What are you? A cop?
     <<endif>>
 <<jump BasicInteractionBarbara>>
 ===
@@ -113,9 +136,17 @@ position: -2970,-2635
         <<endif>>
     -> imitate a seal
         You take a deep breath and start belting.
+        Barbara starts singing which somehow sounds worse.
     -> blankly stare at them
         ...
+        ...
+        ...
+        ...
+        Does Barbara never blink??
+        You lose the staring contest.
     -> twerk furiously
+        Barbara joins in.
+        Barbara definitely has more stamina than you.
 <<jump BasicInteractionBarbara>>
 ===
 
@@ -123,18 +154,24 @@ title: ItemsBarbara
 position: -3006,-2211
 ---
     -> 10€ note <<if $drink == 0 && $note == 2>>
+        Barbara: Huh, thanks.
+        Barbara rolls up the note and... uses it.
         <<set $note = 0>>
     -> 2€ <<if $drink >1 && $note ==1>>
-        <<set $note = 0>>
+        Barbara: Nah, thanks, I have no use for this.
     -> Banana <<if $banana == 1>>
+        Barbara: Finally someone who actually has a banana in their pocket!
         <<set $banana = 0>>
     -> Drink <<if $drink == 1>>
+        Barbara: Can't have too much of these!
         <<set $drink = 2>>
     -> Schirmchen <<if $drink == 2>>
+        Barbara: Aww, cute.
+        Barbara puts the Schirmchen in her hair.
         <<set $drink = 3>>
     -> Snail <<if $snail == 1>>
-        <<set $snail = 0>>
+        Barbara: Love her but you can keep her.
     -> white powder <<if $koks == 1>>
-        <<set $koks = 0>>
+        Barbara: I have more than enough of this.
 <<jump BasicInteractionBarbara>>
 ===

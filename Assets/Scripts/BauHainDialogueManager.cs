@@ -25,6 +25,11 @@ public class BauHainDialogueManager : MonoBehaviour {
     void Start() {
         DialogueCanvas.enabled = false;
         m_Runner.CommandNeedsHandling.AddListener(DialogueIsOver);
+        DontDestroyOnLoad(this);
+    }
+
+    // TODO AAAAAAAAA
+    void Start_SampleScene() {
         m_KSAnimTrans = GameObject.Find("KS Animator Transition");
         m_KSAnimTrans.SetActive(false);
     }

@@ -45,8 +45,8 @@ public class BauHainDialogueManager : MonoBehaviour {
         if (cmd[0] == "dialogue_is_over") {
             BauHainDialogueManager b = GameManager.Instance.DiaManager;
             b.DialogueCanvas.enabled = false;
-            b.m_Runner.StopDialogue();
-            b.m_Runner.StartDialogue("EventLoop");
+            //b.m_Runner.StopDialogue();
+            //b.m_Runner.StartDialogue("EventLoop");
         }
     }
 }

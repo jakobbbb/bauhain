@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class CharacterSelection : MonoBehaviour
 {
@@ -33,6 +34,14 @@ public class CharacterSelection : MonoBehaviour
         }
     }
 
+    private IEnumerator WaitForEntryOpeningStartingBeginningToFinish() {
+        var dm = GameManager.Instance.DiaManager;  // TODO TheBeginning
+        while (dm.IsDialogueRunning()) {
+            yield return new WaitForSeconds(0.5f);
+        }
+        animator.SetTrigger("Enter"); // calls StartGame();
+    }
+
     //Start Yarn Spinner Script and Start Game in this function
     public void SetCharacterVariables(bool accept)
     {
@@ -45,10 +54,10 @@ public class CharacterSelection : MonoBehaviour
                 //Activate Yarn Spinner UI Element and Start the Game Text
                 Debug.Log("GameSTARRRRRRT");
                 animator.SetTrigger("Start");
-                StartGame();
+                var dm = GameManager.Instance.DiaManager;  // TODO TheBeginning
+                dm.TalkTo("Beginning", null, "The");
+                StartCoroutine(WaitForEntryOpeningStartingBeginningToFinish());
                 //Set this animation Trigger when Yarn Spinner is finished with intro and the game should start -> Reveals Bauhain Logo
-                //animator.SetTrigger("Enter");
-                
             }
 
             Destroy(CharacterImages[activeCharacter]);
@@ -168,7 +177,6 @@ public class CharacterSelection : MonoBehaviour
             {
                 //Set Maggie Value to 1
                 s.SetValue("$Maggie", 1);
-                SetDJ("Maggie");
             }
         }
         }

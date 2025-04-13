@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: ffbded0ae67a301d995d02a3a98ffeec
+guid: 1560b5c73d75df048b772c5cc21fdf6c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2543564040476722029
-    second: renata sheet_0
+      213: 5897997875551042235
+    second: thatcher sheet_0
   - first:
-      213: -5047985377427253998
-    second: renata sheet_1
+      213: 5538740917457467027
+    second: thatcher sheet_1
   - first:
-      213: -2418733595913228118
-    second: renata sheet_2
+      213: -5760728961017606409
+    second: thatcher sheet_2
   - first:
-      213: 4456796757122623338
-    second: renata sheet_3
+      213: -971921035162447735
+    second: thatcher sheet_3
   - first:
-      213: -7018102872133165933
-    second: renata sheet_4
+      213: -8020491557335830010
+    second: thatcher sheet_4
   - first:
-      213: -5825379696059955721
-    second: renata sheet_5
+      213: -3596811984937776630
+    second: thatcher sheet_5
   - first:
-      213: 8099047017420713869
-    second: renata sheet_6
+      213: -4352318917903399631
+    second: thatcher sheet_6
   - first:
-      213: 8799106379778843201
-    second: renata sheet_7
+      213: 19775930859367971
+    second: thatcher sheet_7
   - first:
-      213: -8781828329000271456
-    second: renata sheet_8
+      213: -2821691554433040460
+    second: thatcher sheet_8
   - first:
-      213: -2568552841282938676
-    second: renata sheet_9
+      213: -2661754328329836895
+    second: thatcher sheet_9
   - first:
-      213: 4751375380278750679
-    second: renata sheet_10
+      213: -6022164319559942221
+    second: thatcher sheet_10
   - first:
-      213: 6610870402298875669
-    second: renata sheet_11
+      213: -1405849643781133701
+    second: thatcher sheet_11
   - first:
-      213: -4525647343129727504
-    second: renata sheet_12
+      213: 5527409881361223004
+    second: thatcher sheet_12
   - first:
-      213: -2680550939990696605
-    second: renata sheet_13
+      213: 5733100101233835908
+    second: thatcher sheet_13
   - first:
-      213: 4540574155561065707
-    second: renata sheet_14
+      213: -4285985998432779430
+    second: thatcher sheet_14
   - first:
-      213: 1084858729919976009
-    second: renata sheet_15
+      213: -809923863000583975
+    second: thatcher sheet_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: renata sheet_0
+      name: thatcher sheet_0
       rect:
         serializedVersion: 2
         x: 5
         y: 125
         width: 31
-        height: 40
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d638218b40e8c4320800000000000000
-      internalID: 2543564040476722029
+      spriteID: bba7a32a1d5e9d150800000000000000
+      internalID: 5897997875551042235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: renata sheet_1
+      name: thatcher sheet_1
       rect:
         serializedVersion: 2
         x: 46
         y: 125
         width: 32
-        height: 40
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 215151b6b04f1f9b0800000000000000
-      internalID: -5047985377427253998
+      spriteID: 39639f7d48f8ddc40800000000000000
+      internalID: 5538740917457467027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: renata sheet_2
+      name: thatcher sheet_2
       rect:
         serializedVersion: 2
         x: 89
         y: 125
         width: 31
-        height: 40
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa0f9490c9eee6ed0800000000000000
-      internalID: -2418733595913228118
+      spriteID: 7fe8d371887cd00b0800000000000000
+      internalID: -5760728961017606409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: renata sheet_3
+      name: thatcher sheet_3
       rect:
         serializedVersion: 2
-        x: 132
+        x: 131
         y: 125
         width: 31
-        height: 40
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,41 +226,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6728689909b9dd30800000000000000
-      internalID: 4456796757122623338
+      spriteID: 980996dc7fa0382f0800000000000000
+      internalID: -971921035162447735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: renata sheet_4
+      name: thatcher sheet_4
       rect:
         serializedVersion: 2
-        x: 135
+        x: 6
         y: 83
-        width: 24
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39c9a5d0f90ba9e90800000000000000
-      internalID: -7018102872133165933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: renata sheet_5
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 83
-        width: 24
+        width: 31
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -270,19 +248,85 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f5c296d708182fa0800000000000000
-      internalID: -5825379696059955721
+      spriteID: 6027af84c6d71b090800000000000000
+      internalID: -8020491557335830010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: renata sheet_6
+      name: thatcher sheet_5
       rect:
         serializedVersion: 2
-        x: 50
+        x: 48
         y: 83
-        width: 24
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a8ae17e8e851ec0800000000000000
+      internalID: -3596811984937776630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thatcher sheet_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 83
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 135c725f0057993c0800000000000000
+      internalID: -4352318917903399631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thatcher sheet_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 83
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ea9f5ba12464000800000000000000
+      internalID: 19775930859367971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thatcher sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 32
         height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -292,19 +336,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8f6c8c0a58956070800000000000000
-      internalID: 8099047017420713869
+      spriteID: 4bf7c403b7657d8d0800000000000000
+      internalID: -2821691554433040460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: renata sheet_7
+      name: thatcher sheet_9
       rect:
         serializedVersion: 2
-        x: 93
-        y: 83
-        width: 24
+        x: 5
+        y: 41
+        width: 31
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -314,19 +358,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 142679bf1a4bc1a70800000000000000
-      internalID: 8799106379778843201
+      spriteID: 1a6aa8c7a8c8f0bd0800000000000000
+      internalID: -2661754328329836895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: renata sheet_8
+      name: thatcher sheet_10
       rect:
         serializedVersion: 2
-        x: 135
-        y: 41
-        width: 24
+        x: 46
+        y: 0
+        width: 32
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -336,20 +380,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a10a73b9ada02680800000000000000
-      internalID: -8781828329000271456
+      spriteID: 3bff8994579fc6ca0800000000000000
+      internalID: -6022164319559942221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: renata sheet_9
+      name: thatcher sheet_11
       rect:
         serializedVersion: 2
-        x: 9
+        x: 47
         y: 41
-        width: 24
-        height: 39
+        width: 31
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,62 +402,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc89284bccaaa5cd0800000000000000
-      internalID: -2568552841282938676
+      spriteID: b7ae0de823b6d7ce0800000000000000
+      internalID: -1405849643781133701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: renata sheet_10
+      name: thatcher sheet_12
       rect:
         serializedVersion: 2
-        x: 52
+        x: 89
         y: 41
-        width: 24
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7dd2d080cb640f140800000000000000
-      internalID: 4751375380278750679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: renata sheet_11
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 41
-        width: 24
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 51f0b21ea978ebb50800000000000000
-      internalID: 6610870402298875669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: renata sheet_12
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 0
         width: 31
         height: 38
       alignment: 0
@@ -424,42 +424,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0fdef0628bba131c0800000000000000
-      internalID: -4525647343129727504
+      spriteID: c5d058a600e45bc40800000000000000
+      internalID: 5527409881361223004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: renata sheet_13
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 0
-        width: 32
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 36dd38b4f15cccad0800000000000000
-      internalID: -2680550939990696605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: renata sheet_14
+      name: thatcher sheet_13
       rect:
         serializedVersion: 2
         x: 89
         y: 0
         width: 31
-        height: 38
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,20 +446,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bec5982332c530f30800000000000000
-      internalID: 4540574155561065707
+      spriteID: 48f7cc3ba20109f40800000000000000
+      internalID: 5733100101233835908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: renata sheet_15
+      name: thatcher sheet_14
       rect:
         serializedVersion: 2
-        x: 132
-        y: 0
+        x: 131
+        y: 41
         width: 31
-        height: 38
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,8 +468,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9429c5c54413e0f00800000000000000
-      internalID: 1084858729919976009
+      spriteID: a53cd1b417e1584c0800000000000000
+      internalID: -4285985998432779430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thatcher sheet_15
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0fcbaa98292c4f0800000000000000
+      internalID: -809923863000583975
       vertices: []
       indices: 
       edges: []
@@ -509,23 +509,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      renata sheet_0: 2543564040476722029
-      renata sheet_1: -5047985377427253998
-      renata sheet_10: 4751375380278750679
-      renata sheet_11: 6610870402298875669
-      renata sheet_12: -4525647343129727504
-      renata sheet_13: -2680550939990696605
-      renata sheet_14: 4540574155561065707
-      renata sheet_15: 1084858729919976009
-      renata sheet_2: -2418733595913228118
-      renata sheet_3: 4456796757122623338
-      renata sheet_4: -7018102872133165933
-      renata sheet_5: -5825379696059955721
-      renata sheet_6: 8099047017420713869
-      renata sheet_7: 8799106379778843201
-      renata sheet_8: -8781828329000271456
-      renata sheet_9: -2568552841282938676
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

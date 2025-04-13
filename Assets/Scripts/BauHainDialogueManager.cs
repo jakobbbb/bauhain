@@ -7,6 +7,8 @@ public class BauHainDialogueManager : MonoBehaviour {
 
     private InMemoryVariableStorage m_Vars = null;
 
+    public Canvas DialogueCanvas;
+
     public InMemoryVariableStorage Storage() {
         if (m_Vars == null) {
             m_Vars = GetComponent<InMemoryVariableStorage>();
@@ -15,23 +17,23 @@ public class BauHainDialogueManager : MonoBehaviour {
     }
 
     void Start() {
+        DialogueCanvas.enabled = false;
     }
 
     void Update() {
         float clock = -1;
         Storage().TryGetValue<float>("$clock", out clock);
         if (clock >= 10) {
+            DialogueCanvas.enabled = true;
             m_Runner.StopDialogue();
             m_Runner.StartDialogue("TheEnd");
         }
     }
 
     public void TalkTo(string character_name) {
+        DialogueCanvas.enabled = true;
+        Debug.Log("enabled? " + DialogueCanvas.enabled);
         m_Runner.StopDialogue();
         m_Runner.StartDialogue("Intro" + character_name);
-    }
-
-    public void OnDialogueFinished() {
-        m_Runner.StartDialogue("EventLoop");
     }
 }

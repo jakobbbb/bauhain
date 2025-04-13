@@ -53,7 +53,7 @@ public class PlayerController : CharacterController {
 
         UpdateAnimator(delta);
 
-        if (m_SprintAction.WasPerformedThisFrame()) {
+        if (Input.GetKeyDown(KeyCode.E)) {
             var near = GetNearNPC();
             if (near) {
                 GameManager.Instance.DiaManager.TalkTo(near.NPCName());

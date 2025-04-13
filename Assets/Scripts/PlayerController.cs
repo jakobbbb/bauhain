@@ -55,10 +55,20 @@ public class PlayerController : CharacterController {
 
         if (m_SprintAction.WasPerformedThisFrame()) {
             var near = GetNearNPC();
-            Debug.Log("Near" + near);
             if (near) {
                 GameManager.Instance.DiaManager.TalkTo(near.NPCName());
             }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other) {
+        Room r = null;
+        other.TryGetComponent<Room>(out r);
+        if (r) {
+            // TODO!!! fix?
+            var storage = GameManager.Instance.DiaManager.Storage();
+            storage.SetValue("$playerroom", r.RoomId);
+            Debug.Log("Room updated to " + r.RoomId + " (" + r + ")");
         }
     }
 
@@ -66,13 +76,7 @@ public class PlayerController : CharacterController {
         DialogueTrigger d = null;
         other.TryGetComponent<DialogueTrigger>(out d);
         if (d == null) {
-            Room r = null;
-            other.TryGetComponent<Room>(out r);
-            if (r) {
-                var storage = GameManager.Instance.DiaManager.Storage();
-                storage.SetValue("$playerroom", r.RoomId);
-                Debug.Log("Room updated to " + r.RoomId);
-            }
+            return;
         } else {
             m_NearNPC = d;
         }

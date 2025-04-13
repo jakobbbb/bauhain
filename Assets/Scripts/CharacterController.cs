@@ -95,8 +95,4 @@ public abstract class CharacterController : MonoBehaviour {
         // Gizmos.color = Color.blue;
         // Gizmos.DrawSphere(m_Target, 0.15f);
     }
-
-    void OnCollisionEnter2D(Collision2D collision) {
-        Debug.Log(collision);
-    }
 }

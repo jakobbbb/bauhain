@@ -84,6 +84,7 @@ position: -3358,-2263
 ---
     <<if $backwards == 0>>
     -> say something in Ye Old English
+        You: Thou must kill Vampire Potter!
         <<if $vampires < 4 && $murder == "no">>
             <<jump MURDEREnoby>>
         <<else>>
@@ -92,15 +93,35 @@ position: -3358,-2263
             Enoby: Fucking prep.
         <<endif>>
     -> tell them about your childhood
+        Enoby: Did i ask u?
     -> ask their opinion on an obscure animated film
+        Enoby: Do u lik MCR?? Gerard iz sooo hot :3
     -> explain one of your fan theories
+        You try to explain why it is obvious that Frodo does not know Legolas' name.
+        Enoby does only seem interested in whether they are "sensitiv bi guyz" or not.
+        You have no idea.
     -> interrogate them about there whereabouts on April 16th 2023
+        Enoby: I was walking outside Hogwarts. It was snowing and raining so there was no sun, which I was very happy about. A lot of preps stared at me. I put up my middle finger at them.
     <<else>>
     -> hsilgnE dlO eY ni gnihtemos yas
+        !rettoP eripmaV llik tsum uohT
+        <<if $vampires < 4 && $murder == "no">>
+            <<jump MURDEREnoby>>
+        <<else>>
+            Enoby shoots you a look that could kill.
+            And also puts her middle finger up at you.
+            Enoby: Fucking prep.
+        <<endif>>
     -> doohdlihc ruoy tuoba meht llet
+         Enoby: Did i ask u?
     -> mlif detamina erucsbo na no noinipo rieht ksa
+        Enoby: Do u lik MCR?? Gerard iz sooo hot :3
     -> seiroeht naf ruoy fo eno nialpxe
+        You try to explain why it is obvious that Frodo does not know Legolas' name.
+        Enoby does only seem interested in whether they are "sensitiv bi guyz" or not.
+        You have no idea.
     -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+        Enoby: I was walking outside Hogwarts. It was snowing and raining so there was no sun, which I was very happy about. A lot of preps stared at me. I put up my middle finger at them.
     <<endif>>
 <<jump BasicInteractionEnoby>>
 ===
@@ -112,11 +133,15 @@ position: -2970,-2635
         <<set $backwards = 1>>
     -> scream
         You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        Enoby: U sound lik Joel Madden.
     -> imitate a seal
         You take a deep breath and start belting.
+        Enoby: U sound lik that bithcy prep Hilary Duff.
     -> blankly stare at them
         ...
+        Enoby: R u stunned bc I look lik Amy Lee?
     -> twerk furiously
+        Enoby: Prep.
 <<jump BasicInteractionEnoby>>
 ===
 
@@ -124,18 +149,25 @@ title: ItemsEnoby
 position: -3006,-2211
 ---
     -> 10€ note <<if $drink == 0 && $note == 2>>
+        Enoby: Thx xD
         <<set $note = 0>>
     -> 2€ <<if $drink >1 && $note ==1>>
+        Enoby: Thx xD
         <<set $note = 0>>
     -> Banana <<if $banana == 1>>
+        Enoby: Thx xD
         <<set $banana = 0>>
     -> Drink <<if $drink == 1>>
+        Enoby: Thx xD
         <<set $drink = 2>>
     -> Schirmchen <<if $drink == 2>>
+        Enoby: Thx xD
         <<set $drink = 3>>
     -> Snail <<if $snail == 1>>
+        Enoby: Thx xD
         <<set $snail = 0>>
     -> white powder <<if $koks == 1>>
+        Enoby: Thx xD
         <<set $koks = 0>>
 <<jump BasicInteractionEnoby>>
 ===

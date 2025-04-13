@@ -32,16 +32,32 @@ position: -3551,-2488
 ---
     <<if $backwards == 0>>
     -> say something in Ye Old English
+        You: I do wish thou wert a dog, that I might love thee something ...
+        Kids: Ok, rude.
     -> tell them about your childhood
+        They do not care.
+        At all.
     -> ask their opinion on an obscure animated film
+        They were probably not born when that one came out.
     -> explain one of your fan theories
+        You explain why it is obvious that Frodo does not know Legolas' name.
+        Kids: That makes sense.
     -> interrogate them about there whereabouts on April 16th 2023
+        Kids: Uh... work?
     <<else>>
     -> hsilgnE dlO eY ni gnihtemos yas
+        You: ... gnihtemos eeht evol thgim I taht ,god a trew uoht hsiw od I
+        Kids: Ok, rude.
     -> doohdlihc ruoy tuoba meht llet
+        They do not care.
+        At all.
     -> mlif detamina erucsbo na no noinipo rieht ksa
+        They were probably not born when that one came out.
     -> seiroeht naf ruoy fo eno nialpxe
+        You explain why it is obvious that Frodo does not know Legolas' name.
+        Kids: That makes sense.
     -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+        Kids: Uh... work?
     <<endif>>
 <<jump BasicInteractionKids>>
 ===
@@ -52,11 +68,14 @@ position: -2970,-2635
     -> start speaking backwards
         <<set $backwards = 1>>
     -> scream
-        You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        Don't do that.
+        You don't want to scare them.
     -> imitate a seal
         You take a deep breath and start belting.
+        The kids break into applause.
     -> blankly stare at them
-        ...
+        Don't do that.
+        That's weird.
     -> twerk furiously
         No, that's ... how does the youth say... out?
         What is in right now?
@@ -72,17 +91,23 @@ title: ItemsKids
 position: -3006,-2211
 ---
     -> 10€ note <<if $drink == 0 && $note == 2>>
-        <<set $note = 0>>
+        Kids: Uh, thank you.
+        Kids: This will come in handy for... taxes.
     -> 2€ <<if $drink >1 && $note ==1>>
-        <<set $note = 0>>
+        Kids: Uh, thank you.
+        Kids: This will come in handy for... taxes.
     -> Banana <<if $banana == 1>>
+        Kids: Uh, thank you.
+        Kids: Good source of potassium.
         <<set $banana = 0>>
     -> Drink <<if $drink == 1>>
-        <<set $drink = 2>>
+        No.
+        You're not going to do that.
     -> Schirmchen <<if $drink == 2>>
+        Kids: Uh, thank you.
         <<set $drink = 3>>
     -> Snail <<if $snail == 1>>
-        <<set $snail = 0>>
+        Do not give animals to children.
     -> white powder <<if $koks == 1>>
         No.
         You're not going to do that.

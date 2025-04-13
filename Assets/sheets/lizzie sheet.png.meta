@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lizzie sheet_0: 7772051169508461254
+      lizzie sheet_1: 6730241327042869007
+      lizzie sheet_10: -2739656679571254119
+      lizzie sheet_11: 5643251200919298177
+      lizzie sheet_2: 3732751758126289488
+      lizzie sheet_3: -3130712038814524206
+      lizzie sheet_4: 9041013778437989678
+      lizzie sheet_5: -167128026595033796
+      lizzie sheet_6: 8513189919832281719
+      lizzie sheet_7: -701193349616750684
+      lizzie sheet_8: -2007188417506627638
+      lizzie sheet_9: -4500801072575678875
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      random 2 sheet_0: 7628900114004535829
+      random 2 sheet_1: -8904695310840672459
+      random 2 sheet_10: 9148696855856060181
+      random 2 sheet_11: 1574789267392954720
+      random 2 sheet_12: 3811912292004514599
+      random 2 sheet_13: -6413872425093696720
+      random 2 sheet_14: -4640888431950889576
+      random 2 sheet_15: -8119521432414511844
+      random 2 sheet_2: -7900443104958329040
+      random 2 sheet_3: -7224323641566082931
+      random 2 sheet_4: 7327070404644919845
+      random 2 sheet_5: -8946832924694856913
+      random 2 sheet_6: 4427187671947146600
+      random 2 sheet_7: -4842533153099601913
+      random 2 sheet_8: -1475371787063694705
+      random 2 sheet_9: 8504627029141289073
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

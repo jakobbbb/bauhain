@@ -45,12 +45,15 @@ public class BauHainDialogueManager : MonoBehaviour {
         }
     }
 
-    public void TalkTo(string character_name, Sprite sprite) {
+    public void TalkTo(string character_name, Sprite sprite, string prefix = "Intro") {
         DialogueCanvas.enabled = true;
         CharacterSplash.sprite = sprite;
+        var im = CharacterSplash.GetComponent<Image>();
+        im.enabled = (sprite != null);
+
         Debug.Log("enabled? " + DialogueCanvas.enabled);
         m_Runner.StopDialogue();
-        m_Runner.StartDialogue("Intro" + character_name);
+        m_Runner.StartDialogue(prefix + character_name);
     }
 
     public static void DialogueIsOver(string[] cmd) {
@@ -65,12 +68,8 @@ public class BauHainDialogueManager : MonoBehaviour {
             var ks = GameObject.Find(ks_name);
             ks.GetComponent<Image>().enabled = true;
         } else if (cmd[0] == "trigger_as") {
-            string as_name = cmd[1];
-            Debug.Log(as_name);
-            b.m_KSAnimTrans.SetActive(true);
-            var ass = GameObject.Find(as_name);
-            Debug.Log(ass);
-            ass.GetComponent<Image>().enabled = true;
+            var assman = GameObject.FindFirstObjectByType<ActionScreenManager>();
+            assman.ShowScreen(cmd[1]);
         }
     }
     public bool IsDialogueRunning() {

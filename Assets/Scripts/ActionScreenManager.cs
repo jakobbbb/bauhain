@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class ActionScreenManager : MonoBehaviour {
@@ -18,7 +19,7 @@ public class ActionScreenManager : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void ShowScreen(string screen_name) {
+    public void ShowScreen(string screen_name) {
         foreach (var screen in m_Screens) {
             if (screen.name == screen_name) {
                 screen.SetActive(true);
@@ -26,12 +27,19 @@ public class ActionScreenManager : MonoBehaviour {
             }
         }
         m_ActionScreenParent.SetActive(true);
+        StopAllCoroutines();
+        StartCoroutine(HideScreenAfterDelay());
     }
 
-    void HideScreen() {
+    public void HideScreen() {
         foreach (var screen in m_Screens) {
             screen.SetActive(false);
         }
         m_ActionScreenParent.SetActive(false);
+    }
+
+    private IEnumerator HideScreenAfterDelay() {
+        yield return new WaitForSeconds(4.0f);
+        HideScreen();
     }
 }

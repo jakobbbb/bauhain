@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using Yarn;
 
 
@@ -26,6 +27,7 @@ public class CharacterSelection : MonoBehaviour
         animator.SetTrigger("Accept");        
     }
 
+    //Start Yarn Spinner Script and Start Game in this function
     public void SetCharacterVariables(bool accept)
     {
         if (accept)
@@ -36,6 +38,9 @@ public class CharacterSelection : MonoBehaviour
                 //Activate Yarn Spinner UI Element and Start the Game Text
                 Debug.Log("GameSTARRRRRRT");
                 animator.SetTrigger("Start");
+                //Set this animation Trigger when Yarn Spinner is finished with intro and the game should start -> Reveals Bauhain Logo
+                //animator.SetTrigger("Enter");
+                
             }
 
             Destroy(CharacterImages[activeCharacter]);
@@ -236,6 +241,10 @@ public class CharacterSelection : MonoBehaviour
     public void RejectCharacter()
     {        
         animator.SetTrigger("Reject");
+    }
+    public void StartGame()
+    {        
+        SceneManager.LoadScene("SampleScene");
     }
     // Update is called once per frame
     void Update()

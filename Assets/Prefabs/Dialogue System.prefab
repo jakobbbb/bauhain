@@ -1035,6 +1035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Runner: {fileID: 3201071656974259664}
+  DialogueCanvas: {fileID: 3612422127587824572}
 --- !u!1 &5428238804238489676
 GameObject:
   m_ObjectHideFlags: 0

@@ -53,12 +53,21 @@ public class PlayerController : CharacterController {
 
         UpdateAnimator(delta);
 
-        if (m_SprintAction.WasPerformedThisFrame()) {
+        if (Input.GetKeyDown(KeyCode.E)) {
             var near = GetNearNPC();
-            Debug.Log("Near" + near);
             if (near) {
                 GameManager.Instance.DiaManager.TalkTo(near.NPCName());
             }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other) {
+        Room r = null;
+        other.TryGetComponent<Room>(out r);
+        if (r) {
+            // TODO!!! fix?
+            var storage = GameManager.Instance.DiaManager.Storage();
+            storage.SetValue("$playerroom", r.RoomId);
         }
     }
 

@@ -660,6 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rooms: []
+  DJSpot: {fileID: 2052832617}
 --- !u!4 &1636538514
 Transform:
   m_ObjectHideFlags: 0
@@ -1141,6 +1142,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2052832617 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5630118572080745856, guid: 66a654af3b92874c7907659e55299d18, type: 3}
+  m_PrefabInstance: {fileID: 1552161668}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &14631440739281455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1214,6 +1220,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2524995517813476551, guid: 3efc910c4e15ee020a4afdc5ba35ab84, type: 3}
+      propertyPath: IsDJ
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3065951046805694539, guid: 3efc910c4e15ee020a4afdc5ba35ab84, type: 3}
       propertyPath: m_Name
       value: Lux

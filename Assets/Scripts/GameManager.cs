@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour {
 
     private float m_GameTimeMinutes = 0;
 
+    public Transform DJSpot;
+
     void Awake() {
         if (Instance == null) {
             Instance = this;

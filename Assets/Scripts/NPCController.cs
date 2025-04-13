@@ -15,6 +15,10 @@ public class NPCController : CharacterController {
 
     private GameObject m_MoveTarget;
 
+    public bool IsDJ;
+    public AudioClip Soundtrack;
+    public int SoundtrackBPM;
+
     [System.Serializable]
     public class RoomPreferences {
         [Range(0.0f, 1.0f)]
@@ -131,11 +135,13 @@ public class NPCController : CharacterController {
 
     private IEnumerator RandomRoomCoroutine() {
         while (true) {
-            // TODO enable once rooms are set up
             yield return new WaitForSeconds(Random.Range(0.0f, 1.0f));
             var room_idx = ChooseRandomRoom();
             var room = GameManager.Instance.Rooms[room_idx];
             m_MoveTarget.transform.position = room.RandomPositionWithinRoom();
+            if (IsDJ) {
+                m_MoveTarget.transform.position = GameManager.Instance.DJSpot.transform.position;
+            }
             m_StateMachine.SetTrigger("MoveToTarget");
             Debug.Log(name + " moving to " + room.name);
             yield return new WaitForSeconds(Random.Range(4.0f, 14.0f));

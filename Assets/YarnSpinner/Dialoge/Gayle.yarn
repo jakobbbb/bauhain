@@ -84,6 +84,7 @@ position: -3358,-2263
 ---
 <<if $backwards == 0>>
     -> say something in Ye Old English
+        Gayle: Your accent is terrible.
     -> tell them about your childhood
         <<if $vampires < 4 && $murder == "no">>
             <<jump MURDERGayle>>
@@ -92,10 +93,15 @@ position: -3358,-2263
             The selfcontrol needed to not beat the shit out of you seems to be immense.
         <<endif>>
     -> ask their opinion on an obscure animated film
+        Gayle: I simply do not care.
     -> explain one of your fan theories
+        You: ... and that is why Elvis is definitely alive!
+        Gayle: Yeah, no shit, I had dinner with him last week.
     -> interrogate them about there whereabouts on April 16th 2023
+        Gayle: Wouldn't you like to know.
     <<else>>
     -> hsilgnE dlO eY ni gnihtemos yas
+        Gayle: Your accent is terrible.
     -> doohdlihc ruoy tuoba meht llet
         <<if $vampires < 4 && $murder == "no">>
             <<jump MURDERGayle>>
@@ -104,8 +110,12 @@ position: -3358,-2263
             The selfcontrol needed to not beat the shit out of you seems to be immense.
         <<endif>>
     -> mlif detamina erucsbo na no noinipo rieht ksa
+        Gayle: I simply do not care.
     -> seiroeht naf ruoy fo eno nialpxe
+        You: !evila yletinifed si sivlE yhw si taht dna ...
+        Gayle: Yeah, no shit, I had dinner with him last week.
     -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+        Gayle: Wouldn't you like to know.
     <<endif>>
 <<jump BasicInteractionGayle>>
 ===
@@ -117,11 +127,16 @@ position: -2970,-2635
         <<set $backwards = 1>>
     -> scream
         You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        Gayle: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
     -> imitate a seal
         You take a deep breath and start belting.
+        Gayle's eyes go blank for a second.
     -> blankly stare at them
         ...
+        Gayle lightly kicks your shin.
+        Ouch.
     -> twerk furiously
+        Gayle: At least you got the moves.
 <<jump BasicInteractionGayle>>
 ===
 
@@ -129,18 +144,18 @@ title: ItemsGayle
 position: -3006,-2211
 ---
     -> 10€ note <<if $drink == 0 && $note == 2>>
-        <<set $note = 0>>
+        Gayle: I don't need that.
     -> 2€ <<if $drink >1 && $note ==1>>
-        <<set $note = 0>>
+        Gayle: I don't need that.
     -> Banana <<if $banana == 1>>
-        <<set $banana = 0>>
+        Gayle: I don't need that.
     -> Drink <<if $drink == 1>>
-        <<set $drink = 2>>
+        Gayle: I don't need that.
     -> Schirmchen <<if $drink == 2>>
-        <<set $drink = 3>>
+        Gayle: Get that thing away from me!
     -> Snail <<if $snail == 1>>
-        <<set $snail = 0>>
+        Gayle: I don't need that.
     -> white powder <<if $koks == 1>>
-        <<set $koks = 0>>
+        Gayle: I don't need that.
 <<jump BasicInteractionGayle>>
 ===

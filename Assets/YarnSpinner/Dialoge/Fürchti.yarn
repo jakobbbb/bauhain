@@ -84,16 +84,38 @@ position: -3358,-2263
 ---
     <<if $backwards == 0>>
     -> say something in Ye Old English
+        Fürchtegott Wilhelm: No.
     -> tell them about your childhood
+        Fürchtegott Wilhelm: When I was a child I had to walk uphill on my way to school and on the way back!
     -> ask their opinion on an obscure animated film
+        Fürchtegott Wilhelm: I saw the original Metropolis release in cinema.
     -> explain one of your fan theories
+        Fürchtegott Wilhelm seems intrigued by your 15 minute monologue about why Sokka is most definitely an earthbender.
+        Fürchtegott Wilhelm: I would have never thought about it that way!
+        You bond over your mutual love for Avatar The last Airbender
+        and sing a beautiful duet of "Secret Tunnel."
+        Fürchtegott Wilhelm: Here take this.
+        Fürchtegott Wilhelm hands you a snail.
+        <<set $snail = 1>>
     -> interrogate them about there whereabouts on April 16th 2023
+        Fürchtegott Wilhelm: What makes you think I remember that?
     <<else>>
     -> hsilgnE dlO eY ni gnihtemos yas
+        Fürchtegott Wilhelm: No.
     -> doohdlihc ruoy tuoba meht llet
+        Fürchtegott Wilhelm: When I was a child I had to walk uphill on my way to school and on the way back!
     -> mlif detamina erucsbo na no noinipo rieht ksa
+        Fürchtegott Wilhelm: I saw the original Metropolis release in cinema.
     -> seiroeht naf ruoy fo eno nialpxe
+        Fürchtegott Wilhelm seems intrigued by your 15 minute monologue about why Sokka is most definitely an earthbender.
+        Fürchtegott Wilhelm: I would have never thought about it that way!
+        You bond over your mutual love for Avatar The last Airbender
+        and sing a beautiful duet of "Secret Tunnel."
+        Fürchtegott Wilhelm: Here take this.
+        Fürchtegott Wilhelm hands you a snail.
+        <<set $snail = 1>>
     -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+        Fürchtegott Wilhelm: What makes you think I remember that?
     <<endif>>
 <<jump BasicInteractionFürchti>>
 ===
@@ -105,11 +127,20 @@ position: -2970,-2635
         <<set $backwards = 1>>
     -> scream
         You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+        Fürchtegott Wilhelm: Huh?
     -> imitate a seal
         You take a deep breath and start belting.
+        Fürchtegott Wilhelm: Interesting.
     -> blankly stare at them
         ...
+        Fürchtegott Wilhelm stares back.
     -> twerk furiously
+        Fürchtegott Wilhelm joins you.
+        Fürchtegott Wilhelm's moves are stiff but powerful.
+        Fun!
+        Fürchtegott Wilhelm: Here take this.
+        Fürchtegott Wilhelm hands you a snail.
+        <<set $snail = 1>>
 <<jump BasicInteractionFürchti>>
 ===
 
@@ -117,14 +148,17 @@ title: ItemsFürchti
 position: -3006,-2211
 ---
     -> 10€ note <<if $drink == 0 && $note == 2>>
-        <<set $note = 0>>
+        Fürchtegott Wilhelm: Keep that, kid.
     -> 2€ <<if $drink >1 && $note ==1>>
-        <<set $note = 0>>
+        Fürchtegott Wilhelm: Keep that, kid.
     -> Banana <<if $banana == 1>>
+        Fürchtegott Wilhelm: Gimme that, kid.
         <<set $banana = 0>>
     -> Drink <<if $drink == 1>>
+        Fürchtegott Wilhelm: Keep that, kid.
         <<set $drink = 2>>
     -> Schirmchen <<if $drink == 2>>
+        Fürchtegott Wilhelm: Keep that, kid.
         <<set $drink = 3>>
     -> Snail <<if $snail == 1>>
         <<if $Rentner < 4 && $murder == "no">>
@@ -134,8 +168,8 @@ position: -3006,-2211
             It's unnerving.
             Even the snail seems a litte uneasy.
         <<endif>>
-        <<set $snail = 0>>
     -> white powder <<if $koks == 1>>
+        Fürchtegott Wilhelm: Gimme that, kid.
         <<set $koks = 0>>
 <<jump BasicInteractionFürchti>>
 ===

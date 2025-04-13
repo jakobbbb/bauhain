@@ -13,6 +13,8 @@ public class BauHainDialogueManager : MonoBehaviour {
 
     private bool m_TheEnd = false;
 
+    private GameObject m_KSAnimTrans = null;
+
     public InMemoryVariableStorage Storage() {
         if (m_Vars == null) {
             m_Vars = GetComponent<InMemoryVariableStorage>();
@@ -23,6 +25,8 @@ public class BauHainDialogueManager : MonoBehaviour {
     void Start() {
         DialogueCanvas.enabled = false;
         m_Runner.CommandNeedsHandling.AddListener(DialogueIsOver);
+        m_KSAnimTrans = GameObject.Find("KS Animator Transition");
+        m_KSAnimTrans.SetActive(false);
     }
 
     void Update() {
@@ -45,13 +49,18 @@ public class BauHainDialogueManager : MonoBehaviour {
     }
 
     public static void DialogueIsOver(string[] cmd) {
+        BauHainDialogueManager b = GameManager.Instance.DiaManager;
         if (cmd[0] == "dialogue_is_over") {
-            BauHainDialogueManager b = GameManager.Instance.DiaManager;
             b.DialogueCanvas.enabled = false;
             //b.m_Runner.StopDialogue();
             //b.m_Runner.StartDialogue("EventLoop");
-        } else {
-            Debug.Log("Got command " + cmd[0]);
+        } else if (cmd[0] == "trigger_ks") {
+            string ks_name = cmd[1];
+            Debug.Log(ks_name);
+            b.m_KSAnimTrans.SetActive(true);
+            var ks = GameObject.Find(ks_name);
+            Debug.Log(ks);
+            ks.GetComponent<Image>().enabled = true;
         }
     }
 }

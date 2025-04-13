@@ -16,7 +16,6 @@ public class DialogueTrigger : MonoBehaviour {
             return;
         }
         foreach (var el in GameObject.FindObjectsOfType<DialogueTrigger>()) {
-            Debug.Log(el);
             el.InteractionIcon.enabled = (this == el);
         }
     }

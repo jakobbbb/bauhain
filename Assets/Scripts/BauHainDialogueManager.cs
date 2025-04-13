@@ -71,6 +71,7 @@ public class BauHainDialogueManager : MonoBehaviour {
             var ks = GameObject.Find(ks_name);
             ks.GetComponent<Image>().enabled = true;
         } else if (cmd[0] == "trigger_as") {
+            Debug.Log("action screen " + cmd[1]);
             var assman = GameObject.FindFirstObjectByType<ActionScreenManager>();
             assman.ShowScreen(cmd[1]);
         }

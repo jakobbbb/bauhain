@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: 5eb28a1b6e3a1a97786b4e58566687e5
+guid: c347c66ab7489574e8b131885ba6e0db
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4440332131094614840
-    second: samira sheet_0
+      213: 2731960588331809501
+    second: barbara sheet_0
   - first:
-      213: -7453376835267401756
-    second: samira sheet_1
+      213: -8089082720329551505
+    second: barbara sheet_1
   - first:
-      213: -926214437448054122
-    second: samira sheet_2
+      213: 2494986259926467605
+    second: barbara sheet_2
   - first:
-      213: -1021171552335672644
-    second: samira sheet_3
+      213: -1658754053918630240
+    second: barbara sheet_3
   - first:
-      213: -7281142475581873262
-    second: samira sheet_4
+      213: 2937027195961593633
+    second: barbara sheet_4
   - first:
-      213: -4705437876975545976
-    second: samira sheet_5
+      213: 2287946556608596770
+    second: barbara sheet_5
   - first:
-      213: -7024901790206916037
-    second: samira sheet_6
+      213: 1986549969377684544
+    second: barbara sheet_6
   - first:
-      213: 485060712571740058
-    second: samira sheet_7
+      213: -8543052227154148000
+    second: barbara sheet_7
   - first:
-      213: 8410162169038714692
-    second: samira sheet_8
+      213: -8901489507300167302
+    second: barbara sheet_8
   - first:
-      213: -3069433976668700982
-    second: samira sheet_9
+      213: 5420362725119483997
+    second: barbara sheet_9
   - first:
-      213: -4267758950732128957
-    second: samira sheet_10
+      213: 3883487435643277809
+    second: barbara sheet_10
   - first:
-      213: -6284892647818857809
-    second: samira sheet_11
+      213: 5006384657840183601
+    second: barbara sheet_11
   - first:
-      213: 3016861978297650129
-    second: samira sheet_12
+      213: -1600259351724607284
+    second: barbara sheet_12
   - first:
-      213: 6464096038767074316
-    second: samira sheet_13
+      213: 1473132310529322410
+    second: barbara sheet_13
   - first:
-      213: -4681263773957684708
-    second: samira sheet_14
+      213: 7354918187597077863
+    second: barbara sheet_14
   - first:
-      213: 9135763120327927327
-    second: samira sheet_15
+      213: -2751330661071207143
+    second: barbara sheet_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: samira sheet_0
+      name: barbara sheet_0
       rect:
         serializedVersion: 2
         x: 5
         y: 125
         width: 31
-        height: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8cc2a51e375c062c0800000000000000
-      internalID: -4440332131094614840
+      spriteID: dda72e73eafd9e520800000000000000
+      internalID: 2731960588331809501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samira sheet_1
+      name: barbara sheet_1
       rect:
         serializedVersion: 2
         x: 46
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e7e2cc0249409890800000000000000
-      internalID: -7453376835267401756
+      spriteID: f61b108af1ecdbf80800000000000000
+      internalID: -8089082720329551505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samira sheet_2
+      name: barbara sheet_2
       rect:
         serializedVersion: 2
         x: 89
         y: 125
         width: 31
-        height: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,19 +204,63 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69a021e50ec6523f0800000000000000
-      internalID: -926214437448054122
+      spriteID: 514c56ec8c8ff9220800000000000000
+      internalID: 2494986259926467605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samira sheet_3
+      name: barbara sheet_3
       rect:
         serializedVersion: 2
         x: 132
         y: 125
         width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aed076f9fbeaf8e0800000000000000
+      internalID: -1658754053918630240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbara sheet_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 83
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fc3f67caa62c820800000000000000
+      internalID: 2937027195961593633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbara sheet_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 83
+        width: 24
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -226,41 +270,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cba4c4032e114d1f0800000000000000
-      internalID: -1021171552335672644
+      spriteID: 22bcbbb654b60cf10800000000000000
+      internalID: 2287946556608596770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samira sheet_4
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 83
-        width: 24
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2932fefde7f24fa90800000000000000
-      internalID: -7281142475581873262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samira sheet_5
+      name: barbara sheet_6
       rect:
         serializedVersion: 2
         x: 50
         y: 83
         width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ce1550ca4a19b10800000000000000
+      internalID: 1986549969377684544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbara sheet_7
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 83
+        width: 24
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -270,42 +314,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 881543e6e2de2beb0800000000000000
-      internalID: -4705437876975545976
+      spriteID: 0650ede234bf07980800000000000000
+      internalID: -8543052227154148000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samira sheet_6
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 83
-        width: 24
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b3a06b49a09828e90800000000000000
-      internalID: -7024901790206916037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samira sheet_7
+      name: barbara sheet_8
       rect:
         serializedVersion: 2
         x: 135
-        y: 83
+        y: 41
         width: 24
-        height: 40
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,20 +336,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9f165be5284bb600800000000000000
-      internalID: 485060712571740058
+      spriteID: a71b189847e877480800000000000000
+      internalID: -8901489507300167302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samira sheet_8
+      name: barbara sheet_9
       rect:
         serializedVersion: 2
         x: 9
         y: 41
         width: 24
-        height: 37
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,17 +358,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4473bfc0fe5e6b470800000000000000
-      internalID: 8410162169038714692
+      spriteID: d50e3802e2ff83b40800000000000000
+      internalID: 5420362725119483997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samira sheet_9
+      name: barbara sheet_10
       rect:
         serializedVersion: 2
         x: 52
+        y: 41
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1d5334f3be4e530800000000000000
+      internalID: 3883487435643277809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbara sheet_11
+      rect:
+        serializedVersion: 2
+        x: 93
         y: 41
         width: 24
         height: 39
@@ -358,58 +402,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aceb52f8f0e2765d0800000000000000
-      internalID: -3069433976668700982
+      spriteID: 139978342504a7540800000000000000
+      internalID: 5006384657840183601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samira sheet_10
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 41
-        width: 24
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 34d1e9a88dfd5c4c0800000000000000
-      internalID: -4267758950732128957
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samira sheet_11
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 41
-        width: 24
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fa2fa438f6397c8a0800000000000000
-      internalID: -6284892647818857809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: samira sheet_12
+      name: barbara sheet_12
       rect:
         serializedVersion: 2
         x: 5
@@ -424,14 +424,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1db40d83cfb0ed920800000000000000
-      internalID: 3016861978297650129
+      spriteID: cc835ff199cbac9e0800000000000000
+      internalID: -1600259351724607284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samira sheet_13
+      name: barbara sheet_13
       rect:
         serializedVersion: 2
         x: 46
@@ -446,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0c98b8591515b950800000000000000
-      internalID: 6464096038767074316
+      spriteID: aad204c080e917410800000000000000
+      internalID: 1473132310529322410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samira sheet_14
+      name: barbara sheet_14
       rect:
         serializedVersion: 2
         x: 89
@@ -468,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c120955666fc80fb0800000000000000
-      internalID: -4681263773957684708
+      spriteID: 76d98c3af1be11660800000000000000
+      internalID: 7354918187597077863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samira sheet_15
+      name: barbara sheet_15
       rect:
         serializedVersion: 2
         x: 132
@@ -490,8 +490,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f16a2439720c8ce70800000000000000
-      internalID: 9135763120327927327
+      spriteID: 915c537475f41d9d0800000000000000
+      internalID: -2751330661071207143
       vertices: []
       indices: 
       edges: []
@@ -509,23 +509,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      samira sheet_0: -4440332131094614840
-      samira sheet_1: -7453376835267401756
-      samira sheet_10: -4267758950732128957
-      samira sheet_11: -6284892647818857809
-      samira sheet_12: 3016861978297650129
-      samira sheet_13: 6464096038767074316
-      samira sheet_14: -4681263773957684708
-      samira sheet_15: 9135763120327927327
-      samira sheet_2: -926214437448054122
-      samira sheet_3: -1021171552335672644
-      samira sheet_4: -7281142475581873262
-      samira sheet_5: -4705437876975545976
-      samira sheet_6: -7024901790206916037
-      samira sheet_7: 485060712571740058
-      samira sheet_8: 8410162169038714692
-      samira sheet_9: -3069433976668700982
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

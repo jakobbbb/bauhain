@@ -21,7 +21,7 @@ position: -3211,-2474
     <<if $Cops == 4 && $Mia == 2 && $Emma == 2 && $Noah == 2>>
         <<jump MURDERCops>>
     <<endif>>
-    <<if $Cops < 4 && $murder == "no">>
+    <<if $Cops < 4>>
         <<set $chanceMURDER = 0>>
         <<if $clock == 1>>
             <<set $chanceMURDER = random_range(1, 20)>> //5% 
@@ -113,7 +113,7 @@ position: -2970,-2635
     Mattheo squints, eyes following you bouncing behind.
     Mattheo: Appalling workplace behaviour.
     You: You are not the boss of me!
-    <<if $Cops < 4 && $murder == "no">>
+    <<if $Cops < 4>>
         Mattheo: Actually I am.
         <<jump MURDERMattheo>>
     <<else>>

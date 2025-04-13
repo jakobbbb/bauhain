@@ -1,0 +1,16 @@
+title: Test
+---
+<<if visited("GodIsDead") == false && $playerroom != 1 && $ball = 0>>
+Renata: We should dance.
+Renata seems trustworthy.
+You follow Renata to the dance floor.
+<<elseif visited("GodIsDead") == true && $playerroom != 1>>
+Huh?
+How did you get on the dancefloor?
+<<endif>>
+Is it just you or is that disco ball not properly fixed to the rafters?
+Renata: Don't move, sweetie.
+Renata takes on step to the side.
+The disco ball come crashing down.
+//RenataMurder
+===

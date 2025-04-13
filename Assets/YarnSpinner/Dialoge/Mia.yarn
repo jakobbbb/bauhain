@@ -21,7 +21,7 @@ position: -3211,-2474
     <<if $Cops == 4 && $Emma == 2 && $Mattheo == 2 && $Noah == 2>>
         <<jump MURDERCops>>
     <<endif>>
-    <<if $Cops < 4 && $murder == "no">>
+    <<if $Cops < 4>>
         <<set $chanceMURDER = 0>>
         <<if $clock == 1>>
             <<set $chanceMURDER = random_range(1, 20)>> //5% 
@@ -115,7 +115,7 @@ title: ItemsMia
 position: -3006,-2211
 ---
 -> 10€ note <<if $drink == 0 && $note == 2>>
-    <<if $Cops < 4 && $murder == "no">>
+    <<if $Cops < 4>>
         <<jump MURDERMia>>
     <<else>>
         There is something rattling behind Mias back.

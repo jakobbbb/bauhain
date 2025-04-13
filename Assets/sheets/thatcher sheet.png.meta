@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: c347c66ab7489574e8b131885ba6e0db
+guid: 3518747e033d34f419ecf95ff601ab14
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2731960588331809501
-    second: barbara sheet_0
+      213: 5897997875551042235
+    second: thatcher sheet_0
   - first:
-      213: -8089082720329551505
-    second: barbara sheet_1
+      213: 5538740917457467027
+    second: thatcher sheet_1
   - first:
-      213: 2494986259926467605
-    second: barbara sheet_2
+      213: -5760728961017606409
+    second: thatcher sheet_2
   - first:
-      213: -1658754053918630240
-    second: barbara sheet_3
+      213: -971921035162447735
+    second: thatcher sheet_3
   - first:
-      213: 2937027195961593633
-    second: barbara sheet_4
+      213: -8020491557335830010
+    second: thatcher sheet_4
   - first:
-      213: 2287946556608596770
-    second: barbara sheet_5
+      213: -3596811984937776630
+    second: thatcher sheet_5
   - first:
-      213: 1986549969377684544
-    second: barbara sheet_6
+      213: -4352318917903399631
+    second: thatcher sheet_6
   - first:
-      213: -8543052227154148000
-    second: barbara sheet_7
+      213: 19775930859367971
+    second: thatcher sheet_7
   - first:
-      213: -8901489507300167302
-    second: barbara sheet_8
+      213: -2821691554433040460
+    second: thatcher sheet_8
   - first:
-      213: 5420362725119483997
-    second: barbara sheet_9
+      213: -2661754328329836895
+    second: thatcher sheet_9
   - first:
-      213: 3883487435643277809
-    second: barbara sheet_10
+      213: -6022164319559942221
+    second: thatcher sheet_10
   - first:
-      213: 5006384657840183601
-    second: barbara sheet_11
+      213: -1405849643781133701
+    second: thatcher sheet_11
   - first:
-      213: -1600259351724607284
-    second: barbara sheet_12
+      213: 5527409881361223004
+    second: thatcher sheet_12
   - first:
-      213: 1473132310529322410
-    second: barbara sheet_13
+      213: 5733100101233835908
+    second: thatcher sheet_13
   - first:
-      213: 7354918187597077863
-    second: barbara sheet_14
+      213: -4285985998432779430
+    second: thatcher sheet_14
   - first:
-      213: -2751330661071207143
-    second: barbara sheet_15
+      213: -809923863000583975
+    second: thatcher sheet_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barbara sheet_0
+      name: thatcher sheet_0
       rect:
         serializedVersion: 2
         x: 5
         y: 125
         width: 31
-        height: 40
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dda72e73eafd9e520800000000000000
-      internalID: 2731960588331809501
+      spriteID: bba7a32a1d5e9d150800000000000000
+      internalID: 5897997875551042235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_1
+      name: thatcher sheet_1
       rect:
         serializedVersion: 2
         x: 46
         y: 125
         width: 32
-        height: 40
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f61b108af1ecdbf80800000000000000
-      internalID: -8089082720329551505
+      spriteID: 39639f7d48f8ddc40800000000000000
+      internalID: 5538740917457467027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_2
+      name: thatcher sheet_2
       rect:
         serializedVersion: 2
         x: 89
         y: 125
         width: 31
-        height: 40
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 514c56ec8c8ff9220800000000000000
-      internalID: 2494986259926467605
+      spriteID: 7fe8d371887cd00b0800000000000000
+      internalID: -5760728961017606409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_3
+      name: thatcher sheet_3
       rect:
         serializedVersion: 2
-        x: 132
+        x: 131
         y: 125
         width: 31
-        height: 40
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,41 +226,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0aed076f9fbeaf8e0800000000000000
-      internalID: -1658754053918630240
+      spriteID: 980996dc7fa0382f0800000000000000
+      internalID: -971921035162447735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_4
+      name: thatcher sheet_4
       rect:
         serializedVersion: 2
-        x: 135
+        x: 6
         y: 83
-        width: 24
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 12fc3f67caa62c820800000000000000
-      internalID: 2937027195961593633
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barbara sheet_5
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 83
-        width: 24
+        width: 31
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -270,19 +248,85 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22bcbbb654b60cf10800000000000000
-      internalID: 2287946556608596770
+      spriteID: 6027af84c6d71b090800000000000000
+      internalID: -8020491557335830010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_6
+      name: thatcher sheet_5
       rect:
         serializedVersion: 2
-        x: 50
+        x: 48
         y: 83
-        width: 24
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a8ae17e8e851ec0800000000000000
+      internalID: -3596811984937776630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thatcher sheet_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 83
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 135c725f0057993c0800000000000000
+      internalID: -4352318917903399631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thatcher sheet_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 83
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ea9f5ba12464000800000000000000
+      internalID: 19775930859367971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thatcher sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 32
         height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -292,19 +336,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04ce1550ca4a19b10800000000000000
-      internalID: 1986549969377684544
+      spriteID: 4bf7c403b7657d8d0800000000000000
+      internalID: -2821691554433040460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_7
+      name: thatcher sheet_9
       rect:
         serializedVersion: 2
-        x: 93
-        y: 83
-        width: 24
+        x: 5
+        y: 41
+        width: 31
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -314,19 +358,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0650ede234bf07980800000000000000
-      internalID: -8543052227154148000
+      spriteID: 1a6aa8c7a8c8f0bd0800000000000000
+      internalID: -2661754328329836895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_8
+      name: thatcher sheet_10
       rect:
         serializedVersion: 2
-        x: 135
-        y: 41
-        width: 24
+        x: 46
+        y: 0
+        width: 32
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -336,20 +380,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a71b189847e877480800000000000000
-      internalID: -8901489507300167302
+      spriteID: 3bff8994579fc6ca0800000000000000
+      internalID: -6022164319559942221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_9
+      name: thatcher sheet_11
       rect:
         serializedVersion: 2
-        x: 9
+        x: 47
         y: 41
-        width: 24
-        height: 39
+        width: 31
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,62 +402,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d50e3802e2ff83b40800000000000000
-      internalID: 5420362725119483997
+      spriteID: b7ae0de823b6d7ce0800000000000000
+      internalID: -1405849643781133701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_10
+      name: thatcher sheet_12
       rect:
         serializedVersion: 2
-        x: 52
+        x: 89
         y: 41
-        width: 24
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f1d5334f3be4e530800000000000000
-      internalID: 3883487435643277809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barbara sheet_11
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 41
-        width: 24
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 139978342504a7540800000000000000
-      internalID: 5006384657840183601
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barbara sheet_12
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 0
         width: 31
         height: 38
       alignment: 0
@@ -424,42 +424,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc835ff199cbac9e0800000000000000
-      internalID: -1600259351724607284
+      spriteID: c5d058a600e45bc40800000000000000
+      internalID: 5527409881361223004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_13
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 0
-        width: 32
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aad204c080e917410800000000000000
-      internalID: 1473132310529322410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barbara sheet_14
+      name: thatcher sheet_13
       rect:
         serializedVersion: 2
         x: 89
         y: 0
         width: 31
-        height: 38
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,20 +446,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76d98c3af1be11660800000000000000
-      internalID: 7354918187597077863
+      spriteID: 48f7cc3ba20109f40800000000000000
+      internalID: 5733100101233835908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_15
+      name: thatcher sheet_14
       rect:
         serializedVersion: 2
-        x: 132
-        y: 0
+        x: 131
+        y: 41
         width: 31
-        height: 38
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,8 +468,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 915c537475f41d9d0800000000000000
-      internalID: -2751330661071207143
+      spriteID: a53cd1b417e1584c0800000000000000
+      internalID: -4285985998432779430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thatcher sheet_15
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0fcbaa98292c4f0800000000000000
+      internalID: -809923863000583975
       vertices: []
       indices: 
       edges: []
@@ -509,23 +509,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      barbara sheet_0: 2731960588331809501
-      barbara sheet_1: -8089082720329551505
-      barbara sheet_10: 3883487435643277809
-      barbara sheet_11: 5006384657840183601
-      barbara sheet_12: -1600259351724607284
-      barbara sheet_13: 1473132310529322410
-      barbara sheet_14: 7354918187597077863
-      barbara sheet_15: -2751330661071207143
-      barbara sheet_2: 2494986259926467605
-      barbara sheet_3: -1658754053918630240
-      barbara sheet_4: 2937027195961593633
-      barbara sheet_5: 2287946556608596770
-      barbara sheet_6: 1986549969377684544
-      barbara sheet_7: -8543052227154148000
-      barbara sheet_8: -8901489507300167302
-      barbara sheet_9: 5420362725119483997
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

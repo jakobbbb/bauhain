@@ -71,7 +71,7 @@ PrefabInstance:
     - target: {fileID: 7742389923477699528, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: Soundtrack
       value: 
-      objectReference: {fileID: 8300000, guid: dc5e7f4e734b28e7e93739b7d31fc440, type: 3}
+      objectReference: {fileID: 8300000, guid: fc7045659cca1505f999d6107fe2978c, type: 3}
     - target: {fileID: 7742389923477699528, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: SoundtrackBPM
       value: 130

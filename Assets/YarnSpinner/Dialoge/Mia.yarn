@@ -82,67 +82,67 @@ position: -3211,-2474
 title: SayMia
 position: -3358,-2263
 ---
-<<if $backwards == 0>>
--> say something in Ye Old English
--> tell them about your childhood
--> ask their opinion on an obscure animated film
--> explain one of your fan theories
--> interrogate them about there whereabouts on April 16th 2023
-<<else>>
--> hsilgnE dlO eY ni gnihtemos yas
--> doohdlihc ruoy tuoba meht llet
--> mlif detamina erucsbo na no noinipo rieht ksa
--> seiroeht naf ruoy fo eno nialpxe
--> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
-<<endif>>
+    <<if $backwards == 0>>
+    -> say something in Ye Old English
+    -> tell them about your childhood
+    -> ask their opinion on an obscure animated film
+    -> explain one of your fan theories
+    -> interrogate them about there whereabouts on April 16th 2023
+    <<else>>
+    -> hsilgnE dlO eY ni gnihtemos yas
+    -> doohdlihc ruoy tuoba meht llet
+    -> mlif detamina erucsbo na no noinipo rieht ksa
+    -> seiroeht naf ruoy fo eno nialpxe
+    -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
+    <<endif>>
 <<jump BasicInteractionMia>>
 ===
 
 title: DoMia
 position: -2970,-2635
 ---
--> start speaking backwards
-    <<set $backwards = 1>>
--> scream
-    You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
--> imitate a seal
-    You take a deep breath and start belting.
--> blankly stare at them
-    ...
--> twerk furiously
+    -> start speaking backwards
+        <<set $backwards = 1>>
+    -> scream
+        You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+    -> imitate a seal
+        You take a deep breath and start belting.
+    -> blankly stare at them
+        ...
+    -> twerk furiously
 <<jump BasicInteractionMia>>
 ===
 
 title: ItemsMia
 position: -3006,-2211
 ---
--> 10€ note <<if $drink == 0 && $note == 2>>
-    <<if $Cops < 4>>
-        <<jump MURDERMia>>
-    <<else>>
-        There is something rattling behind Mias back.
-        You: Are those... 
-        You: handcuffs?
-        Mia: ...no?
-        You: ...
-        Mia: ...maybe?
-        You: ...
-        You: Well, the sex dungeon is closed for renovations at the moment.
-        You: You should try again in a few months.
-        Mia puts the handcuffs away but you cannot shake the feeling that she would really like to use them.
-    <<endif>>
-    <<set $note = 0>>
--> 2€ <<if $drink >1 && $note ==1>>
-    <<set $note = 0>>
--> Banana <<if $banana == 1>>
-    <<set $banana = 0>>
--> Drink <<if $drink == 1>>
-    <<set $drink = 2>>
--> Schirmchen <<if $drink == 2>>
-    <<set $drink = 3>>
--> Snail <<if $snail == 1>>
-    <<set $snail = 0>>
--> white powder <<if $koks == 1>>
-    <<set $koks = 0>>
+    -> 10€ note <<if $drink == 0 && $note == 2>>
+        <<if $Cops < 4>>
+            <<jump MURDERMia>>
+        <<else>>
+            There is something rattling behind Mias back.
+            You: Are those... 
+            You: handcuffs?
+            Mia: ...no?
+            You: ...
+            Mia: ...maybe?
+            You: ...
+            You: Well, the sex dungeon is closed for renovations at the moment.
+            You: You should try again in a few months.
+            Mia puts the handcuffs away but you cannot shake the feeling that she would really like to use them.
+        <<endif>>
+        <<set $note = 0>>
+    -> 2€ <<if $drink >1 && $note ==1>>
+        <<set $note = 0>>
+    -> Banana <<if $banana == 1>>
+        <<set $banana = 0>>
+    -> Drink <<if $drink == 1>>
+        <<set $drink = 2>>
+    -> Schirmchen <<if $drink == 2>>
+        <<set $drink = 3>>
+    -> Snail <<if $snail == 1>>
+        <<set $snail = 0>>
+    -> white powder <<if $koks == 1>>
+        <<set $koks = 0>>
 <<jump BasicInteractionMia>>
 ===

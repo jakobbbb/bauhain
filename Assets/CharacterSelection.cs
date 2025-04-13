@@ -177,7 +177,6 @@ public class CharacterSelection : MonoBehaviour
             {
                 //Set Maggie Value to 1
                 s.SetValue("$Maggie", 1);
-                SetDJ("Maggie");
             }
         }
         }

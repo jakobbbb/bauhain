@@ -103,6 +103,12 @@ public class NPCController : CharacterController {
         m_DiaTrigger.transform.SetParent(null);
         m_DiaTrigger.name = name + "Trigger";
         m_DiaTrigger.SetNPCName(name);
+
+        if (IsDJ) {
+            GameManager.Instance.Lights.BPM = SoundtrackBPM;
+            GameManager.Instance.PA.clip = Soundtrack;
+            GameManager.Instance.PA.Play();
+        }
     }
 
     void Update() {

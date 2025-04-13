@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &199182954 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1159516516558136509, guid: a0e038c253f68823da18d1728cdbc5d6, type: 3}
+  m_PrefabInstance: {fileID: 1305261931}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8961dc6e537ad14c9593cfa51ae1b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &238215974 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8219407340154082439, guid: ded1f067fb19d19528b7b9076db7ebd7, type: 3}
@@ -1074,6 +1085,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2524995517813476551, guid: c0fd2ba6461a4bb149cf6398b9c368ed, type: 3}
+      propertyPath: IsDJ
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3065951046805694539, guid: c0fd2ba6461a4bb149cf6398b9c368ed, type: 3}
       propertyPath: m_Name
       value: Yves
@@ -1322,7 +1337,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2524995517813476551, guid: 3efc910c4e15ee020a4afdc5ba35ab84, type: 3}
       propertyPath: IsDJ
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3065951046805694539, guid: 3efc910c4e15ee020a4afdc5ba35ab84, type: 3}
       propertyPath: m_Name
@@ -1401,6 +1416,10 @@ PrefabInstance:
       propertyPath: DJSpot
       value: 
       objectReference: {fileID: 2052832617}
+    - target: {fileID: 2047672728861489954, guid: a840a10ed13eb47738034edcc8b2cfca, type: 3}
+      propertyPath: Lights
+      value: 
+      objectReference: {fileID: 199182954}
     - target: {fileID: 2047672728861489954, guid: a840a10ed13eb47738034edcc8b2cfca, type: 3}
       propertyPath: DiaManager
       value: 

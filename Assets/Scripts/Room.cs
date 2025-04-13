@@ -31,7 +31,6 @@ public class Room : MonoBehaviour {
         if (n > 100) {
             Debug.LogWarning("Did not find a point :c");
         }
-        Debug.Log("got " + p);
         return p;
     }
 }

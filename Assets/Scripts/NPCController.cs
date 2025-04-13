@@ -15,6 +15,9 @@ public class NPCController : CharacterController {
 
     private GameObject m_MoveTarget;
 
+    [SerializeField]
+    private DialogueTrigger m_DiaTrigger;
+
     public bool IsDJ;
     public AudioClip Soundtrack;
     public int SoundtrackBPM;
@@ -96,6 +99,10 @@ public class NPCController : CharacterController {
         StartCoroutine(RandomRoomCoroutine());
         m_MoveTarget = new GameObject(name + "Target");
         m_DestSetter.target = m_MoveTarget.transform;
+
+        m_DiaTrigger.transform.SetParent(null);
+        m_DiaTrigger.name = name + "Trigger";
+        m_DiaTrigger.SetNPCName(name);
     }
 
     void Update() {
@@ -105,6 +112,7 @@ public class NPCController : CharacterController {
         } else if (state.IsName("Idle")) {
             Idle();
         }
+        m_DiaTrigger.transform.position = transform.position;
     }
 
     void Idle() {
@@ -143,8 +151,12 @@ public class NPCController : CharacterController {
                 m_MoveTarget.transform.position = GameManager.Instance.DJSpot.transform.position;
             }
             m_StateMachine.SetTrigger("MoveToTarget");
-            Debug.Log(name + " moving to " + room.name);
+            // Debug.Log(name + " moving to " + room.name);
             yield return new WaitForSeconds(Random.Range(4.0f, 14.0f));
         }
+    }
+
+    private void StartDialogue() {
+        GameManager.Instance.DiaManager.TalkTo(name);
     }
 }

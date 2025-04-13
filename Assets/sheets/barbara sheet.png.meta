@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c347c66ab7489574e8b131885ba6e0db
+=======
+guid: cc328289e44be0407b81b03b651a1397
+>>>>>>> 16f4dfb (Event loop, perchance)
 TextureImporter:
   internalIDToNameTable:
   - first:

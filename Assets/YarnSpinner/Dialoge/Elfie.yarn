@@ -75,6 +75,7 @@ position: -4011,-2877
             <<endif>>
         <<endif>>
     <<endif>>
+<<dialogue_is_over>>
 ===
 
 title: SayElfie

@@ -161,8 +161,4 @@ public class NPCController : CharacterController {
             yield return new WaitForSeconds(Random.Range(4.0f, 14.0f));
         }
     }
-
-    private void StartDialogue() {
-        GameManager.Instance.DiaManager.TalkTo(name);
-    }
 }

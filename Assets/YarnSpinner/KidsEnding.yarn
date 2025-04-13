@@ -1,6 +1,8 @@
 title: KidsEnding
+position: -45,-132
 ---
 Inspector:
 Kids: Dürfen wir Ihnen unsere Karte geben?
 <<set $kids = 0>>
+<<jump EventLoop>>
 ===

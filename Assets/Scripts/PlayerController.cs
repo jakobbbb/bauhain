@@ -31,7 +31,7 @@ public class PlayerController : CharacterController {
         m_RepeatTimer += Time.deltaTime;
         m_IdleTimer += Time.deltaTime;
 
-        if (MovementBlocked()) {
+        if (GameManager.Instance.DiaManager.IsDialogueRunning() || MovementBlocked()) {
             return;
         }
 

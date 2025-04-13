@@ -403,6 +403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a5fc6e5d50939f99a0e70537f88875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Splash: {fileID: 0}
+  InteractionIcon: {fileID: 685318099334287965}
 --- !u!1001 &3519327992975165446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -417,6 +419,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2661999258350789436, guid: 470394f1f0e1fb74982c9c5967e32aca, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131374293691456091, guid: 470394f1f0e1fb74982c9c5967e32aca, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8066096009782982658, guid: 470394f1f0e1fb74982c9c5967e32aca, type: 3}
@@ -464,6 +470,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 470394f1f0e1fb74982c9c5967e32aca, type: 3}
+--- !u!212 &685318099334287965 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4131374293691456091, guid: 470394f1f0e1fb74982c9c5967e32aca, type: 3}
+  m_PrefabInstance: {fileID: 3519327992975165446}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6856639982506930180 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8066096009782982658, guid: 470394f1f0e1fb74982c9c5967e32aca, type: 3}

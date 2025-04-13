@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      def_not_maggie_0: 3326937192228156343
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

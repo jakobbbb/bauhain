@@ -82,81 +82,81 @@ position: -3257,-2571
 title: SayRenata
 position: -3688,-2390
 ---
-<<if $backwards == 0>>
--> say something in Ye Old English
--> tell them about your childhood
--> ask their opinion on an obscure animated film
--> explain one of your fan theories
-    <<if $Polikül < 4 && $murder == "no">>
-        Renata nods along enthusiastically as you explain why JarJar Binks is most definitely a Sith Lord.
-        About twenty minutes later finish your monologue on the dance floor.
-        Right under the big disco ball.
-         <<set $ball = 1>>
-        <<jump MURDERRenata>>
+    <<if $backwards == 0>>
+    -> say something in Ye Old English
+    -> tell them about your childhood
+    -> ask their opinion on an obscure animated film
+    -> explain one of your fan theories
+        <<if $Polikül < 4 && $murder == "no">>
+            Renata nods along enthusiastically as you explain why JarJar Binks is most definitely a Sith Lord.
+            About twenty minutes later finish your monologue on the dance floor.
+            Right under the big disco ball.
+            <<set $ball = 1>>
+            <<jump MURDERRenata>>
+        <<else>>
+            Renata nods along mentally obviously somewhere else
+            and occaisonally glancing at the disco ball above your heads.
+            The way it is fixed on the rafters does not look very secure.
+            You take a few steps to the side.
+            Renata looks slightly disappointed.
+            Nonetheless you finish explaining why JarJar Binks is most definitely a Sith Lord.
+        <<endif>>
+    -> interrogate them about there whereabouts on April 16th 2023
     <<else>>
-        Renata nods along mentally obviously somewhere else
-        and occaisonally glancing at the disco ball above your heads.
-        The way it is fixed on the rafters does not look very secure.
-        You take a few steps to the side.
-        Renata looks slightly disappointed.
-        Nonetheless you finish explaining why JarJar Binks is most definitely a Sith Lord.
+    -> hsilgnE dlO eY ni gnihtemos yas
+    -> doohdlihc ruoy tuoba meht llet
+    -> mlif detamina erucsbo na no noinipo rieht ksa
+    -> seiroeht naf ruoy fo eno nialpxe
+        <<if $Polikül < 4 && $murder == "no">>
+            Renata nods along enthusiastically as you explain why JarJar Binks is most definitely a Sith Lord.
+            About twenty minutes later finish your monologue on the dance floor.
+            Right under the big disco ball.
+            <<set $ball = 1>>
+            <<jump MURDERRenata>>
+        <<else>>
+            Renata nods along mentally obviously somewhere else
+            and occaisonally glancing at the disco ball above your heads.
+            The way it is fixed on the rafters does not look very secure.
+            You take a few steps to the side.
+            Renata looks slightly disappointed.
+            Nonetheless you finish explaining why JarJar Binks is most definitely a Sith Lord.
+        <<endif>>
+    -> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
     <<endif>>
--> interrogate them about there whereabouts on April 16th 2023
-<<else>>
--> hsilgnE dlO eY ni gnihtemos yas
--> doohdlihc ruoy tuoba meht llet
--> mlif detamina erucsbo na no noinipo rieht ksa
--> seiroeht naf ruoy fo eno nialpxe
-    <<if $Polikül < 4 && $murder == "no">>
-        Renata nods along enthusiastically as you explain why JarJar Binks is most definitely a Sith Lord.
-        About twenty minutes later finish your monologue on the dance floor.
-        Right under the big disco ball.
-        <<set $ball = 1>>
-        <<jump MURDERRenata>>
-    <<else>>
-        Renata nods along mentally obviously somewhere else
-        and occaisonally glancing at the disco ball above your heads.
-        The way it is fixed on the rafters does not look very secure.
-        You take a few steps to the side.
-        Renata looks slightly disappointed.
-        Nonetheless you finish explaining why JarJar Binks is most definitely a Sith Lord.
-    <<endif>>
--> 3202 ht61 lirpA no stuobaerehw ereht tuoba meht etagorretni
-<<endif>>
 <<jump BasicInteractionRenata>>
 ===
 
 title: DoRenata
 position: -3163,-2965
 ---
--> start speaking backwards
-    <<set $backwards = 1>>
--> scream
-    You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
--> imitate a seal
-    You take a deep breath and start belting.
--> blankly stare at them
-    ...
--> twerk furiously
+    -> start speaking backwards
+        <<set $backwards = 1>>
+    -> scream
+        You: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+    -> imitate a seal
+        You take a deep breath and start belting.
+    -> blankly stare at them
+        ...
+    -> twerk furiously
 <<jump BasicInteractionRenata>>
 ===
 
 title: ItemsRenata
 position: -3230,-2201
 ---
--> 10€ note <<if $drink == 0 && $note == 2>>
-    <<set $note = 0>>
--> 2€ <<if $drink >1 && $note ==1>>
-    <<set $note = 0>>
--> Banana <<if $banana == 1>>
-    <<set $banana = 0>>
--> Drink <<if $drink == 1>>
-    <<set $drink = 2>>
--> Schirmchen <<if $drink == 2>>
-    <<set $drink = 3>>
--> Snail <<if $snail == 1>>
-    <<set $snail = 0>>
--> white powder <<if $koks == 1>>
-    <<set $koks = 0>>
+    -> 10€ note <<if $drink == 0 && $note == 2>>
+        <<set $note = 0>>
+    -> 2€ <<if $drink >1 && $note ==1>>
+        <<set $note = 0>>
+    -> Banana <<if $banana == 1>>
+        <<set $banana = 0>>
+    -> Drink <<if $drink == 1>>
+        <<set $drink = 2>>
+    -> Schirmchen <<if $drink == 2>>
+        <<set $drink = 3>>
+    -> Snail <<if $snail == 1>>
+        <<set $snail = 0>>
+    -> white powder <<if $koks == 1>>
+        <<set $koks = 0>>
 <<jump BasicInteractionRenata>>
 ===

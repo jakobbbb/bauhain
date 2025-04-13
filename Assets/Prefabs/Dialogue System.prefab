@@ -1103,7 +1103,7 @@ MonoBehaviour:
   useTypewriterEffect: 1
   typewriterEffectSpeed: 120
   continueButton: {fileID: 20236135850932832}
-  holdTime: 1
+  holdTime: 0
 --- !u!114 &4772215693763744191
 MonoBehaviour:
   m_ObjectHideFlags: 0

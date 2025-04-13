@@ -68,6 +68,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7742389923477699528, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
+      propertyPath: Soundtrack
+      value: 
+      objectReference: {fileID: 8300000, guid: cd4bb3a6c445f7ab89fa2019089435a0, type: 3}
+    - target: {fileID: 7742389923477699528, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
+      propertyPath: SoundtrackBPM
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -56,11 +56,19 @@ public class BauHainDialogueManager : MonoBehaviour {
             //b.m_Runner.StartDialogue("EventLoop");
         } else if (cmd[0] == "trigger_ks") {
             string ks_name = cmd[1];
-            Debug.Log(ks_name);
             b.m_KSAnimTrans.SetActive(true);
             var ks = GameObject.Find(ks_name);
-            Debug.Log(ks);
             ks.GetComponent<Image>().enabled = true;
+        } else if (cmd[0] == "trigger_as") {
+            string as_name = cmd[1];
+            Debug.Log(as_name);
+            b.m_KSAnimTrans.SetActive(true);
+            var ass = GameObject.Find(as_name);
+            Debug.Log(ass);
+            ass.GetComponent<Image>().enabled = true;
         }
+    }
+    public bool IsDialogueRunning() {
+        return DialogueCanvas.enabled;
     }
 }

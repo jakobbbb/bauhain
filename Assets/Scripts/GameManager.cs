@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour {
     public Transform DJSpot;
 
     public List<NPCController> NPCPrefabs = new List<NPCController>();
+    public BauHainDialogueManager DiaManager;
+    public PulsateLights Lights;
+    public AudioSource PA;
 
     void Awake() {
         if (Instance == null) {

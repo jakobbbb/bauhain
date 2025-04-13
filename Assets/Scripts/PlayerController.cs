@@ -5,6 +5,7 @@ public class PlayerController : CharacterController {
 
     private InputAction m_MoveAction;
     private InputAction m_SprintAction;
+    private InputAction m_InteractAction;
 
     private const float REPEAT_COOLDOWN_S = 100.0f / 1000.0f;
     private float m_RepeatTimer = REPEAT_COOLDOWN_S;
@@ -13,9 +14,12 @@ public class PlayerController : CharacterController {
     private const float IDLE_COOLDOWN_S = 50.0f / 1000.0f;
     private float m_IdleTimer = IDLE_COOLDOWN_S;
 
+    private DialogueTrigger m_NearNPC;
+
     public void Start() {
         m_MoveAction = InputSystem.actions.FindAction("Move");
         m_SprintAction = InputSystem.actions.FindAction("Sprint");
+        m_InteractAction = InputSystem.actions.FindAction("Interact");
         //m_PositionInternal = transform.position;
     }
 
@@ -49,5 +53,27 @@ public class PlayerController : CharacterController {
 
         UpdateAnimator(delta);
 
+        if (m_SprintAction.WasPerformedThisFrame()) {
+            var near = GetNearNPC();
+            Debug.Log("Near" + near);
+            if (near) {
+                GameManager.Instance.DiaManager.TalkTo(near.NPCName());
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        DialogueTrigger d = null;
+        other.TryGetComponent<DialogueTrigger>(out d);
+        if (d == null) {
+            return;
+        } else {
+            m_NearNPC = d;
+        }
+    }
+
+    private DialogueTrigger GetNearNPC() {
+        var dist = (m_NearNPC.transform.position - transform.position).magnitude;
+        return (dist < 1.5f) ? m_NearNPC : null;
     }
 }

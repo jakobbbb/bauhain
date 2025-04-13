@@ -45,6 +45,7 @@ public class CharacterSelection : MonoBehaviour
                 //Activate Yarn Spinner UI Element and Start the Game Text
                 Debug.Log("GameSTARRRRRRT");
                 animator.SetTrigger("Start");
+                StartGame();
                 //Set this animation Trigger when Yarn Spinner is finished with intro and the game should start -> Reveals Bauhain Logo
                 //animator.SetTrigger("Enter");
                 
@@ -214,8 +215,15 @@ public class CharacterSelection : MonoBehaviour
     {        
         animator.SetTrigger("Reject");
     }
+
+    public static void Loaded(Scene scene, LoadSceneMode mode) {
+        GameManager.Instance.Start_SampleScene();
+        GameManager.Instance.DiaManager.Start_SampleScene();
+    }
+
     public void StartGame()
     {        
+        SceneManager.sceneLoaded += Loaded;
         SceneManager.LoadScene("SampleScene");
     }
     // Update is called once per frame

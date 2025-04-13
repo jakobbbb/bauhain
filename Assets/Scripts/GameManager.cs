@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour {
     }
 
     void Start() {
+    }
+
+    public void Start_SampleScene() {
+        Debug.Log("Hello??");
         var rs = GameObject.FindObjectsByType(typeof(Room), FindObjectsSortMode.None);
         foreach (var el in rs) {
             Rooms.Add(null);
@@ -33,6 +37,8 @@ public class GameManager : MonoBehaviour {
         foreach (var el in rs) {
             Rooms[((Room)el).RoomId] = (Room)el;
         }
+        Lights = FindFirstObjectByType<PulsateLights>();
+        DJSpot = GameObject.Find("DJSpot").transform;
     }
 
     public void AdvanceTime(float minutes) {

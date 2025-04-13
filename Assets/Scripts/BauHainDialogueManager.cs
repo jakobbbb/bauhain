@@ -28,8 +28,8 @@ public class BauHainDialogueManager : MonoBehaviour {
         DontDestroyOnLoad(this);
     }
 
-    // TODO AAAAAAAAA
-    void Start_SampleScene() {
+    // AAAAAAAAA
+    public void Start_SampleScene() {
         m_KSAnimTrans = GameObject.Find("KS Animator Transition");
         m_KSAnimTrans.SetActive(false);
     }

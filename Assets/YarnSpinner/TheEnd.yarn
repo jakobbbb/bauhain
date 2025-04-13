@@ -1,6 +1,10 @@
 title: TheEnd
 ---
-something something Bus
+You: Finally.
+You: Time to catch the bus.
+You: And go home.
+You: ...
+You: I'm so glad nothing really bad happenend to me today.
 <<if $murder == "Diana">>
     <<jump MURDERDiana>>
 <<else>>

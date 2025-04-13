@@ -1,12 +1,43 @@
 title: MURDERBarbara
 ---
-<< if $kids >= 1>>
+<<if visited("GodIsDead") == false && $playerroom != 3>>
+Barbara: Oh child.
+Barbara: Come with me.
+Barbara seems trustworthy.
+You follow Barbara to the Koksraum.
+<<elseif visited("GodIsDead") == true && $playerroom != 3>>
+Wait...
+How did you get into the Koksraum?
+<<endif>>
+Barbara: Looks like you need some... vitamins.
+Barbara grabs your head and shoves your face into a mountain of white powder.
+//BarbaraMurder
+<<if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
 ===
 
 title: MURDERBrayn
 ---
+<<if visited("GodIsDead") == false && $playerroom != 8>>
+Brayn: ...
+Brayn: Can I buy you a drink?
+Brayn seems trustworthy.
+You follow Brayn to the bar.
+<<elseif visited("GodIsDead") == true && $playerroom != 8>>
+Huh?
+How did you get to the bar?
+<<endif>>
+Brayn: Here you go.
+Brayn hands you a drink.
+How nice.
+You take a sip.
+... wait, does that taste like...
+You: Peanuts!
+You try to spit out the drink but it's already to late.
+Your throat is closing up and you forgot your EpiPen at home.
+A really stupid mistake on your part.
+//BraynMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -14,6 +45,12 @@ title: MURDERBrayn
 
 title: MURDERDiana
 ---
+You hear an engine reving.
+Someone is screaming at you.
+Diana: Fuck YOU and your FUCKING club!!!
+Diana: You can shove your FUCKING 2€ coin right UP YOUR ARSE!!!
+Diana: DIE BITCH!!! DIIIIEEEE!!!
+//DianaMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -21,6 +58,18 @@ title: MURDERDiana
 
 title: MURDERElfie
 ---
+<<if visited("GodIsDead") == false && $playerroom != 6>>
+Elfie: I would like to show you something.
+Elfie seems trustworthy.
+You follow Elfie to the top of the stairs.
+<<elseif visited("GodIsDead") == true && $playerroom != 6>>
+Huh?
+How did you get to the top of the stairs?
+<<endif>>
+Elfie grabs your throat with surprising strength.
+Elfie: Hasta la vista baby.
+Elfie throws you down the stairs.
+//ElfieMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -28,6 +77,12 @@ title: MURDERElfie
 
 title: MURDERElim
 ---
+Elim: Never. 
+Elim: Talk. 
+Elim: To. 
+Elim: The. 
+Elim: DJ.
+//ElimMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -35,6 +90,17 @@ title: MURDERElim
 
 title: MURDEREmma
 ---
+<<if visited("GodIsDead") == true>>
+A person appears next to you.
+Emma: Police! Drop your weapon!
+You: What weap...
+<<else>>
+Emma: Police! Drop your weapon!
+You: That's a bana...
+<<endif>>
+But Emma has already doused you in enough pepperspray to kill an adult elephant.
+Which is more than enough to finish you off.
+//EmmaMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -42,6 +108,15 @@ title: MURDEREmma
 
 title: MURDEREnoby
 ---
+<<if visited("GodIsDead") == true>>
+A person appears in front of you.
+<<else>>
+Enoby stares at you with huge eyes.
+Enoby pulls out a gun.
+<<endif>>
+Enoby: YOU MUTHRFUKR!!!
+Enoby shots you a gazillion times.
+//EnobyMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -49,6 +124,17 @@ title: MURDEREnoby
 
 title: MURDERFürchti
 ---
+<<if visited("GodIsDead") == true>>
+A person appears in front of you.
+<<else>>
+Fürchtegott Wilhelm snatches the snail out of you hand.
+You: Hey, that is my snail!
+Fürchtegott Wilhelm: Not anymore.
+<<endif>>
+Fürchtegott Wilhelm pulls a knife out of his pocket.
+Guess who's getting stabbed today?
+It's you!
+//FürchtiMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -56,6 +142,19 @@ title: MURDERFürchti
 
 title: MURDERGayle
 ---
+<<if visited("GodIsDead") == false && $playerroom != 5>>
+Gayle: Okay...
+Gayle: Come with me.
+Gayle seems trustworthy.
+You follow Gayle to the bathroom.
+Gayle: Now stop bothering me.
+<<elseif visited("GodIsDead") == true && $playerroom != 5>>
+Huh?
+How did you get to the bathroom?
+<<endif>>
+Gayle snatches you and drowns you in the toilet.
+What a dignified way to go.
+//GayleMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -63,6 +162,18 @@ title: MURDERGayle
 
 title: MURDERLizzie
 ---
+<<if visited("GodIsDead") == true>>
+Wait, how did you get outside?
+<<else>>
+Lizzie: We should go on a nice brisk walk.
+Lizzie seems trustworthy.
+You follow Lizzie outside.
+...
+<<endif>>
+Are those guns?
+You hear one last thing before the firing squad executes you:
+LONG LIVE THE QUEEN!
+//LizzieMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -70,6 +181,23 @@ title: MURDERLizzie
 
 title: MURDERLux
 ---
+<<if visited("GodIsDead") == false && $playerroom != 7>>
+Lux: I would like to show you something.
+Lux seems trustworthy.
+You follow Lux up to the gallery.
+<<elseif visited("GodIsDead") == true && $playerroom != 7>>
+Huh?
+How did you get up ono the gallery?
+<<endif>>
+Oh, an open window.
+That's not supposed to be like that.
+You are a good employee, even off the clock.
+You go to the window to close it.
+...
+Is that someone purring behind you?
+You feel hands on your back.
+Lux shoves you out of the window.
+//LuxMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -77,6 +205,14 @@ title: MURDERLux
 
 title: MURDERMaggie
 ---
+<<if visited("GodIsDead") == true>>
+Wait, how did you get to the Koksraum?
+<<endif>>
+You turn around to leave the room.
+Big mistake.
+Definitely not Margaret Thatcher stabs you in the back.
+Never turn your back on a Torie.
+//MaggieMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -84,6 +220,12 @@ title: MURDERMaggie
 
 title: MURDERMattheo
 ---
+Mattheo: You will be happy to hear that I have just been hired as your supervisor.
+Mattheo pulls out a piece of paper that informs you, that your contract has been terminated.
+//MattheoMurder
+You: Damn. 
+You: Guess, I'll just continue to chill here until I can catch my bus.
+<<jump TheEnd>>
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -91,6 +233,21 @@ title: MURDERMattheo
 
 title: MURDERMia
 ---
+Mia: Stop! You are under arrest!
+Mia: For trying to bribe an officer!
+You weigh your choices.
+You could comply.
+Or you could run.
+You know the club better than Mia.
+You could hide until your bus arrives.
+Mia: You have the right to remain silent. Anything you say can and will...
+You: Look over there!
+You point behind Mia.
+Mia turns around.
+You run.
+//MurderMia
+That was close.
+<<jump TheEnd>>
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -98,6 +255,18 @@ title: MURDERMia
 
 title: MURDERNoah
 ---
+<<if visited("GodIsDead") == true>>
+A person appears in front of you.
+<<endif>>
+Noahs pupils are tiny.
+Noah starts talking at an alarming speed.
+The sheer power of it.
+You cannot leave.
+So. much. theory. 
+That. makes. no. sense.
+You can feel your brain melting.
+Noah is still talking as you sink to the floor.
+//NoahMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -105,6 +274,19 @@ title: MURDERNoah
 
 title: MURDERRenata
 ---
+<<if visited("GodIsDead") == false && $playerroom != 1 && $ball == 0>>
+Renata: We should dance.
+Renata seems trustworthy.
+You follow Renata to the dance floor.
+<<elseif visited("GodIsDead") == true && $playerroom != 1>>
+Huh?
+How did you get on the dancefloor?
+<<endif>>
+Is it just you or is that disco ball not properly fixed to the rafters?
+Renata: Don't move, sweetie.
+Renata takes on step to the side.
+The disco ball come crashing down.
+//RenataMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -112,6 +294,14 @@ title: MURDERRenata
 
 title: MURDERSamira
 ---
+<<if visited("GodIsDead") == true>>
+A person appears next to you.
+<<else>>
+Samira pulls out hammer and sickle.
+You: Oh no.
+<<endif>>
+Samira: За Сталина!
+//SamiraMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -119,6 +309,11 @@ title: MURDERSamira
 
 title: MURDERYves
 ---
+<<if visited("GodIsDead") == true>>
+A person appears in front of you.
+<<endif>>
+Yves sucker punches you square in the face.
+//YvesMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -126,6 +321,8 @@ title: MURDERYves
 
 title: MURDERVampires
 ---
+What's that?
+//VampireMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -133,6 +330,8 @@ title: MURDERVampires
 
 title: MURDERPolikül
 ---
+What's that?
+//PolikülMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -140,6 +339,8 @@ title: MURDERPolikül
 
 title: MURDERRentner
 ---
+What's that?
+//RentnerMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -147,6 +348,8 @@ title: MURDERRentner
 
 title: MURDERCops
 ---
+What's that?
+//CopMurder
 << if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -154,6 +357,11 @@ title: MURDERCops
 
 title: MURDERAlley
 ---
+What's that?
+???: Well, well, well.
+???: Look who finally got out of the club they wouldn't let us in...
+Ten people emerge from the shadows.
+They pull out their weapons.
 <<if $kids >= 1>>
     <<jump KidsEnding>>
 <<endif>>
@@ -163,7 +371,7 @@ title: MURDERGod
 Lightning strikes you right where you stand.
 ...
 How original.
-    <<if $kids >= 1>>
-        <<jump KidsEnding>>
-    <<endif>>
+<<if $kids >= 1>>
+    <<jump KidsEnding>>
+<<endif>>
 ===

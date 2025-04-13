@@ -94,8 +94,8 @@ position: -3006,-2211
 title: GodIsDead
 ---
 <<declare $randomMURDER = 0>>
-<<set $randomMURDER = random_range(1, 16)>>
-<<if $Barbara == 0 && $Brayn == 0 && $Elfie == 0 && $Emma == 0 && $Enoby == 0 && $Fürchti == 0 && $Gayle == 0 && $Lizzie == 0 && $Lux == 0 && $Maggie == 0 && $Mattheo == 0 && $Mia == 0 && $Noah == 0 && $Renata == 0 && $Samira == 0 && $Yves == 0>>
+<<set $randomMURDER = random_range(1, 15)>>
+<<if $Barbara == 0 && $Brayn == 0 && $Elfie == 0 && $Emma == 0 && $Enoby == 0 && $Fürchti == 0 && $Gayle == 0 && $Lizzie == 0 && $Lux == 0 && $Maggie == 0 && $Noah == 0 && $Renata == 0 && $Samira == 0 && $Yves == 0>>
     <<jump MURDERGod>>
 <<elseif $randomMURDER == 1>>
     <<if $Barbara >= 1>>
@@ -131,35 +131,27 @@ title: GodIsDead
     <<endif>>
 <<elseif $randomMURDER == 9>>
     <<if $Lux >= 1>>
-        <<jump MURDERLizzie>>
+        <<jump MURDERLux>>
     <<endif>>
 <<elseif $randomMURDER == 10>>
     <<if $Maggie >= 1>>
-        <<jump MURDERLizzie>>
+        <<jump MURDERMaggie>>
     <<endif>>
 <<elseif $randomMURDER == 11>>
-    <<if $Mattheo >= 1>>
-        <<jump MURDERLizzie>>
+    <<if $Noah >= 1>>
+        <<jump MURDERNoah>>
     <<endif>>
 <<elseif $randomMURDER == 12>>
-    <<if $Mia >= 1>>
-        <<jump MURDERLizzie>>
+    <<if $Renata >= 1>>
+        <<jump MURDERRenata>>
     <<endif>>
 <<elseif $randomMURDER == 13>>
-    <<if $Noah >= 1>>
-        <<jump MURDERLizzie>>
+    <<if $Samira >= 1>>
+        <<jump MURDERSamira>>
     <<endif>>
 <<elseif $randomMURDER == 14>>
-    <<if $Renata >= 1>>
-        <<jump MURDERLizzie>>
-    <<endif>>
-<<elseif $randomMURDER == 15>>
-    <<if $Samira >= 1>>
-        <<jump MURDERLizzie>>
-    <<endif>>
-<<elseif $randomMURDER == 17>>
     <<if $Yves >= 1>>
-        <<jump MURDERLizzie>>
+        <<jump MURDERYves>>
     <<endif>>
 <<endif>>
 <<jump GodIsDead2>>

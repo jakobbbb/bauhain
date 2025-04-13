@@ -2,7 +2,8 @@ title: IntroBarbara
 position: -3440,-2597
 ---
 <<set $backwards = 0>>
-
+Ah, a person.
+Quick:
 <<jump BasicInteractionBarbara>>
 ===
 title: BasicInteractionBarbara

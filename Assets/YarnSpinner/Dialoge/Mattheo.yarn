@@ -108,14 +108,15 @@ position: -2970,-2635
 -> blankly stare at them
     ...
 -> twerk furiously
+    Mattheo: Don't you like... work here?
+    You: You make it sound like it's a bad thing.
+    Mattheo squints, eyes following you bouncing behind.
+    Mattheo: Appalling workplace behaviour.
+    You: You are not the boss of me!
     <<if $Cops < 4 && $murder == "no">>
+        Mattheo: Actually I am.
         <<jump MURDERMattheo>>
     <<else>>
-        Mattheo: Don't you like... work here?
-        You: You make it sound like it's a bad thing.
-        Mattheo squints, eyes following you bouncing behind.
-        Mattheo: Appalling workplace behaviour.
-        You: You are not the boss of me!
         Mattheo: ...
         Mattheo: Unfortunately.
         You are not sure what that is supposed to mean.

@@ -2,7 +2,7 @@ title: IntroRenata
 position: -3589,-2730
 ---
 <<set $backwards = 0>>
-
+<<declare $ball = 0>>
 <<jump BasicInteractionRenata>>
 ===
 title: BasicInteractionRenata
@@ -86,6 +86,10 @@ position: -3688,-2390
 -> ask their opinion on an obscure animated film
 -> explain one of your fan theories
     <<if $Polikül < 4 && $murder == "no">>
+        Renata nods along enthusiastically as you explain why JarJar Binks is most definitely a Sith Lord.
+        About twenty minutes later finish your monologue on the dance floor.
+        Right under the big disco ball.
+         <<set $ball = 1>>
         <<jump MURDERRenata>>
     <<else>>
         Renata nods along mentally obviously somewhere else
@@ -102,6 +106,10 @@ position: -3688,-2390
 -> mlif detamina erucsbo na no noinipo rieht ksa
 -> seiroeht naf ruoy fo eno nialpxe
     <<if $Polikül < 4 && $murder == "no">>
+        Renata nods along enthusiastically as you explain why JarJar Binks is most definitely a Sith Lord.
+        About twenty minutes later finish your monologue on the dance floor.
+        Right under the big disco ball.
+        <<set $ball = 1>>
         <<jump MURDERRenata>>
     <<else>>
         Renata nods along mentally obviously somewhere else

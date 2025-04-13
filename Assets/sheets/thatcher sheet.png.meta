@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      thatcher sheet_0: 5897997875551042235
+      thatcher sheet_1: 5538740917457467027
+      thatcher sheet_10: -6022164319559942221
+      thatcher sheet_11: -1405849643781133701
+      thatcher sheet_12: 5527409881361223004
+      thatcher sheet_13: 5733100101233835908
+      thatcher sheet_14: -4285985998432779430
+      thatcher sheet_15: -809923863000583975
+      thatcher sheet_2: -5760728961017606409
+      thatcher sheet_3: -971921035162447735
+      thatcher sheet_4: -8020491557335830010
+      thatcher sheet_5: -3596811984937776630
+      thatcher sheet_6: -4352318917903399631
+      thatcher sheet_7: 19775930859367971
+      thatcher sheet_8: -2821691554433040460
+      thatcher sheet_9: -2661754328329836895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

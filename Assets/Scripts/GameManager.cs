@@ -39,6 +39,18 @@ public class GameManager : MonoBehaviour {
         }
         Lights = FindFirstObjectByType<PulsateLights>();
         DJSpot = GameObject.Find("DJSpot").transform;
+
+        var npcs = GameObject.FindObjectsByType(typeof(NPCController), FindObjectsSortMode.None);
+        foreach (var npc in npcs) {
+            float present = -1.0f;
+            DiaManager.Storage().TryGetValue("$" + npc.name, out present);
+            string dj = "";
+            //DiaManager.Storage().TryGetValue("$DJ" + npc.name, out present);
+            if (present < 0.9f) {
+                ((NPCController)npc).transform.position = 10000.0f * new Vector3(1, 1, 1);
+                DestroyImmediate(npc);
+            }
+        }
     }
 
     public void AdvanceTime(float minutes) {

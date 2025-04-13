@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour {
             DiaManager.Storage().TryGetValue("$DJ", out dj);
             if (present < 0.9f) {
                 ((NPCController)npc).transform.position = 10000.0f * new Vector3(1, 1, 1);
-                DestroyImmediate(npc);
+                Destroy(npc);
             } else if (dj == npc.name) {
                 ((NPCController)npc).MakeDJ();
             }

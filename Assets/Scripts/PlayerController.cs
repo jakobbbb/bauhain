@@ -89,6 +89,9 @@ public class PlayerController : CharacterController {
     }
 
     private DialogueTrigger GetNearNPC() {
+        if (m_NearNPC == null) {
+            return null;
+        }
         var dist = (m_NearNPC.transform.position - transform.position).magnitude;
         return (dist < 1.5f) ? m_NearNPC : null;
     }

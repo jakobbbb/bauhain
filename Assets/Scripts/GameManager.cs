@@ -45,10 +45,12 @@ public class GameManager : MonoBehaviour {
             float present = -1.0f;
             DiaManager.Storage().TryGetValue("$" + npc.name, out present);
             string dj = "";
-            //DiaManager.Storage().TryGetValue("$DJ" + npc.name, out present);
+            DiaManager.Storage().TryGetValue("$DJ", out dj);
             if (present < 0.9f) {
                 ((NPCController)npc).transform.position = 10000.0f * new Vector3(1, 1, 1);
                 DestroyImmediate(npc);
+            } else if (dj == npc.name) {
+                ((NPCController)npc).MakeDJ();
             }
         }
     }

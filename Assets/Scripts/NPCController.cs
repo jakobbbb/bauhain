@@ -105,10 +105,15 @@ public class NPCController : CharacterController {
         m_DiaTrigger.SetNPCName(name);
 
         if (IsDJ) {
-            GameManager.Instance.Lights.BPM = SoundtrackBPM;
-            GameManager.Instance.PA.clip = Soundtrack;
-            GameManager.Instance.PA.Play();
+            MakeDJ();
         }
+    }
+
+    public void MakeDJ() {
+        IsDJ = true;
+        GameManager.Instance.Lights.BPM = SoundtrackBPM;
+        GameManager.Instance.PA.clip = Soundtrack;
+        GameManager.Instance.PA.Play();
     }
 
     void Update() {

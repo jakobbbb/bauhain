@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 061bb61260e294d95988f2a282e7d7f5
+guid: 389118ab8e23b3e4ea2ce7fae085ce9e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8673756312040429146
-    second: textbox_0
+      213: -6207193392188836992
+    second: snail_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 42
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: textbox_0
+      name: snail_0
       rect:
         serializedVersion: 2
-        x: 83
-        y: 0
-        width: 1754
-        height: 281
+        x: 0
+        y: 7
+        width: 39
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a92788f690a0a780800000000000000
-      internalID: -8673756312040429146
+      spriteID: 083be663f7e9bd9a0800000000000000
+      internalID: -6207193392188836992
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      textbox_0: -8673756312040429146
+      snail_0: -6207193392188836992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

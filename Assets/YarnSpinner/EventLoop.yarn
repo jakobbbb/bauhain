@@ -5,6 +5,7 @@ position: -90,-128
     <<if $Renata == 2 && $Gayle == 2 && $Elfie == 2>>
         <<wait  20>>
         //ProfKill
+        <<trigger_as "Profkill 1">>
         <<set $Renata = 0>>
         <<set $Gayle = 0>>
         <<set $Elfie = 0>>

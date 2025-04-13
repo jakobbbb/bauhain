@@ -16,11 +16,13 @@ position: -3211,-2474
 -> Items? <<if visited("ItemsDiana") == false>>
     <<jump ItemsDiana>>
 -> Leave. <<if visited("SayDiana") && visited("Do") && visited("ItemsDiana") == true>>
-<<set $Diana = 2>>
+    <<set $Diana = 2>>
     <<set $clock = $clock +1>>
     <<if $Polikül == 4 && $Samira == 2 && $Lux == 2 && $Renata == 2>>
         <<jump MURDERPolikül>>
     <<endif>>
+    <<dialogue_is_over>>
+    <<jump EventLoop>>
 ===
 
 title: SayDiana

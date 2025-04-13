@@ -76,7 +76,8 @@ position: -3211,-2474
             <<endif>>
         <<endif>>
     <<endif>>
-<<dialogue_is_over>>
+    <<dialogue_is_over>>
+    <<jump EventLoop>>
 ===
 title: SayBarbara
 position: -3358,-2263

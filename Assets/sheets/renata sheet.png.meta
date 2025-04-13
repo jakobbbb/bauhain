@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      renata sheet_0: 2543564040476722029
+      renata sheet_1: -5047985377427253998
+      renata sheet_10: 4751375380278750679
+      renata sheet_11: 6610870402298875669
+      renata sheet_12: -4525647343129727504
+      renata sheet_13: -2680550939990696605
+      renata sheet_14: 4540574155561065707
+      renata sheet_15: 1084858729919976009
+      renata sheet_2: -2418733595913228118
+      renata sheet_3: 4456796757122623338
+      renata sheet_4: -7018102872133165933
+      renata sheet_5: -5825379696059955721
+      renata sheet_6: 8099047017420713869
+      renata sheet_7: 8799106379778843201
+      renata sheet_8: -8781828329000271456
+      renata sheet_9: -2568552841282938676
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

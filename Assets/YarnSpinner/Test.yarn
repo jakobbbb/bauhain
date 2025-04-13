@@ -1,11 +1,4 @@
 title: Test
 ---
-//DJ
-<<if $DJ == "Yves" && $Yves == 2 && $Elim >= 1>>
-    <<wait  10>>
-    //DJKill
-    <<set $Yves = 0>>
-    <<set $murderCount = $murderCount +1>>
-    <<set $DJ = "Elim">>
-<<endif>>
+
 ===

@@ -1,5 +1,5 @@
 title: EventLoop
-position: 0,0
+position: -90,-128
 ---
 //Profs
 <<if $Renata == 2 && $Gayle == 2 && $Elfie == 2>>
@@ -326,7 +326,7 @@ position: 0,0
 <<jump EventLoop2>>
 ===
 title: EventLoop2
-position: 119,205
+position: 2,125
 ---
 <<if $murderCount == 1>>
     <<jump KidsEnding>>

@@ -70,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,10 +81,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 42
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -136,10 +136,10 @@ TextureImporter:
       name: lizzie sheet_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 83
-        width: 29
-        height: 43
+        x: 0
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,10 +158,10 @@ TextureImporter:
       name: lizzie sheet_1
       rect:
         serializedVersion: 2
-        x: 5
-        y: 125
-        width: 31
-        height: 43
+        x: 42
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +180,10 @@ TextureImporter:
       name: lizzie sheet_2
       rect:
         serializedVersion: 2
-        x: 46
-        y: 41
-        width: 34
-        height: 125
+        x: 84
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: lizzie sheet_3
       rect:
         serializedVersion: 2
-        x: 88
-        y: 83
-        width: 29
-        height: 43
+        x: 126
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +224,10 @@ TextureImporter:
       name: lizzie sheet_4
       rect:
         serializedVersion: 2
-        x: 89
-        y: 125
-        width: 31
-        height: 41
+        x: 0
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +246,10 @@ TextureImporter:
       name: lizzie sheet_5
       rect:
         serializedVersion: 2
-        x: 132
-        y: 41
-        width: 32
-        height: 125
+        x: 42
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: lizzie sheet_6
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 31
-        height: 41
+        x: 84
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: lizzie sheet_7
       rect:
         serializedVersion: 2
-        x: 9
-        y: 41
-        width: 29
-        height: 43
+        x: 126
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,10 +312,10 @@ TextureImporter:
       name: lizzie sheet_8
       rect:
         serializedVersion: 2
-        x: 46
-        y: 0
-        width: 32
-        height: 41
+        x: 0
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,10 +334,10 @@ TextureImporter:
       name: lizzie sheet_9
       rect:
         serializedVersion: 2
-        x: 88
-        y: 0
-        width: 32
-        height: 41
+        x: 42
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,10 +356,10 @@ TextureImporter:
       name: lizzie sheet_10
       rect:
         serializedVersion: 2
-        x: 93
-        y: 41
-        width: 29
-        height: 43
+        x: 84
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +378,10 @@ TextureImporter:
       name: lizzie sheet_11
       rect:
         serializedVersion: 2
-        x: 132
-        y: 0
-        width: 31
-        height: 41
+        x: 126
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,11 +396,99 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: lizzie sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58ab3a39f87af4c9bde71d6e8633928
+      internalID: -620225328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lizzie sheet_13
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef72d056616a7227e85fd80a75081bbb
+      internalID: -574962191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lizzie sheet_14
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8027f87b9f567d8f8aed93730635db00
+      internalID: -1342138095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lizzie sheet_15
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e7e6cc49235df889372e677f80e2c9
+      internalID: 1232972730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5a1c32ecca8b7d1b2852519a3f8d890f
     internalID: 0
     vertices: []
     indices: 
@@ -414,6 +502,10 @@ TextureImporter:
       lizzie sheet_1: 6730241327042869007
       lizzie sheet_10: -2739656679571254119
       lizzie sheet_11: 5643251200919298177
+      lizzie sheet_12: -620225328
+      lizzie sheet_13: -574962191
+      lizzie sheet_14: -1342138095
+      lizzie sheet_15: 1232972730
       lizzie sheet_2: 3732751758126289488
       lizzie sheet_3: -3130712038814524206
       lizzie sheet_4: 9041013778437989678

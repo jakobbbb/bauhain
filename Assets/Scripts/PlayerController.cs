@@ -53,11 +53,14 @@ public class PlayerController : CharacterController {
 
         UpdateAnimator(delta);
 
-        if (Input.GetKeyDown(KeyCode.E)) {
-            var near = GetNearNPC();
-            if (near) {
+        var near = GetNearNPC();
+        if (near) {
+            if (Input.GetKeyDown(KeyCode.E)) {
                 GameManager.Instance.DiaManager.TalkTo(near.NPCName(), near.Splash);
             }
+            near.EnableInteractionIcon();
+        } else {
+            DialogueTrigger.DisableAllInteractionIcons();
         }
     }
 

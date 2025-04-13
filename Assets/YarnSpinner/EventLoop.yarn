@@ -54,7 +54,6 @@ position: -90,-128
     <<set $Elfie = 0>>
     <<set $murderCount = $murderCount +1>>
 <<endif>>
-
 //Snails
 <<if $Renata == 2 && $Gayle == 2 && $Elfie == 2>>
     <<wait  20>>
@@ -323,12 +322,7 @@ position: -90,-128
     <<set $murderCount = $murderCount +1>>
     <<set $DJ = "Elim">>
 <<endif>>
-<<jump EventLoop2>>
-===
-title: EventLoop2
-position: 2,125
----
-<<if $murderCount == 1>>
+<<if $murderCount == 1 && $kids == 2>>
     <<jump KidsEnding>>
 <<endif>>
 ===

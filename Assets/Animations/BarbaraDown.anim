@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RanataRight
+  m_Name: BarbaraDown
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -7018102872133165933, guid: ffbded0ae67a301d995d02a3a98ffeec, type: 3}
+      value: {fileID: 766988828, guid: c347c66ab7489574e8b131885ba6e0db, type: 3}
     - time: 0.083333336
-      value: {fileID: -5825379696059955721, guid: ffbded0ae67a301d995d02a3a98ffeec, type: 3}
+      value: {fileID: -810359127, guid: c347c66ab7489574e8b131885ba6e0db, type: 3}
     - time: 0.16666667
-      value: {fileID: 8099047017420713869, guid: ffbded0ae67a301d995d02a3a98ffeec, type: 3}
+      value: {fileID: -621215667, guid: c347c66ab7489574e8b131885ba6e0db, type: 3}
     - time: 0.25
-      value: {fileID: 8799106379778843201, guid: ffbded0ae67a301d995d02a3a98ffeec, type: 3}
+      value: {fileID: -1334186733, guid: c347c66ab7489574e8b131885ba6e0db, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,10 +50,10 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -7018102872133165933, guid: ffbded0ae67a301d995d02a3a98ffeec, type: 3}
-    - {fileID: -5825379696059955721, guid: ffbded0ae67a301d995d02a3a98ffeec, type: 3}
-    - {fileID: 8099047017420713869, guid: ffbded0ae67a301d995d02a3a98ffeec, type: 3}
-    - {fileID: 8799106379778843201, guid: ffbded0ae67a301d995d02a3a98ffeec, type: 3}
+    - {fileID: 766988828, guid: c347c66ab7489574e8b131885ba6e0db, type: 3}
+    - {fileID: -810359127, guid: c347c66ab7489574e8b131885ba6e0db, type: 3}
+    - {fileID: -621215667, guid: c347c66ab7489574e8b131885ba6e0db, type: 3}
+    - {fileID: -1334186733, guid: c347c66ab7489574e8b131885ba6e0db, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

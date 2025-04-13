@@ -148,10 +148,10 @@ TextureImporter:
       name: thatcher sheet_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 125
-        width: 31
-        height: 43
+        x: 0
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: thatcher sheet_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 125
-        width: 32
-        height: 43
+        x: 42
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: thatcher sheet_2
       rect:
         serializedVersion: 2
-        x: 89
-        y: 125
-        width: 31
-        height: 43
+        x: 84
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +214,10 @@ TextureImporter:
       name: thatcher sheet_3
       rect:
         serializedVersion: 2
-        x: 131
-        y: 125
-        width: 31
-        height: 43
+        x: 126
+        y: 126
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: thatcher sheet_4
       rect:
         serializedVersion: 2
-        x: 6
-        y: 83
-        width: 31
-        height: 39
+        x: 0
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: thatcher sheet_5
       rect:
         serializedVersion: 2
-        x: 48
-        y: 83
-        width: 31
-        height: 40
+        x: 42
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: thatcher sheet_6
       rect:
         serializedVersion: 2
-        x: 90
-        y: 83
-        width: 31
-        height: 38
+        x: 84
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: thatcher sheet_7
       rect:
         serializedVersion: 2
-        x: 132
-        y: 83
-        width: 31
-        height: 40
+        x: 126
+        y: 84
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,10 +324,10 @@ TextureImporter:
       name: thatcher sheet_8
       rect:
         serializedVersion: 2
-        x: 4
-        y: 0
-        width: 32
-        height: 41
+        x: 0
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,10 +346,10 @@ TextureImporter:
       name: thatcher sheet_9
       rect:
         serializedVersion: 2
-        x: 5
-        y: 41
-        width: 31
-        height: 39
+        x: 42
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,9 +368,9 @@ TextureImporter:
       name: thatcher sheet_10
       rect:
         serializedVersion: 2
-        x: 46
-        y: 0
-        width: 32
+        x: 84
+        y: 42
+        width: 42
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -390,10 +390,10 @@ TextureImporter:
       name: thatcher sheet_11
       rect:
         serializedVersion: 2
-        x: 47
-        y: 41
-        width: 31
-        height: 40
+        x: 126
+        y: 42
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +412,10 @@ TextureImporter:
       name: thatcher sheet_12
       rect:
         serializedVersion: 2
-        x: 89
-        y: 41
-        width: 31
-        height: 38
+        x: 0
+        y: 0
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,9 +434,9 @@ TextureImporter:
       name: thatcher sheet_13
       rect:
         serializedVersion: 2
-        x: 89
+        x: 42
         y: 0
-        width: 31
+        width: 42
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: thatcher sheet_14
       rect:
         serializedVersion: 2
-        x: 131
-        y: 41
-        width: 31
-        height: 40
+        x: 84
+        y: 0
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,9 +478,9 @@ TextureImporter:
       name: thatcher sheet_15
       rect:
         serializedVersion: 2
-        x: 131
+        x: 126
         y: 0
-        width: 31
+        width: 42
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -500,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 42cf90dae855d74c69e30c421f321233
     internalID: 0
     vertices: []
     indices: 

@@ -66,7 +66,11 @@ public class PlayerController : CharacterController {
         DialogueTrigger d = null;
         other.TryGetComponent<DialogueTrigger>(out d);
         if (d == null) {
-            return;
+            Debug.Log(other);
+            Room r = null;
+            other.TryGetComponent<Room>(out r);
+            Debug.Log(r);
+            // TODO Set room variable!!!!!!!!!!!
         } else {
             m_NearNPC = d;
         }

@@ -1,59 +1,55 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: c347c66ab7489574e8b131885ba6e0db
-=======
-guid: cc328289e44be0407b81b03b651a1397
->>>>>>> 16f4dfb (Event loop, perchance)
+guid: ffbded0ae67a301d995d02a3a98ffeec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2731960588331809501
-    second: barbara sheet_0
+      213: 2543564040476722029
+    second: renata sheet_0
   - first:
-      213: -8089082720329551505
-    second: barbara sheet_1
+      213: -5047985377427253998
+    second: renata sheet_1
   - first:
-      213: 2494986259926467605
-    second: barbara sheet_2
+      213: -2418733595913228118
+    second: renata sheet_2
   - first:
-      213: -1658754053918630240
-    second: barbara sheet_3
+      213: 4456796757122623338
+    second: renata sheet_3
   - first:
-      213: 2937027195961593633
-    second: barbara sheet_4
+      213: -7018102872133165933
+    second: renata sheet_4
   - first:
-      213: 2287946556608596770
-    second: barbara sheet_5
+      213: -5825379696059955721
+    second: renata sheet_5
   - first:
-      213: 1986549969377684544
-    second: barbara sheet_6
+      213: 8099047017420713869
+    second: renata sheet_6
   - first:
-      213: -8543052227154148000
-    second: barbara sheet_7
+      213: 8799106379778843201
+    second: renata sheet_7
   - first:
-      213: -8901489507300167302
-    second: barbara sheet_8
+      213: -8781828329000271456
+    second: renata sheet_8
   - first:
-      213: 5420362725119483997
-    second: barbara sheet_9
+      213: -2568552841282938676
+    second: renata sheet_9
   - first:
-      213: 3883487435643277809
-    second: barbara sheet_10
+      213: 4751375380278750679
+    second: renata sheet_10
   - first:
-      213: 5006384657840183601
-    second: barbara sheet_11
+      213: 6610870402298875669
+    second: renata sheet_11
   - first:
-      213: -1600259351724607284
-    second: barbara sheet_12
+      213: -4525647343129727504
+    second: renata sheet_12
   - first:
-      213: 1473132310529322410
-    second: barbara sheet_13
+      213: -2680550939990696605
+    second: renata sheet_13
   - first:
-      213: 7354918187597077863
-    second: barbara sheet_14
+      213: 4540574155561065707
+    second: renata sheet_14
   - first:
-      213: -2751330661071207143
-    second: barbara sheet_15
+      213: 1084858729919976009
+    second: renata sheet_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -149,7 +145,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barbara sheet_0
+      name: renata sheet_0
       rect:
         serializedVersion: 2
         x: 5
@@ -164,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dda72e73eafd9e520800000000000000
-      internalID: 2731960588331809501
+      spriteID: d638218b40e8c4320800000000000000
+      internalID: 2543564040476722029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_1
+      name: renata sheet_1
       rect:
         serializedVersion: 2
         x: 46
@@ -186,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f61b108af1ecdbf80800000000000000
-      internalID: -8089082720329551505
+      spriteID: 215151b6b04f1f9b0800000000000000
+      internalID: -5047985377427253998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_2
+      name: renata sheet_2
       rect:
         serializedVersion: 2
         x: 89
@@ -208,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 514c56ec8c8ff9220800000000000000
-      internalID: 2494986259926467605
+      spriteID: aa0f9490c9eee6ed0800000000000000
+      internalID: -2418733595913228118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_3
+      name: renata sheet_3
       rect:
         serializedVersion: 2
         x: 132
@@ -230,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0aed076f9fbeaf8e0800000000000000
-      internalID: -1658754053918630240
+      spriteID: a6728689909b9dd30800000000000000
+      internalID: 4456796757122623338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_4
+      name: renata sheet_4
       rect:
         serializedVersion: 2
         x: 135
@@ -252,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 12fc3f67caa62c820800000000000000
-      internalID: 2937027195961593633
+      spriteID: 39c9a5d0f90ba9e90800000000000000
+      internalID: -7018102872133165933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_5
+      name: renata sheet_5
       rect:
         serializedVersion: 2
         x: 9
@@ -274,14 +270,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22bcbbb654b60cf10800000000000000
-      internalID: 2287946556608596770
+      spriteID: 7f5c296d708182fa0800000000000000
+      internalID: -5825379696059955721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_6
+      name: renata sheet_6
       rect:
         serializedVersion: 2
         x: 50
@@ -296,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04ce1550ca4a19b10800000000000000
-      internalID: 1986549969377684544
+      spriteID: d8f6c8c0a58956070800000000000000
+      internalID: 8099047017420713869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_7
+      name: renata sheet_7
       rect:
         serializedVersion: 2
         x: 93
@@ -318,14 +314,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0650ede234bf07980800000000000000
-      internalID: -8543052227154148000
+      spriteID: 142679bf1a4bc1a70800000000000000
+      internalID: 8799106379778843201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_8
+      name: renata sheet_8
       rect:
         serializedVersion: 2
         x: 135
@@ -340,14 +336,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a71b189847e877480800000000000000
-      internalID: -8901489507300167302
+      spriteID: 0a10a73b9ada02680800000000000000
+      internalID: -8781828329000271456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_9
+      name: renata sheet_9
       rect:
         serializedVersion: 2
         x: 9
@@ -362,14 +358,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d50e3802e2ff83b40800000000000000
-      internalID: 5420362725119483997
+      spriteID: cc89284bccaaa5cd0800000000000000
+      internalID: -2568552841282938676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_10
+      name: renata sheet_10
       rect:
         serializedVersion: 2
         x: 52
@@ -384,14 +380,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f1d5334f3be4e530800000000000000
-      internalID: 3883487435643277809
+      spriteID: 7dd2d080cb640f140800000000000000
+      internalID: 4751375380278750679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_11
+      name: renata sheet_11
       rect:
         serializedVersion: 2
         x: 93
@@ -406,14 +402,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 139978342504a7540800000000000000
-      internalID: 5006384657840183601
+      spriteID: 51f0b21ea978ebb50800000000000000
+      internalID: 6610870402298875669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_12
+      name: renata sheet_12
       rect:
         serializedVersion: 2
         x: 5
@@ -428,14 +424,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc835ff199cbac9e0800000000000000
-      internalID: -1600259351724607284
+      spriteID: 0fdef0628bba131c0800000000000000
+      internalID: -4525647343129727504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_13
+      name: renata sheet_13
       rect:
         serializedVersion: 2
         x: 46
@@ -450,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aad204c080e917410800000000000000
-      internalID: 1473132310529322410
+      spriteID: 36dd38b4f15cccad0800000000000000
+      internalID: -2680550939990696605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_14
+      name: renata sheet_14
       rect:
         serializedVersion: 2
         x: 89
@@ -472,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76d98c3af1be11660800000000000000
-      internalID: 7354918187597077863
+      spriteID: bec5982332c530f30800000000000000
+      internalID: 4540574155561065707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barbara sheet_15
+      name: renata sheet_15
       rect:
         serializedVersion: 2
         x: 132
@@ -494,8 +490,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 915c537475f41d9d0800000000000000
-      internalID: -2751330661071207143
+      spriteID: 9429c5c54413e0f00800000000000000
+      internalID: 1084858729919976009
       vertices: []
       indices: 
       edges: []

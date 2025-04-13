@@ -13,18 +13,21 @@ position: -90,-128
     <<elseif $Renata == 2 && $Gayle == 2 && $Elfie == 0>>
         <<wait  20>>
         //ProfKill
+        <<trigger_as "Profkill 2">>
         <<set $Renata = 0>>
         <<set $Gayle = 0>>
         <<set $murderCount = $murderCount +1>>
     <<elseif $Renata == 0 && $Gayle == 2 && $Elfie == 2>>
         <<wait  20>>
         //ProfKill
+        <<trigger_as "Profkill 2 (2)">>
         <<set $Gayle = 0>>
         <<set $Elfie = 0>>
         <<set $murderCount = $murderCount +1>>
     <<elseif $Renata == 2 && $Gayle == 0 && $Elfie == 2>>
         <<wait  20>>
         //ProfKill
+        <<trigger_as "Profkill 3">>
         <<set $Renata = 0>>
         <<set $Elfie = 0>>
         <<set $murderCount = $murderCount +1>>
@@ -34,22 +37,26 @@ position: -90,-128
     <<if $Brayn == 2 && $Fürchti == 2 && $Emma == 2>>
         <<wait  45>>
         //SnailKill
+        <<trigger_as "Snail 1">>
         <<set $Brayn = 0>>
         <<set $Fürchti = 0>>
         <<set $Emma = 0>>
     <<elseif $Brayn == 2 && $Fürchti == 2 && $Emma == 0>>
         <<wait  45>>
         //SnailKill
+        <<trigger_as "Snail 2">>
         <<set $Brayn = 0>>
         <<set $Fürchti = 0>>
     <<elseif $Brayn == 0 && $Fürchti == 2 && $Emma == 2>>
         <<wait  45>>
         //SnailKill
+        <<trigger_as "Snail 4">>
         <<set $Fürchti = 0>>
         <<set $Emma = 0>>
     <<elseif $Brayn == 2 && $Fürchti == 0 && $Emma == 2>>
         <<wait  45>>
         //SnailKill
+        <<trigger_as "Snail 3">>
         <<set $Brayn = 0>>
         <<set $Emma = 0>>
     <<endif>>
@@ -58,6 +65,7 @@ position: -90,-128
     <<if $Enoby == 2 && $Mattheo == 2>>
         <<wait  5>>
         //GoffKill
+        <<trigger_as "Goff">>
         <<set $Enoby = 0>>
         <<set $Mattheo = 0>>
     <<endif>>
@@ -66,6 +74,7 @@ position: -90,-128
     <<if $Yves == 2 && $Noah == 2>>
         <<wait  10>>
         //LeftBangKill
+        <<trigger_as "Left Bang">>
         <<set $Yves = 0>>
         <<set $Noah = 0>>
     <<endif>>
@@ -74,6 +83,7 @@ position: -90,-128
     <<if $Samira == 2 && $Barbara == 2>>
         <<wait  10>>
         //LeftKill
+        <<trigger_as "Left">>
         <<set $Samira = 0>>
         <<set $murderCount = $murderCount +1>>
     <<endif>>
@@ -82,6 +92,7 @@ position: -90,-128
     <<if $Renata == 2 && $Barbara == 2>>
         <<wait  60>>
         //WomenKill
+        <<trigger_as "Women">>
         <<set $Renata = 0>>
         <<set $Barbara = 0>>
     <<endif>>
@@ -90,6 +101,7 @@ position: -90,-128
     <<if $Mia == 2 && $Lux == 2>>
         <<wait  5>>
         //CatKill
+        <<trigger_as "Cats">>
         <<set $Mia = 0>>
         <<set $Lux = 0>>
     <<endif>>
@@ -98,6 +110,7 @@ position: -90,-128
     <<if $Diana == 2 && $Lizzie == 2>>
         <<wait  60>>
         //RoyalKill
+        <<trigger_as "Royal">>
         <<set $Diana = 0>>
         <<if $murder == "Diana">>
             <<set $murder = "no">>
@@ -109,6 +122,7 @@ position: -90,-128
     <<if $Maggie == 2 && $Lizzie == 2>>
         <<wait  15>>
         //BritishKill
+        <<trigger_as "British">>
         <<set $Maggie = 0>>
         <<set $murderCount = $murderCount +1>>
     <<endif>>
@@ -117,6 +131,7 @@ position: -90,-128
     <<if $Fürchti == 2 && $God == 2>>
         <<wait  40>>
         //GodKill
+        <<trigger_as "God">>
         <<set $Fürchti = 0>>
     <<endif>>
 
@@ -124,6 +139,7 @@ position: -90,-128
     <<if $DJ == "Barbara" && $Barbara == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Barbara = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -131,6 +147,7 @@ position: -90,-128
     <<if $DJ == "Brayn" && $Brayn == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Brayn = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -138,6 +155,7 @@ position: -90,-128
     <<if $DJ == "Diana" && $Diana == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Diana = 0>>
         <<if $murder == "Diana">>
             <<set $murder = "no">>
@@ -148,6 +166,7 @@ position: -90,-128
     <<if $DJ == "Elfie" && $Elfie == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Elfie = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -155,6 +174,7 @@ position: -90,-128
     <<if $DJ == "Emma" && $Emma == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Emma = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -162,6 +182,7 @@ position: -90,-128
     <<if $DJ == "Enoby" && $Enoby == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Enoby = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -169,6 +190,7 @@ position: -90,-128
     <<if $DJ == "Fürchti" && $Fürchti == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Fürchti = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -176,6 +198,7 @@ position: -90,-128
     <<if $DJ == "Gayle" && $Gayle == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Gayle = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -183,6 +206,7 @@ position: -90,-128
     <<if $DJ == "Lizzie" && $Lizzie == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Lizzie = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -190,6 +214,7 @@ position: -90,-128
     <<if $DJ == "Lux" && $Lux == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Lux = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -197,6 +222,7 @@ position: -90,-128
     <<if $DJ == "Maggie" && $Maggie == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Maggie = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -204,6 +230,7 @@ position: -90,-128
     <<if $DJ == "Mattheo" && $Mattheo == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Mattheo = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -211,6 +238,7 @@ position: -90,-128
     <<if $DJ == "Mia" && $Mia == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Mia = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -218,6 +246,7 @@ position: -90,-128
     <<if $DJ == "Noah" && $Noah == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Noah = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -225,6 +254,7 @@ position: -90,-128
     <<if $DJ == "Renata" && $Renata == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Renata = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -232,6 +262,7 @@ position: -90,-128
     <<if $DJ == "Samira" && $Samira == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Samira = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
@@ -239,6 +270,7 @@ position: -90,-128
     <<if $DJ == "Yves" && $Yves == 2 && $Elim >= 1>>
         <<wait  2>>
         //DJKill
+        <<trigger_as "DJ">>
         <<set $Yves = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>

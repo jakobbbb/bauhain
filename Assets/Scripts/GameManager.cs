@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour {
 
     public Transform DJSpot;
 
+    public List<NPCController> NPCPrefabs = new List<NPCController>();
+
     void Awake() {
         if (Instance == null) {
             Instance = this;

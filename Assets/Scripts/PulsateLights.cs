@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class PulsateLights : MonoBehaviour {
 
+    public float BPM;
+
     private List<Light2D> m_Lights = new List<Light2D>();
     private List<float> m_DefaultIntensities = new List<float>();
 
@@ -20,7 +22,7 @@ public class PulsateLights : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        float speed = 2.4f;
+        float speed = BPM / 60.0f;
         float t = (Time.time * speed) - Mathf.Floor(Time.time * speed);
         float intensity = m_Curve.Evaluate(t);
 

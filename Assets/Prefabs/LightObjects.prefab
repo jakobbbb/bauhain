@@ -1072,6 +1072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8961dc6e537ad14c9593cfa51ae1b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BPM: 120
   m_Curve:
     serializedVersion: 2
     m_Curve:

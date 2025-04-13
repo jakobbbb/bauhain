@@ -13,9 +13,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: f40097060bbfc61488dd88112e7de819, type: 3}
     - target: {fileID: 5627499385641983255, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627499385641983255, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627499385641983255, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5897997875551042235, guid: 3518747e033d34f419ecf95ff601ab14, type: 3}
+      objectReference: {fileID: 5897997875551042235, guid: 1560b5c73d75df048b772c5cc21fdf6c, type: 3}
+    - target: {fileID: 5627499385641983255, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7130494179135545156, guid: d0adff77bf0dff0ecb5eb1a58600538c, type: 3}
       propertyPath: m_Name
       value: Thatcher

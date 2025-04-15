@@ -866,9 +866,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6784532598113714435}
-  - component: {fileID: 3201071656974259664}
   - component: {fileID: 2649138489238246569}
   - component: {fileID: 8219407340154082439}
+  - component: {fileID: 2230293288109745603}
   m_Layer: 0
   m_Name: Dialogue System
   m_TagString: Untagged
@@ -893,123 +893,6 @@ Transform:
   - {fileID: 7473144452873317291}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3201071656974259664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5308072696296461845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 296d2bb63af7744c9a60817178ff25b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  project: {fileID: 7545569452688597077, guid: 25c25bc3171b69a469366a4c2f92b03d, type: 3}
-  VariableStorage: {fileID: 0}
-  LineProvider: {fileID: 0}
-  OptionsNeedPresentation:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5970160772750774880}
-        m_TargetAssemblyTypeName: MinimalOptionsView, YarnSpinner.Unity.Example
-        m_MethodName: RunOptions
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  CommandNeedsHandling:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2649138489238246569}
-        m_TargetAssemblyTypeName: DialogueSupportComponent, YarnSpinner.Unity.Example
-        m_MethodName: HandleCommand
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 0
-  LineNeedsPresentation:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5013111144395596992}
-        m_TargetAssemblyTypeName: MinimalLineView, YarnSpinner.Unity.Example
-        m_MethodName: RunLine
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5970160772750774880}
-        m_TargetAssemblyTypeName: MinimalOptionsView, YarnSpinner.Unity.Example
-        m_MethodName: RunLine
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  NodeStarted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2649138489238246569}
-        m_TargetAssemblyTypeName: DialogueSupportComponent, YarnSpinner.Unity.Example
-        m_MethodName: LogNodeStarted
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  NodeEnded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2649138489238246569}
-        m_TargetAssemblyTypeName: DialogueSupportComponent, YarnSpinner.Unity.Example
-        m_MethodName: LogNodeEnded
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  DialogueComplete:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2649138489238246569}
-        m_TargetAssemblyTypeName: DialogueSupportComponent, YarnSpinner.Unity.Example
-        m_MethodName: LogDialogueEnded
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2649138489238246569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,9 +917,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88806fbf3cf590126ac6f73e36b0d739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Runner: {fileID: 3201071656974259664}
+  m_Runner: {fileID: 0}
   DialogueCanvas: {fileID: 3612422127587824572}
   CharacterSplash: {fileID: 1568123839168484129}
+--- !u!114 &2230293288109745603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5308072696296461845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yarnProject: {fileID: 0}
+  _variableStorage: {fileID: 0}
+  dialogueViews:
+  - {fileID: 0}
+  startNode: Start
+  startAutomatically: 1
+  runSelectedOptionAsLine: 0
+  lineProvider: {fileID: 0}
+  verboseLogging: 1
+  onNodeStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  onCommand:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5428238804238489676
 GameObject:
   m_ObjectHideFlags: 0

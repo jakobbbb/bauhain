@@ -4,7 +4,7 @@ using Yarn.Unity;
 
 public class BauHainDialogueManager : MonoBehaviour {
     [SerializeField]
-    private MinimalDialogueRunner m_Runner;
+    private DialogueRunner m_Runner;
 
     private InMemoryVariableStorage m_Vars = null;
 
@@ -24,7 +24,6 @@ public class BauHainDialogueManager : MonoBehaviour {
 
     void Start() {
         DialogueCanvas.enabled = false;
-        m_Runner.CommandNeedsHandling.AddListener(DialogueIsOver);
         DontDestroyOnLoad(this);
     }
 
@@ -39,7 +38,7 @@ public class BauHainDialogueManager : MonoBehaviour {
         Storage().TryGetValue<float>("$clock", out clock);
         if (!m_TheEnd && clock >= 10) {
             DialogueCanvas.enabled = true;
-            m_Runner.StopDialogue();
+            //m_Runner.StopDialogue();
             m_Runner.StartDialogue("TheEnd");
             m_TheEnd = true;
         }
@@ -55,14 +54,29 @@ public class BauHainDialogueManager : MonoBehaviour {
         im.enabled = (sprite != null);
 
         Debug.Log("enabled? " + DialogueCanvas.enabled);
-        m_Runner.StopDialogue();
+        //m_Runner.StopDialogue();
         m_Runner.StartDialogue(prefix + character_name);
+    }
+
+    [YarnCommand("trigger_ks")]
+    public static void TriggerKS(string ks_name) {
+        BauHainDialogueManager b = GameManager.Instance.DiaManager;
+        Debug.Log("triggering ks " + ks_name);
+        b.m_KSAnimTrans.SetActive(true);
+        var ks = GameObject.Find(ks_name);
+        ks.GetComponent<Image>().enabled = true;
+    }
+
+    [YarnCommand("hide_canvas")]
+    public static void HideCanvas() {
+        BauHainDialogueManager b = GameManager.Instance.DiaManager;
+        b.DialogueCanvas.enabled = false;
     }
 
     public static void DialogueIsOver(string[] cmd) {
         BauHainDialogueManager b = GameManager.Instance.DiaManager;
         if (cmd[0] == "dialogue_is_over") {
-            b.DialogueCanvas.enabled = false;
+            //b.DialogueCanvas.enabled = false;
             //b.m_Runner.StopDialogue();
             //b.m_Runner.StartDialogue("EventLoop");
         } else if (cmd[0] == "trigger_ks") {
@@ -77,6 +91,6 @@ public class BauHainDialogueManager : MonoBehaviour {
         }
     }
     public bool IsDialogueRunning() {
-        return DialogueCanvas.enabled;
+        return m_Runner.IsDialogueRunning;
     }
 }

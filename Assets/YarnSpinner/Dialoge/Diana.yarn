@@ -22,7 +22,7 @@ position: -3211,-2474
     <<if $Polikül == 4 && $Samira == 2 && $Lux == 2 && $Renata == 2>>
         <<jump MURDERPolikül>>
     <<endif>>
-    <<dialogue_is_over>>
+    <<hide_canvas>>
     <<jump EventLoop>>
 ===
 

@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour {
 
     public Transform DJSpot;
 
+    public bool m_DebugSkipSelection = false;
+
     public List<NPCController> NPCPrefabs = new List<NPCController>();
     public BauHainDialogueManager DiaManager;
     public PulsateLights Lights;
@@ -26,6 +28,17 @@ public class GameManager : MonoBehaviour {
     }
 
     void Start() {
+#if !UNITY_EDITOR
+        // never skip in builds
+        m_DebugSkipSelection = false;
+#endif
+
+        if (m_DebugSkipSelection) {
+            var sel = GameObject.FindAnyObjectByType<CharacterSelection>();
+            for (int i = 0; i < 10; ++i) {
+                sel.SwitchCharacterAccept();
+            }
+        }
     }
 
     public void Start_SampleScene() {

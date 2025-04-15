@@ -48,6 +48,13 @@ public class BauHainDialogueManager : MonoBehaviour {
         if (character_name == "kids") {
             character_name = "Kids";  // aAAAAAAAAAAAAaaaaaaaaaaaAAAaaAAAAAAAaAAAAa
         }
+
+        if (InEventLoop()) {
+            // break out of event loop when talking to someone while in event loop
+            m_Runner.Dialogue.Stop();
+            Storage().SetValue("$in_event_loop", false);
+        }
+
         DialogueCanvas.enabled = true;
         CharacterSplash.sprite = sprite;
         var im = CharacterSplash.GetComponent<Image>();
@@ -79,10 +86,14 @@ public class BauHainDialogueManager : MonoBehaviour {
         b.DialogueCanvas.enabled = false;
     }
 
-    public bool IsDialogueRunning() {
+    public bool InEventLoop() {
         bool in_event_loop = false;
         Storage().TryGetValue("$in_event_loop", out in_event_loop);
         Debug.Log("in ev loop?" + in_event_loop);
-        return m_Runner.IsDialogueRunning && !in_event_loop;
+        return in_event_loop;
+    }
+
+    public bool IsDialogueRunning() {
+        return m_Runner.IsDialogueRunning && !InEventLoop();
     }
 }

@@ -21,6 +21,8 @@ position: -3211,-2474
 -> Items? <<if visited("ItemsBarbara") == false>>
     <<jump ItemsBarbara>>
 -> Leave. <<if visited("SayBarbara") && visited("DoBarbara") && visited("ItemsBarbara") == true>>
+    ok
+-> Debug
     <<set $Barbara = 2>>
     <<set $clock = $clock + 1>>
     <<if $Rentner == 4 && $Elfie == 2 && $Lizzie == 2 && $Fürchti == 2>>

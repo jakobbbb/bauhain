@@ -67,30 +67,22 @@ public class BauHainDialogueManager : MonoBehaviour {
         ks.GetComponent<Image>().enabled = true;
     }
 
+    [YarnCommand("trigger_as")]
+    public static void TriggerAS(string as_name) {
+        var assman = GameObject.FindFirstObjectByType<ActionScreenManager>();
+        assman.ShowScreen(as_name);
+    }
+
     [YarnCommand("hide_canvas")]
     public static void HideCanvas() {
         BauHainDialogueManager b = GameManager.Instance.DiaManager;
         b.DialogueCanvas.enabled = false;
     }
 
-    public static void DialogueIsOver(string[] cmd) {
-        BauHainDialogueManager b = GameManager.Instance.DiaManager;
-        if (cmd[0] == "dialogue_is_over") {
-            //b.DialogueCanvas.enabled = false;
-            //b.m_Runner.StopDialogue();
-            //b.m_Runner.StartDialogue("EventLoop");
-        } else if (cmd[0] == "trigger_ks") {
-            string ks_name = cmd[1];
-            b.m_KSAnimTrans.SetActive(true);
-            var ks = GameObject.Find(ks_name);
-            ks.GetComponent<Image>().enabled = true;
-        } else if (cmd[0] == "trigger_as") {
-            Debug.Log("action screen " + cmd[1]);
-            var assman = GameObject.FindFirstObjectByType<ActionScreenManager>();
-            assman.ShowScreen(cmd[1]);
-        }
-    }
     public bool IsDialogueRunning() {
-        return m_Runner.IsDialogueRunning;
+        bool in_event_loop = false;
+        Storage().TryGetValue("$in_event_loop", out in_event_loop);
+        Debug.Log("in ev loop?" + in_event_loop);
+        return m_Runner.IsDialogueRunning && !in_event_loop;
     }
 }

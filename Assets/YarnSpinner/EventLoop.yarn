@@ -1,9 +1,13 @@
 title: EventLoop
 position: -90,-128
 ---
-Meowwwww
+<<declare $in_event_loop = false>>
+<<set $in_event_loop = true>>
     //Profs
-    <<if $Renata == 2 && $Gayle == 2 && $Elfie == 2>>
+    <<if $Barbara == 2 >>  // debugggg
+        <<wait 5>>
+        <<trigger_as "Profkill 1">>
+    <<elseif $Renata == 2 && $Gayle == 2 && $Elfie == 2>>
         <<wait  20>>
         //ProfKill
         <<trigger_as "Profkill 1">>
@@ -275,8 +279,9 @@ Meowwwww
         <<set $Yves = 0>>
         <<set $murderCount = $murderCount +1>>
         <<set $DJ = "Elim">>
-<<endif>>
-<<if $murderCount == 1 && $kids == 2>>
-    <<jump KidsEnding>>
-<<endif>>
+    <<endif>>
+    <<set $in_event_loop = false>>
+    <<if $murderCount == 1 && $kids == 2>>
+        <<jump KidsEnding>>
+    <<endif>>
 ===

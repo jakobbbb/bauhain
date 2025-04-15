@@ -76,7 +76,6 @@ position: -3211,-2474
             <<endif>>
         <<endif>>
     <<endif>>
-    <<dialogue_is_over>>
     <<jump EventLoop>>
 ===
 

@@ -23,6 +23,7 @@ position: -3421,-2741
 -> Leave. <<if visited("SayKids") && visited("DoKids") && visited("ItemsKids") == true>>
     <<set $kids = 2>>
     <<set $clock = $clock + 1>>
+    <<dialogue_is_over>>
     <<jump EventLoop>>
 ===
 

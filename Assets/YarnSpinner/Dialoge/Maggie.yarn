@@ -71,6 +71,7 @@ position: -3211,-2474
             <<jump MURDERMaggie>>
         <<endif>>
     <<endif>>
+    <<dialogue_is_over>>
     <<jump EventLoop>>
 ===
 

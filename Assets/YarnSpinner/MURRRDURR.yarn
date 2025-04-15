@@ -122,7 +122,7 @@ Enoby stares at you with huge eyes.
 Enoby pulls out a gun.
 <<endif>>
 Enoby: YOU MUTHRFUKR!!!
-Enoby shots you a gazillion times.
+Enoby shoots you a gazillion times.
 //EnobyMurder
 //<< if $kids >= 1>>
 //    <<jump KidsEnding>>
@@ -181,7 +181,7 @@ You follow Lizzie outside.
 ...
 <<endif>>
 Are those guns?
-You hear one last thing before the firing squad executes you:
+You hear one last thing before the firing squad executes you
 LONG LIVE THE QUEEN!
 //LizzieMurder
 ////<< if $kids >= 1>>
@@ -236,17 +236,17 @@ title: MURDERMattheo
 Mattheo: You will be happy to hear that I have just been hired as your supervisor.
 Mattheo pulls out a piece of paper that informs you, that your contract has been terminated.
 //MattheoMurder
+<<trigger_ks Mattheo_KS>>
 You: Damn. 
 You: Guess, I'll just continue to chill here until I can catch my bus.
 <<jump TheEnd>>
-<<trigger_ks Mattheo_KS>>
 ===
 
 title: MURDERMia
 ---
 Mia: Stop! You are under arrest!
 Mia: For trying to bribe an officer!
-You weigh your choices.
+You weight your choices.
 You could comply.
 Or you could run.
 You know the club better than Mia.
@@ -259,7 +259,6 @@ You run.
 <<trigger_ks Mia_KS>>
 That was close.
 <<jump TheEnd>>
-<<trigger_ks Mia_KS>>
 ===
 
 title: MURDERNoah

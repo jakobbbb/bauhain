@@ -18,7 +18,7 @@ position: -3211,-2474
     <<jump ItemsLizzie>>
 -> Leave. <<if visited("SayLizzie") && visited("DoLizzie") && visited("ItemsLizzie") == true>>
     <<set $Lizzie = 2>>
-        <<set $clock = $clock +1>>
+        <<set $clock = $clock + 1>>
         <<if $Rentner == 4 && $Barbara == 2 && $Fürchti == 2 && $Elfie == 2>>
             <<jump MURDERRentner>>
         <<endif>>
@@ -163,5 +163,7 @@ position: -3006,-2211
     -> white powder <<if $koks == 1>>
         Lizzie: Ah, yes, thank you.
         <<set $koks = 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 0 && $snail == 0 && $koks == 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 3 && $snail == 0 && $koks == 0>>
 <<jump BasicInteractionLizzie>>
 ===

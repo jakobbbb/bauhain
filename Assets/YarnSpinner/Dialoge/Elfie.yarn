@@ -2,9 +2,13 @@ title: IntroElfie
 position: -4157,-3160
 ---
 <<set $backwards = 0>>
+<<if $playerroom == 6>>
+    <<jump MURDERElfie>>
+<<else>>
 Ah, a person.
 Quick!
 <<jump BasicInteractionElfie>>
+<<endif>>
 ===
 title: BasicInteractionElfie
 position: -4011,-2877
@@ -18,7 +22,7 @@ position: -4011,-2877
     <<jump ItemsElfie>>
 -> Leave. <<if visited("SayElfie") && visited("DoElfie") && visited("ItemsElfie") == true>>
     <<set $Elfie = 2>>
-    <<set $clock = $clock +1>>
+    <<set $clock = $clock + 1>>
     <<if $Rentner == 4 && $Barbara == 2 && $Lizzie == 2 && $Fürchti == 2>>
         <<jump MURDERRentner>>
     <<endif>>
@@ -174,5 +178,7 @@ position: -3694,-2583
     -> white powder <<if $koks == 1>>
         Elfie: Keep that, you need it more than me.
         <<set $koks = 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 0 && $snail == 0 && $koks == 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 3 && $snail == 0 && $koks == 0>>
 <<jump BasicInteractionElfie>>
 ===

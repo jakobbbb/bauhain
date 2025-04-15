@@ -18,7 +18,7 @@ position: -3211,-2474
     <<jump ItemsGod>>
 -> Leave. <<if visited("SayGod") && visited("DoGod") && visited("ItemsGod") == true>>
     <<set $God = 2>>
-    <<set $clock = $clock +1>>
+    <<set $clock = $clock + 1>>
     <<dialogue_is_over>>
     <<jump EventLoop>>
 ===

@@ -7,7 +7,7 @@ Yeah, no, that's obviously three kids in a trenchcoat.
 Why did you let them in?
 At least they seem well behaved.
 For now.
-Quick:
+Quick!
 <<jump BasicInteractionKids>>
 ===
 title: BasicInteractionKids
@@ -22,7 +22,7 @@ position: -3421,-2741
     <<jump ItemsKids>>
 -> Leave. <<if visited("SayKids") && visited("DoKids") && visited("ItemsKids") == true>>
     <<set $kids = 2>>
-    <<set $clock = $clock +1>>
+    <<set $clock = $clock + 1>>
     <<dialogue_is_over>>
     <<jump EventLoop>>
 ===
@@ -111,5 +111,7 @@ position: -3006,-2211
     -> white powder <<if $koks == 1>>
         No.
         You're not going to do that.
+    -> Your pockets are empty. <<if $note == 0 && $drink == 0 && $snail == 0 && $koks == 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 3 && $snail == 0 && $koks == 0>>
 <<jump BasicInteractionKids>>
 ===

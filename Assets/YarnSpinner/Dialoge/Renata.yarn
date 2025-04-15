@@ -3,9 +3,13 @@ position: -3589,-2730
 ---
 <<set $backwards = 0>>
 <<declare $ball = 0>>
+<<if $playerroom == 1>>
+    <<jump MURDERRenata>>
+<<else>>
 Ah, a person.
 Quick!
 <<jump BasicInteractionRenata>>
+<<endif>>
 ===
 title: BasicInteractionRenata
 position: -3257,-2571
@@ -19,7 +23,7 @@ position: -3257,-2571
     <<jump ItemsRenata>>
 -> Leave. <<if visited("SayRenata") && visited("DoRenata") && visited("ItemsRenata") == true>>
     <<set $Renata = 2>>
-    <<set $clock = $clock +1>>
+    <<set $clock = $clock + 1>>
     <<if $Polikül == 4 && $Diana == 2 && $Lux == 2 && $Samira == 2>>
         <<jump MURDERPolikül>>
     <<endif>>
@@ -175,5 +179,7 @@ position: -3230,-2201
         Renata: You can keep that.
     -> white powder <<if $koks == 1>>
         Renata: You can keep that.
+    -> Your pockets are empty. <<if $note == 0 && $drink == 0 && $snail == 0 && $koks == 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 3 && $snail == 0 && $koks == 0>>
 <<jump BasicInteractionRenata>>
 ===

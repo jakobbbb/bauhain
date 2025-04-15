@@ -2,9 +2,13 @@ title: IntroBarbara
 position: -3440,-2597
 ---
 <<set $backwards = 0>>
+<<if $playerroom == 3>>
+    <<jump MURDERBarbara>>
+<<else>>
 Ah, a person.
 Quick!
 <<jump BasicInteractionBarbara>>
+<<endif>>
 ===
 title: BasicInteractionBarbara
 position: -3211,-2474
@@ -18,7 +22,7 @@ position: -3211,-2474
     <<jump ItemsBarbara>>
 -> Leave. <<if visited("SayBarbara") && visited("DoBarbara") && visited("ItemsBarbara") == true>>
     <<set $Barbara = 2>>
-    <<set $clock = $clock +1>>
+    <<set $clock = $clock + 1>>
     <<if $Rentner == 4 && $Elfie == 2 && $Lizzie == 2 && $Fürchti == 2>>
         <<jump MURDERRentner>>
     <<endif>>
@@ -173,5 +177,7 @@ position: -3006,-2211
         Barbara: Love her but you can keep her.
     -> white powder <<if $koks == 1>>
         Barbara: I have more than enough of this.
+    -> Your pockets are empty. <<if $note == 0 && $drink == 0 && $snail == 0 && $koks == 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 3 && $snail == 0 && $koks == 0>>
 <<jump BasicInteractionBarbara>>
 ===

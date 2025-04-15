@@ -2,9 +2,13 @@ title: IntroGayle
 position: -3440,-2597
 ---
 <<set $backwards = 0>>
+<<if $playerroom == 5>>
+    <<jump MURDERGayle>>
+<<else>>
 Ah, a person.
 Quick!
 <<jump BasicInteractionGayle>>
+<<endif>>
 ===
 title: BasicInteractionGayle
 position: -3211,-2474
@@ -18,7 +22,7 @@ position: -3211,-2474
     <<jump ItemsGayle>>
 -> Leave. <<if visited("SayGayle") && visited("DoGayle") && visited("ItemsGayle") == true>>
     <<set $Gayle = 2>>
-    <<set $clock = $clock +1>>
+    <<set $clock = $clock + 1>>
     <<if $vampires == 4 && $Brayn == 2 && $Enoby == 2 && $Yves == 2>>
         <<jump MURDERVampires>>
     <<endif>>
@@ -158,5 +162,7 @@ position: -3006,-2211
         Gayle: I don't need that.
     -> white powder <<if $koks == 1>>
         Gayle: I don't need that.
+    -> Your pockets are empty. <<if $note == 0 && $drink == 0 && $snail == 0 && $koks == 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 3 && $snail == 0 && $koks == 0>>
 <<jump BasicInteractionGayle>>
 ===

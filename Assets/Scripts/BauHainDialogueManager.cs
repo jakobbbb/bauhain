@@ -89,7 +89,6 @@ public class BauHainDialogueManager : MonoBehaviour {
     public bool InEventLoop() {
         bool in_event_loop = false;
         Storage().TryGetValue("$in_event_loop", out in_event_loop);
-        Debug.Log("in ev loop?" + in_event_loop);
         return in_event_loop;
     }
 

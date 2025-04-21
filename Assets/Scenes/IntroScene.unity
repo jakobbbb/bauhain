@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 1083047503}
     - target: {fileID: 2047672728861489954, guid: a840a10ed13eb47738034edcc8b2cfca, type: 3}
       propertyPath: m_DebugSkipSelection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2720998619898231482, guid: a840a10ed13eb47738034edcc8b2cfca, type: 3}
       propertyPath: m_Name
@@ -1709,7 +1709,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327098529}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6019e2c4a46dccf43b74b3cb385af74a, type: 3}
   m_Name: 

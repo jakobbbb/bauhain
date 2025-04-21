@@ -17,6 +17,7 @@ public class CharacterSelection : MonoBehaviour
         {
             CharacterImages[i].SetActive(false);
         }
+        Debug.Log("activeCharacter is " + activeCharacter);
         CharacterImages[activeCharacter].SetActive(true);
     }
 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
@@ -34,10 +35,16 @@ public class GameManager : MonoBehaviour {
 #endif
 
         if (m_DebugSkipSelection) {
-            var sel = GameObject.FindAnyObjectByType<CharacterSelection>();
-            for (int i = 0; i < 10; ++i) {
-                sel.SwitchCharacterAccept();
-            }
+            StartCoroutine(DebugSkipCharacterSelectionCoroutine());
+        }
+    }
+
+    private IEnumerator DebugSkipCharacterSelectionCoroutine() {
+        yield return new WaitForSeconds(0.3f);
+        var sel = GameObject.FindAnyObjectByType<CharacterSelection>();
+        for (int i = 0; i < 10; ++i) {
+            sel.SwitchCharacterAccept();
+            yield return new WaitForSeconds(0.05f);
         }
     }
 

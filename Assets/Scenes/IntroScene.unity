@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 1083047503}
     - target: {fileID: 2047672728861489954, guid: a840a10ed13eb47738034edcc8b2cfca, type: 3}
       propertyPath: m_DebugSkipSelection
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2720998619898231482, guid: a840a10ed13eb47738034edcc8b2cfca, type: 3}
       propertyPath: m_Name

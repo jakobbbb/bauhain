@@ -63,6 +63,8 @@ title: TheBeginning
 <<declare $clock = 0>>
 <<declare $chanceMURDER = 0>>
 You: Great, my shift is over.
+-> meow
+-> purr
 You: ...
 You: And the next bus leaves at 5:15 a.m.
 You: ...

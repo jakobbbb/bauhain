@@ -12,19 +12,24 @@ public class TimeIsRunningAAAAAAAA : MonoBehaviour {
             m_Elements.Add(c.GetChild(i).gameObject);
         }
         StartCoroutine(UpdateTime());
+        UpdateClock();
+    }
+
+    private void UpdateClock() {
+        var stor = GameManager.Instance.DiaManager.Storage();
+        float clock = -1;
+        stor.TryGetValue("$clock", out clock);
+        if (clock >= 0) {
+            for (int i = 0; i < m_Elements.Count; ++i) {
+                m_Elements[i].SetActive(i == (int)clock);
+            }
+        }
     }
 
     private IEnumerator UpdateTime() {
-        var stor = GameManager.Instance.DiaManager.Storage();
         while (true) {
             yield return new WaitForSeconds(2.5f);
-            float clock = -1;
-            stor.TryGetValue("$clock", out clock);
-            if (clock >= 0) {
-                for (int i = 0; i < m_Elements.Count; ++i) {
-                    m_Elements[i].SetActive(i == (int)clock);
-                }
-            }
+            UpdateClock();
         }
     }
 }

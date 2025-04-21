@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour {
     public PulsateLights Lights;
     public AudioSource PA;
 
+    private SortedDictionary<string, NPCController> m_NPCObjects =
+            new SortedDictionary<string, NPCController>();
+
     void Awake() {
         if (Instance == null) {
             Instance = this;
@@ -49,6 +52,7 @@ public class GameManager : MonoBehaviour {
     }
 
     public void Start_SampleScene() {
+        StopAllCoroutines();
         Debug.Log("Hello??");
         var rs = GameObject.FindObjectsByType(typeof(Room), FindObjectsSortMode.None);
         foreach (var el in rs) {
@@ -66,11 +70,28 @@ public class GameManager : MonoBehaviour {
             DiaManager.Storage().TryGetValue("$" + npc.name, out present);
             string dj = "";
             DiaManager.Storage().TryGetValue("$DJ", out dj);
-            if (present < 0.9f) {
+            if (present > 0.0f) {
+                if (dj == npc.name) {
+                    ((NPCController)npc).MakeDJ();
+                }
+                m_NPCObjects.Add("$" + npc.name, (NPCController)npc);
+            } else {
                 ((NPCController)npc).transform.position = 10000.0f * new Vector3(1, 1, 1);
-                Destroy(npc);
-            } else if (dj == npc.name) {
-                ((NPCController)npc).MakeDJ();
+                Destroy(((NPCController)npc).gameObject);
+            }
+        }
+        StartCoroutine(CheckForRemovedCharactersCoroutine());
+    }
+
+    private IEnumerator CheckForRemovedCharactersCoroutine() {
+        while (true) {
+            yield return new WaitForSeconds(1.0f);
+            foreach (var item in m_NPCObjects) {
+                float present = 0.0f;
+                DiaManager.Storage().TryGetValue(item.Key, out present);
+                if (present < 1.0f && item.Value != null) {
+                    Destroy(item.Value.gameObject);
+                }
             }
         }
     }

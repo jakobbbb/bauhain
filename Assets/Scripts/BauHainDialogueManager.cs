@@ -60,7 +60,6 @@ public class BauHainDialogueManager : MonoBehaviour {
         var im = CharacterSplash.GetComponent<Image>();
         im.enabled = (sprite != null);
 
-        Debug.Log("enabled? " + DialogueCanvas.enabled);
         //m_Runner.StopDialogue();
         m_Runner.StartDialogue(prefix + character_name);
     }
@@ -89,7 +88,6 @@ public class BauHainDialogueManager : MonoBehaviour {
     public bool InEventLoop() {
         bool in_event_loop = false;
         Storage().TryGetValue("$in_event_loop", out in_event_loop);
-        Debug.Log("in ev loop?" + in_event_loop);
         return in_event_loop;
     }
 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
@@ -18,6 +19,9 @@ public class GameManager : MonoBehaviour {
     public PulsateLights Lights;
     public AudioSource PA;
 
+    private SortedDictionary<string, NPCController> m_NPCObjects =
+            new SortedDictionary<string, NPCController>();
+
     void Awake() {
         if (Instance == null) {
             Instance = this;
@@ -34,14 +38,21 @@ public class GameManager : MonoBehaviour {
 #endif
 
         if (m_DebugSkipSelection) {
-            var sel = GameObject.FindAnyObjectByType<CharacterSelection>();
-            for (int i = 0; i < 10; ++i) {
-                sel.SwitchCharacterAccept();
-            }
+            StartCoroutine(DebugSkipCharacterSelectionCoroutine());
+        }
+    }
+
+    private IEnumerator DebugSkipCharacterSelectionCoroutine() {
+        yield return new WaitForSeconds(0.3f);
+        var sel = GameObject.FindAnyObjectByType<CharacterSelection>();
+        for (int i = 0; i < 10; ++i) {
+            sel.SwitchCharacterAccept();
+            yield return new WaitForSeconds(0.05f);
         }
     }
 
     public void Start_SampleScene() {
+        StopAllCoroutines();
         Debug.Log("Hello??");
         var rs = GameObject.FindObjectsByType(typeof(Room), FindObjectsSortMode.None);
         foreach (var el in rs) {
@@ -54,16 +65,34 @@ public class GameManager : MonoBehaviour {
         DJSpot = GameObject.Find("DJSpot").transform;
 
         var npcs = GameObject.FindObjectsByType(typeof(NPCController), FindObjectsSortMode.None);
-        foreach (var npc in npcs) {
+        foreach (var npc_obj in npcs) {
+            NPCController npc = (NPCController)npc_obj;
             float present = -1.0f;
             DiaManager.Storage().TryGetValue("$" + npc.name, out present);
             string dj = "";
             DiaManager.Storage().TryGetValue("$DJ", out dj);
-            if (present < 0.9f) {
-                ((NPCController)npc).transform.position = 10000.0f * new Vector3(1, 1, 1);
-                Destroy(npc);
-            } else if (dj == npc.name) {
-                ((NPCController)npc).MakeDJ();
+            if (present > 0.0f) {
+                if (dj == npc.name) {
+                    npc.MakeDJ();
+                }
+                m_NPCObjects.Add("$" + npc.name, (NPCController)npc);
+            } else if (!npc.StaticInteraction) {
+                npc.transform.position = 10000.0f * new Vector3(1, 1, 1);
+                Destroy(npc.gameObject);
+            }
+        }
+        StartCoroutine(CheckForRemovedCharactersCoroutine());
+    }
+
+    private IEnumerator CheckForRemovedCharactersCoroutine() {
+        while (true) {
+            yield return new WaitForSeconds(1.0f);
+            foreach (var item in m_NPCObjects) {
+                float present = 0.0f;
+                DiaManager.Storage().TryGetValue(item.Key, out present);
+                if (present < 1.0f && item.Value != null) {
+                    Destroy(item.Value.gameObject);
+                }
             }
         }
     }

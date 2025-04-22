@@ -22,6 +22,8 @@ public class NPCController : CharacterController {
     public AudioClip Soundtrack;
     public int SoundtrackBPM;
 
+    public bool StaticInteraction;
+
     [System.Serializable]
     public class RoomPreferences {
         [Range(0.0f, 1.0f)]
@@ -92,13 +94,15 @@ public class NPCController : CharacterController {
     }
 
     public void Start() {
-        m_AiPath = GetComponent<AIPath>();
-        m_DestSetter = GetComponent<AIDestinationSetter>();
+        if (!StaticInteraction) {
+            m_AiPath = GetComponent<AIPath>();
+            m_DestSetter = GetComponent<AIDestinationSetter>();
 
-        m_MoveSpeed *= 0.75f;
-        StartCoroutine(RandomRoomCoroutine());
-        m_MoveTarget = new GameObject(name + "Target");
-        m_DestSetter.target = m_MoveTarget.transform;
+            m_MoveSpeed *= 0.75f;
+            StartCoroutine(RandomRoomCoroutine());
+            m_MoveTarget = new GameObject(name + "Target");
+            m_DestSetter.target = m_MoveTarget.transform;
+        }
 
         m_DiaTrigger.transform.SetParent(null);
         m_DiaTrigger.name = name + "Trigger";
@@ -117,6 +121,10 @@ public class NPCController : CharacterController {
     }
 
     void Update() {
+        if (StaticInteraction) {
+            return;
+        }
+
         var state = m_StateMachine.GetCurrentAnimatorStateInfo(0);
         if (state.IsName("MoveToTarget")) {
             MoveToTarget();

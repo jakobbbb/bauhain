@@ -4,10 +4,7 @@ position: -90,-128
 <<declare $in_event_loop = false>>
 <<set $in_event_loop = true>>
     //Profs
-    <<if $Barbara == 2 >>  // debugggg
-        <<wait 5>>
-        <<trigger_as "Profkill 1">>
-    <<elseif $Renata == 2 && $Gayle == 2 && $Elfie == 2>>
+    <<if $Renata == 2 && $Gayle == 2 && $Elfie == 2>>
         <<wait  20>>
         //ProfKill
         <<trigger_as "Profkill 1">>

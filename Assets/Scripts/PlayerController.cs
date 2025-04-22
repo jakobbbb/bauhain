@@ -38,7 +38,7 @@ public class PlayerController : CharacterController {
         var move = m_MoveAction.ReadValue<Vector2>();
         var sprinting = m_SprintAction.IsPressed();
         var sprint_mod = sprinting ? m_MoveSpeedSprintModifier : 1.0f;
-        var delta = move * sprint_mod;
+        var delta = move * sprint_mod * 1.5f;
 
         /*
         if (m_MoveAction.WasPressedThisFrame()) {
@@ -59,7 +59,9 @@ public class PlayerController : CharacterController {
                 var name = near.NPCName();
                 if (name != null) {
                     GameManager.Instance.DiaManager.TalkTo(near.NPCName(), near.Splash);
-                    near.MarkVisited();
+                    if (near.NPCName() != "Bar") {
+                        near.MarkVisited();
+                    }
                 }
             }
             near.EnableInteractionIcon();

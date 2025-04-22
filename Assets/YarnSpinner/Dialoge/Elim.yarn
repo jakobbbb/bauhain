@@ -115,8 +115,8 @@ position: -3006,-2211
         Elim: Keep your stuff. I don't need it.
     -> white powder <<if $koks == 1>>
         Elim: Keep your stuff. I don't need it.
-    -> Your pockets are empty. <<if $note == 0 && $drink == 0 && $snail == 0 && $koks == 0>>
-    -> Your pockets are empty. <<if $note == 0 && $drink == 3 && $snail == 0 && $koks == 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 0 && $banana == 0 && $snail == 0 && $koks == 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 3 && $banana == 0 && $snail == 0 && $koks == 0>>
 <<jump BasicInteractionElim>>
 <<endif>>
 ===

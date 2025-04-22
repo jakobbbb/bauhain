@@ -178,7 +178,7 @@ position: -3694,-2583
     -> white powder <<if $koks == 1>>
         Elfie: Keep that, you need it more than me.
         <<set $koks = 0>>
-    -> Your pockets are empty. <<if $note == 0 && $drink == 0 && $snail == 0 && $koks == 0>>
-    -> Your pockets are empty. <<if $note == 0 && $drink == 3 && $snail == 0 && $koks == 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 0 && $banana == 0 && $snail == 0 && $koks == 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 3 && $banana == 0 && $snail == 0 && $koks == 0>>
 <<jump BasicInteractionElfie>>
 ===

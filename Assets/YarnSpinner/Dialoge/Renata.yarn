@@ -179,7 +179,7 @@ position: -3230,-2201
         Renata: You can keep that.
     -> white powder <<if $koks == 1>>
         Renata: You can keep that.
-    -> Your pockets are empty. <<if $note == 0 && $drink == 0 && $snail == 0 && $koks == 0>>
-    -> Your pockets are empty. <<if $note == 0 && $drink == 3 && $snail == 0 && $koks == 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 0 && $banana == 0 && $snail == 0 && $koks == 0>>
+    -> Your pockets are empty. <<if $note == 0 && $drink == 3 && $banana == 0 && $snail == 0 && $koks == 0>>
 <<jump BasicInteractionRenata>>
 ===

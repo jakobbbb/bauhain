@@ -65,19 +65,20 @@ public class GameManager : MonoBehaviour {
         DJSpot = GameObject.Find("DJSpot").transform;
 
         var npcs = GameObject.FindObjectsByType(typeof(NPCController), FindObjectsSortMode.None);
-        foreach (var npc in npcs) {
+        foreach (var npc_obj in npcs) {
+            NPCController npc = (NPCController)npc_obj;
             float present = -1.0f;
             DiaManager.Storage().TryGetValue("$" + npc.name, out present);
             string dj = "";
             DiaManager.Storage().TryGetValue("$DJ", out dj);
             if (present > 0.0f) {
                 if (dj == npc.name) {
-                    ((NPCController)npc).MakeDJ();
+                    npc.MakeDJ();
                 }
                 m_NPCObjects.Add("$" + npc.name, (NPCController)npc);
-            } else {
-                ((NPCController)npc).transform.position = 10000.0f * new Vector3(1, 1, 1);
-                Destroy(((NPCController)npc).gameObject);
+            } else if (!npc.StaticInteraction) {
+                npc.transform.position = 10000.0f * new Vector3(1, 1, 1);
+                Destroy(npc.gameObject);
             }
         }
         StartCoroutine(CheckForRemovedCharactersCoroutine());

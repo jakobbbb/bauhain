@@ -59,7 +59,9 @@ public class PlayerController : CharacterController {
                 var name = near.NPCName();
                 if (name != null) {
                     GameManager.Instance.DiaManager.TalkTo(near.NPCName(), near.Splash);
-                    near.MarkVisited();
+                    if (near.NPCName() != "Bar") {
+                        near.MarkVisited();
+                    }
                 }
             }
             near.EnableInteractionIcon();

@@ -60,7 +60,6 @@ public class BauHainDialogueManager : MonoBehaviour {
         var im = CharacterSplash.GetComponent<Image>();
         im.enabled = (sprite != null);
 
-        Debug.Log("enabled? " + DialogueCanvas.enabled);
         //m_Runner.StopDialogue();
         m_Runner.StartDialogue(prefix + character_name);
     }

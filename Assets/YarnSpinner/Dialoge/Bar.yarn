@@ -1,0 +1,26 @@
+title: IntroBar
+position: -3440,-2597
+---
+<<set $backwards = 0>>
+Ah, the bar.
+Quick!
+<<jump BasicInteractionBar>>
+===
+title: BasicInteractionBar
+position: -3211,-2474
+---
+
+-> Items
+    -> 10€ note<<if $note == 2>>
+        *gulp* *gulp* *gulp*
+        *burp*
+        <<set $note = 1>>
+        <<set $drink = $drink + 1>>
+        <<set $clock = $clock + 1>>
+    -> 2€ coin<<if $note == 1>>
+        That won't get you anywhere...
+    -> Nevermind...
+-> Leave.
+<<hide_canvas>>
+<<jump EventLoop>>
+===
